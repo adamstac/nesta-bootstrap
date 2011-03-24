@@ -1,0 +1,62 @@
+Date: 2010-10-12 17:33:00 GMT
+tumblr_id: 1299701417
+categories: github,ruby,osx,linux,growl,notifications,files,shell
+github_repo: guard/guard
+title: guard: Ruby DSL for creating filesystem watchers
+
+# guard: Ruby DSL for creating filesystem watchers
+
+Watching the filesystem and re-running test suites have long been the sweet spot for [Autotest](https://rubygems.org/gems/autotest) and [Watchr](http://github.com/mynyml/watchr). As more and more preprocessed tools like [CoffeeScript](http://wynn.fm/029) and [Sass](http://lg.gd/001) are more widely adopted, there are a growing number of scenarios where you may want to watch the file system and act on the changes.
+
+[Rémy Coutable](http://github.com/rymai) and [Thibaud Guillaume-Gentil](http://github.com/thibaudgg) are developing [Guard](http://github.com/guard/guard), a Ruby-based utility and DSL for building filesystem watchers. Guard uses FSEvent on OS X and lnotify on Linux to watch the filesystem and [Growl](http://growl.info) on OS X and libnotify on Linux for notifications.
+
+Guard is a gem so install with RubyGems:
+
+    gem install guard
+
+To create a new Guard, just derive from the provided Guard base class, as in the Rspec example:
+
+    require 'guard'
+    require 'guard/guard'
+
+    module Guard
+      class RSpec < Guard
+    
+        autoload :Runner, 'guard/rspec/runner'
+        autoload :Inspector, 'guard/rspec/inspector'
+    
+        def start
+          Runner.set_rspec_version(options)
+        end
+    
+        def run_all
+          Runner.run ["spec"], :message => "Running all specs"
+        end
+    
+        def run_on_change(paths)
+          paths = Inspector.clean(paths)
+          Runner.run(paths) unless paths.empty?
+        end
+    
+      end
+    end
+
+Now you can use the guard using the Guard DSL
+
+    guard 'rspec' do
+      watch('^spec/(.*)_spec.rb')
+      watch('^lib/(.*)\.rb')                              { |m| "spec/lib/#{m[1]}_spec.rb" }
+      watch('^spec/spec_helper.rb')                       { "spec" }
+    end
+
+Currently, Guard has released [guard-rspec](http://github.com/guard/guard-rspec) and [guard-livereload](http://github.com/guard/guard-livereload), but is looking for the community to pile on perhaps with some of the following:
+
+* guard-spork
+* guard-cucumber
+* guard-test
+* guard-sass
+* guard-bundler
+
+Why not [fork the project](http://github.com/guard/guard) and contribute?
+
+[[Source on GitHub](http://github.com/guard/guard)]

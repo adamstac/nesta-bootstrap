@@ -1,0 +1,31 @@
+Date: 2010-10-06 15:20:56 GMT
+tumblr_id: 1256056798
+categories: github,node,javascript,node.js,pubsubhubbub,feeds,push
+github_repo: technoweenie/nubnub
+title: nubnub: PubSubHubbub client/server for Node.js
+
+# nubnub: PubSubHubbub client/server for Node.js
+
+Yesterday, we released [Episode 0.3.7](http://lg.gd/037) in which [Julien Genestoux](http://twitter.com/julien51) from [Superfeedr](http://superfeedr.com) gives us the scoop on PubSubHubbub.
+
+Later that day, [Rick Olson](http://techno-weenie.net/), AKA [technoweenie](http://github.com/technoweenie) [releases](http://techno-weenie.net/2010/10/5/nub-nub/) [Nub Nub](http://github.com/technoweenie/nubnub), client and server-side PubSubHubbub for Node.js. Coincidence? We think not!
+
+#### Usage
+
+Until Nub Nub makes its way into npm, you'll need to vendor [the project](http://github.com/technoweenie/nubnub) and then `require` it:
+
+    var nub = require('nubnub');
+    
+    // subscribing to feeds
+    var sub = nub.subscribe(POST_DATA);
+    sub.callback      // some URL
+    
+    // publish data 
+    sub.publish(items, {format: "atom"}, function(err, resp) {
+
+    })
+
+Rick is looking to support backend stores including Redis, nStore, and more. If you'd like to help out, [fork the project](http://github.com/technoweenie/nubnub#fork_box) and send a pull request.
+
+
+[[Source on GitHub](http://github.com/technoweenie/nubnub)]

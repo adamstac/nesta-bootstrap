@@ -1,0 +1,7 @@
+# Publishing a feed
+
+You don't need to take any action to setup your site's Atom feed; every article that you create (i.e. every page that has a date) is automatically included in the feed.
+
+Simple, but effective. Your feed will be served from `/articles.xml`, though you can tweak that location with a few lines of Ruby (if you can't see what to do, dive onto the [mailing list](mailto:nesta@librelist.com) for advice).
+
+You can add your name and contact deatils to the items in your feed by editing the `author:` section of `config/config.yml`.

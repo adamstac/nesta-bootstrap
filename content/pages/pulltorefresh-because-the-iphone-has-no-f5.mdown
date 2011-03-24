@@ -1,0 +1,13 @@
+Date: 2010-07-30 15:04:22 GMT
+tumblr_id: 879975149
+categories: github,cocoa,osx,iphone,touch,iOS
+github_repo: leah/PullToRefresh
+title: PullToRefresh: Because the iPhone has no F5
+
+# PullToRefresh: Because the iPhone has no F5
+
+Want to implement the nifty pull-to-refresh pattern made popular by [<del>Tweetie</del>Twitter for iPhone](http://blog.twitter.com/2010/05/twitter-for-iphone.html) in your iOS project? [Leah Culver](http://leahculver.com) has created [PullToRefresh](http://github.com/leah/PullToRefresh), a simple TableViewController for your UITableView.
+
+![screenshot](http://s3.amazonaws.com/leah.baconfile.com/blog/refresh-small-1.png)
+
+[Source on GitHub](http://github.com/leah/PullToRefresh)

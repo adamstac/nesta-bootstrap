@@ -1,0 +1,25 @@
+Date: 2010-09-21 21:29:44 GMT
+tumblr_id: 1163222577
+categories: github,css,hacks,chrome,extensions
+github_repo: ankit/stylebot
+title: stylebot: Site-specific styles in Google Chrome
+
+# stylebot: Site-specific styles in Google Chrome
+
+One of the things I missed moving to Google Chrome as my full time browser was Grease Monkey and site-specific hacks. Custom user stylsheets have been available in Chrome for a little while now, but they're cumbersome to manage.
+
+[Ankit Ahuja](http://github.com/ankit) has made overriding a site's styles a snap with [Stylebot](http://github.com/ankit/stylebot), an extension for Google Chrome he built as part of [Google's Summer of Code 2010](http://socghop.appspot.com/).
+
+<iframe class="youtube-player" type="text/html" width="500" height="401" src="http://www.youtube.com/embed/eEqlJ_u9ys4" frameborder="0"></iframe>
+
+To use Stylebot, just install the extension for the [Google Extensions Gallery](https://chrome.google.com/extensions/detail/oiaejidbmkiecgbjeifoejpgmdaleoha) or clone the [repo](http://github.com/ankit/stylebot) and open the `.crx` file with Chrome.
+
+Once installed you get a handy 'CSS' link in Chromes address bar that opens the Stylebot panel, letting you select elements and override default styles. For advanced users, you can drop in your own site-specific CSS, like this:
+
+    code, #browser table {
+      font-family: menlo ;
+    }
+
+Just like that, my favorite fixed width font on [GitHub.com](http://github.com).
+
+[[Source on GitHub](http://github.com/ankit/stylebot)] [[Homepage](http://stylebot.me)] [[Follow @stylebot on Twitter](http://twitter.com/stylebot)]

@@ -1,0 +1,42 @@
+Date: 2010-07-26 02:05:46 GMT
+tumblr_id: 859235082
+categories: github,ruby,redis,deployment
+github_repo: jamesgolick/rollout
+title: Rollout: Conditionally roll out features with Redis
+
+# Rollout: Conditionally roll out features with Redis
+
+
+Ever wanted to roll out new features in your web app to only select users, bit by bit, testing performance as you go? [James Golick](http://github.com/jamesgolick) has harnessed the power of [Redis](http://code.google.com/p/redis/) to do just that with  [Rollout](http://github.com/jamesgolick/rollout).
+
+Rollout is a gem, so just install from the command line:
+
+    gem install rollout
+
+To get started, create your Rollout
+
+    $redis   = Redis.new
+    $rollout = Rollout.new($redis)
+    
+You can then activate/deactivate features in a number of ways
+
+by group,
+
+    $rollout.activate_group(:chat, :all)
+    $rollout.deactivate_group(:chat, :all)
+
+by user,
+
+    $rollout.activate_user(:chat, @user)
+    $rollout.deactivate_user(:chat, @user)
+    
+or even for a percentage of users
+
+    $rollout.activate_percentage(:chat, 20)
+    $rollout.deactivate_percentage(:chat)
+    
+As a failsafe, you can back out a broken feature with the nuclear option:
+
+    $rollout.deactivate_all
+    
+[[Source on GitHub]](http://github.com/jamesgolick/rollout)

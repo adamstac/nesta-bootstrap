@@ -1,0 +1,33 @@
+Date: 2010-07-28 20:50:00 GMT
+tumblr_id: 872114581
+categories: github,nodejs,javascript,web
+github_repo: nodejitsu/node-http-proxy
+title: node-http-proxy: Reverse proxy for Node.js
+
+# node-http-proxy: Reverse proxy for Node.js
+
+Reverse proxies are a pretty standard part of any modern web stack. If you're dabbling in [Node.js](http://nodejs.org) and need one to provide caching, added security, or load balancing, you should checkout [node-http-proxy](http://github.com/nodejitsu/node-http-proxy) from [Marak](http://github.com/Marak) and [Charlie](http://github.com/indexzero) at [nodejitsu](http://github.com/nodejitsu). 
+
+To install via [npm](http://npmjs.org)
+
+    npm install http-proxy
+    
+A quick example:
+
+    var sys = require('sys'),
+        http = require('http'),
+        httpProxy = require('http-proxy').httpProxy;
+
+    http.createServer(function (req, res){
+     var proxy = new httpProxy;
+     proxy.init(req, res);
+     proxy.proxyRequest('localhost', '9000', req, res);
+    }).listen(8000);
+
+    http.createServer(function (req, res){
+     res.writeHead(200, {'Content-Type': 'text/plain'});
+     res.write('request successfully proxied!' + '\n' + JSON.stringify(req.headers, true, 2));
+     res.end();
+    }).listen(9000);
+    
+[[Source on GitHub]](http://github.com/nodejitsu/node-http-proxy)

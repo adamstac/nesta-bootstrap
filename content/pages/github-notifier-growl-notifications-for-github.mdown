@@ -1,0 +1,23 @@
+Date: 2010-09-23 01:02:49 GMT
+tumblr_id: 1170147881
+categories: github,growl,cocoa,osx,mac,alerts
+github_repo: ctshryock/GithubNotifier
+title: GithubNotifier: Growl notifications for GitHub updates 
+
+# GithubNotifier: Growl notifications for GitHub updates 
+
+<a href="http://github.com/ctshryock/GithubNotifier" style="float: right; display: block; padding: 3px; background: #fff; border: solid 1px #ddd; margin: 0 0 10px 10px"><img src="http://cl.ly/d9214c5fed33fdbeae63/content" alt="GitHub growl" /></a>
+
+In [Episode 0.3.5](http://lg.gd/035), Max wished for an app that would give him [Growl](http://growl.info) alerts any time someone added a [Homebrew](http://mxcl.github.com/homebrew/) formula to any Homebrew fork.
+
+Well, [Clint Shryock](http://github.com/ctshryock) has created just such an app. [Github Notifier](http://github.com/ctshryock/GithubNotifier) is a simple menu bar application for OS X that listens for GitHub updates in any of your repos and then alerts you via Growl:
+
+To install, you can [download](http://github.com/downloads/ctshryock/GithubNotifier/GithubNotifier-1.0.zip) the latest release and drag to and launch from your `/Applications` folder. Add your GitHub login and [API Token](https://github.com/account)
+
+![Pref pane](http://cl.ly/adb50ccabc407f0a0840/content)
+
+... and set your refresh interval.
+
+![Pref pane](http://cl.ly/7304dbfef6683fe6dc53/content)
+
+[[Source on GitHub](http://github.com/ctshryock/GithubNotifier)]

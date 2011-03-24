@@ -1,0 +1,13 @@
+Date: 2009-12-07 19:32:55 GMT
+tumblr_id: 273493270
+categories: github,jquery,layout,css,javascript
+github_repo: desandro/masonry
+title: Masonry: Grid layout for jQuery
+
+# Masonry: Grid layout for jQuery
+
+Cool layout plugin for jQuery from [@desandro](http://twitter.com/desandro) with support for infinite scroll as well.
+
+> Think of it as the flip side of CSS floats. Whereas floating arranges elements horizontally then vertically, Masonry arranges elements vertically then horizontally according to a grid.
+
+[[Source on GitHub](http://github.com/desandro/masonry)] [[Homepage](http://desandro.com/resources/jquery-masonry)] [[Demos](http://desandro.com/demo/masonry/basic.html)]

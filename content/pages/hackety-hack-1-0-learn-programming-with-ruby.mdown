@@ -1,0 +1,50 @@
+Date: 2010-12-25 15:49:17 GMT
+tumblr_id: 2458293763
+categories: github,ruby
+github_repo: hacketyhack/hacketyhack
+title: Hackety Hack 1.0 - learn programming with Ruby
+
+# Hackety Hack 1.0 - learn programming with Ruby
+
+Merry Christmas everybody! Full disclosure: this is my particular gift to Open Source, and future programmers everywhere. 
+
+[Hackety Hack](http://hackety-hack.com) is a project that I inherited from [_why](http://en.wikipedia.org/wiki/Why_the_lucky_stiff). It's the best way for people who've never learned programming to get their feet wet. It uses Ruby, combined with a GUI toolkit named [Shoes](http://shoesrb.com), another _why project, to make it really easy to make all kinds of animations, games, and other applications.
+
+![Hackety Hack Tutor](http://imgur.com/X56Ce.png)
+
+Here's an example bit of code:
+
+    label, time = nil, Time.now
+    
+    Shoes.app :height => 150, :width => 250 do
+      background "rgb(240, 250, 208)"
+     
+      stack :margin => 10 do
+        start = button "Start" do
+          time = Time.now
+          label.replace "Stop watch started at #{time}"
+        end
+        stop = button "Stop" do
+          label.replace "Stopped, #{Time.now - time} seconds elapsed."
+        end
+        label = para "Press start to begin timing."
+      end
+    end
+
+Here's a screenshot of this in action:
+
+![shoes timer](http://imgur.com/HZKCZ.png)
+
+As you can see, it uses Ruby's blocks extensively. 
+
+Shoes isn't just for really simple apps. Hackety Hack is itself written entirely in Shoes. :) Here's an example of Pong in Shoes:
+
+http://www.youtube.com/watch?v=b37OibG0BBk
+
+The source code for this actually comes with Hackety, as an example. [It's about 50 lines](https://github.com/hacketyhack/hacketyhack/blob/master/samples/Pong.rb)
+
+There's also a [web application](http://hackety-hack.com) that it integrates with. You can upload the programs that you make and then share them with other people.
+
+Anyway, enough chatter. Enjoy your holiday! Merry Christmas!
+
+[[Github](https://github.com/hacketyhack/hacketyhack)] [[Website GitHub](https://github.com/hacketyhack/hackety-hack.com/)] [[README](https://github.com/hacketyhack/hacketyhack/blob/master/README.textile)] [[Website](http://hackety-hack.com/)] [[Development Mailing list](mailto:hacketyhack@librelist.com)]  

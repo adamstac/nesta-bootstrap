@@ -1,0 +1,19 @@
+Date: 2010-09-15 15:27:23 GMT
+tumblr_id: 1126812842
+categories: github,osx,cocoa,ios,iphone,objective-c
+github_repo: omnigroup/OmniGroup
+title: OmniGroup Frameworks: Objective-C frameworks for Mac OSX and iOS apps
+
+# OmniGroup Frameworks: Objective-C frameworks for Mac OSX and iOS apps
+
+The [Omni Group](http://www.omnigroup.com/), makers of wildly popular Mac and iOS products such as [OmniFocus](http://www.omnigroup.com/products/omnifocus/) and  [OmniGraffle](http://www.omnigroup.com/products/omnigraffle/), want to share some of their code with you.
+
+The [OmniGroup Frameworks](http://github.com/omnigroup/OmniGroup) are a set of Objective-C code libraries for both Mac and iOS that peform a wide range of common tasks.
+
+* **OmniFoundation** includes a set of low-level objects like `OFStringScanner` for scanning Unicode strings, `OFRegularExpression` for Regex, and `OFMessageQueue` & `OFQueueProcessor` for multithreaded operations.
+* **OmniDataObjects** resemble CoreData *light*, built on top of SQLite for Mac and iOS.
+* **OmniAppKit** provides types like `OAOSAScript` for enabling AppleScript in your app, `OAPreferences` for multi-pane preferences windows, and `OAFindPanel` for find-and-replace tasks.
+* **`OmniInspector`** is the inspector seen at work in OmniGraffle, OmniFocus, OmniOutliner and OmniPlan
+* **OmniNetworking** provides higher-level types to work with TCP, UDP and Multicast networking.
+
+[[Source on GitHub](http://github.com/omnigroup/OmniGroup)] [[Framework forums](http://forums.omnigroup.com/forumdisplay.php?f=16)]

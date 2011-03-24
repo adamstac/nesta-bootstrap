@@ -1,0 +1,19 @@
+Date: 2010-08-24 05:00:00 GMT
+tumblr_id: 1007194584
+categories: github,ssl,tls,security,async,c
+github_repo: pquerna/selene
+title: Selene: Asynchronous SSL/TLS
+
+# Selene: Asynchronous SSL/TLS
+
+A common issue when working with SSL/TLS libraries is that they are synchronous, you ask the library to do something, then have to wait for it to finish before you can do anything else, Selene by [Paul Querna](http://github.com/pquerna) aims to change this. 
+
+[Selene](http://github.com/pquerna/selene) is an C library that sits on top of your SSL/TLS library — currently only [OpenSSL](http://www.openssl.org/) is supported — providing an asynchronous API for interacting with it. Currently selene is in an early stage of development, but aims towards the following goals:
+
+* Completely Asynchronous: it does no IO itself, but provides notifications that IO should be done.
+* Test Driven Development: A test framework to test all code paths.
+* Pluggable Backends for Cryptography: Currently only focusing on OpenSSL, but others are possible.
+
+Selene is definitely something that you are probably going to want to checkout if you're working with SSL/TLS and want to get the best performance and throughput possible.
+
+[[Source on Github](http://github.com/pquerna/selene)] [[Mailing List](http://groups.google.com/group/selene-dev?pli=1)]

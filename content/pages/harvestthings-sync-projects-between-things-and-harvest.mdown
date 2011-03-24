@@ -1,0 +1,15 @@
+Date: 2009-12-07 08:51:00 GMT
+tumblr_id: 272978119
+categories: github,ruby,timetracking
+github_repo: mkrisher/harvestthings
+title: HarvestThings: Sync projects between Things and Harvest
+
+# HarvestThings: Sync projects between Things and Harvest
+
+HarvestThings is a Ruby Gem that syncs clients, projects, and tasks from [Things for Mac](http://culturedcode.com/things/) and pushed them into [Harvest](http://www.getharvest.com/). The gem can be installed from gemcutter using `gem install harvestthings`.
+
+Hat tip: [@harvest](http://twitter.com/harvest) [http://twitter.com/harvest/statuses/6316181772](http://twitter.com/harvest/statuses/6316181772)
+
+> Check out the brand spankin new Harvest+Things integration, developed by Harvest user .@mkrisher: http://github.com/mkrisher/HarvestThings
+
+[[code on Github](http://github.com/mkrisher/harvestthings/)]

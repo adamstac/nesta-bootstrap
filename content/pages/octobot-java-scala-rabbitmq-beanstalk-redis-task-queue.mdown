@@ -1,0 +1,86 @@
+Date: 2010-09-20 18:27:33 GMT
+tumblr_id: 1156862826
+categories: github,java,queues,beanstalk,redis,RabbitMQ
+github_repo: cscotta/octobot
+title: Octobot: Fast, reliable Java/Scala task queue for RabbitMQ, Beanstalk, Redis and more
+
+# Octobot: Fast, reliable Java/Scala task queue for RabbitMQ, Beanstalk, Redis and more
+
+<a href="http://octobot.taco.cat/" style="float: right; border: none; margin: 0 0 1em 1em"><img src="http://static.tumblr.com/njo56hx/aUHl925qj/octobot.png" alt="octobot logo"/></a>
+
+Background tasks are crucial for any non-trivial web application so it's no wonder that the landscape of queuing technologies is rapidly evolving.
+
+The latest entry is [Octobot](http://github.com/cscotta/octobot), a Java-based task queue worker from [C. Scott Andreas](http://github.com/cscotta) designed to be reliable, easy to use, and powerful.
+
+#### Reliable
+
+Octobot uses best-of-breed tools for queuing, supporting [AMQP](http://www.amqp.org/confluence/display/AMQP/Advanced+Message+Queuing+Protocol)/[RabbitMQ](http://www.rabbitmq.com/), [Beanstalk](http://kr.github.com/beanstalkd/), and [Redis (Pub/Sub)](http://antirez.com/post/redis-weekly-update-3-publish-submit.html) as backends out of the box. The architecture is extensible so additional backends can be added in the future.
+
+#### Easy to use
+
+Octobot tasks are simply classes with a static `run` method which accept a JSON object.
+
+
+    package com.example.tasks;
+    import org.apache.log4j.Logger; 
+    import org.json.simple.JSONObject;
+    
+    public class TacoTask { 
+      private static Logger logger = Logger.getLogger("TacoTask");
+      
+      public static void run(JSONObject task) {
+        String payload = (String) task.get("payload");
+        logger.info("OMG, GOT A TACO: " + payload");
+      }
+    }
+
+... or in Scala:
+
+    package com.example.tasks
+    import org.apache.log4j.Logger
+    import org.json.simple.JSONObject
+    
+    object TacoTask {
+      val log = Logger.getLogger("TacoTask");
+      
+      def run(task: JSONObject) { 
+        val payload = task.get(“payload”)
+        log.info(“OMG, GOT A SCALA TACO: ” + payload)
+      }
+    }
+
+Octobot also has a simple YAML-based config file format:
+
+    Octobot:
+      queues:
+        - { name: tacotruck,
+            protocol: AMQP,
+            host: localhost,
+            port: 5672,
+            vhost: /,
+            priority: 5,
+            workers: 1,
+            username: cilantro,
+            password: burrito
+          }
+
+      metrics_port: 1228
+
+      email_enabled: false
+      email_from: ohai@example.com
+      email_to: ohno@itsbroke.com
+      email_hostname: localhost
+      email_server: smtp.gmail.com
+      email_port: 465
+      email_ssl: true
+      email_auth: true
+      email_username: username
+      email_password: password
+
+#### Powerful 
+
+Octobot is designed for high throughput, heavy workloads, and ultra-low latency. Early benchmarks using AMQP and MongoDB lookups demonstrate, task execution actually improves as the JIT optimizes execution paths.
+
+[![Graph](http://octobot.taco.cat/images/benchmark.png)](http://octobot.taco.cat/)
+
+[[Source on GitHub](http://github.com/cscotta/octobot)] [[Homepage](http://octobot.taco.cat/)] [[Download Docs](http://octobot.taco.cat/docs/octodocs-v03.pdf)]

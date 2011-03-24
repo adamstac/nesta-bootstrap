@@ -1,0 +1,37 @@
+Date: 2010-04-19 15:25:57 GMT
+tumblr_id: 533435123
+categories: github,javascript,node-js,seed
+github_repo: seedjs/seed
+title: SeedJS - Flexible JavaScript package manager on Node.js
+
+# SeedJS - Flexible JavaScript package manager on Node.js
+
+Meant to support  the [SproutCore HTML5 Platform](http://www.sproutcore.com/) as well as manage packages for apps on the server, web browser, and other clients, [SeedJS](http://seedjs.org/about/) is built on [ node.js](http://nodejs.org) and [Google V8](http://code.google.com/p/v8/) and helps distribute and install shared JavaScript code.
+
+Seed builds upon the [CommonJS](http://wiki.commonjs.com/) package format and Seed archives are normal zip archives.
+
+To get started once you have Node up and running, start by cloning the repo:
+
+    git clone git://github.com/seedjs/seed
+    cd seed
+    git submodule update --init
+
+and then run the setup script:
+
+    ./scripts/install.js
+
+Make sure the seed binary is in your path:
+
+    export PATH=~/.seeds/bin:$PATH
+
+You're then free to list and install seeds:
+
+    seed list --remote
+    seed install markdown
+
+... and use them in your app:
+
+    var markdown = require('markdown');
+    markdown.html('__Hello World__');
+
+[[Source on GitHub](http://github.com/seedjs/seed)] [[Homepage](http://seedjs.org)]

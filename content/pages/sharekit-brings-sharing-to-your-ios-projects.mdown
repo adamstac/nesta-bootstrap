@@ -1,0 +1,15 @@
+Date: 2010-07-09 19:07:00 GMT
+tumblr_id: 790476050
+categories: github,iOS,apple,obj-c
+github_repo: ideashower/sharekit
+title: ShareKit brings sharing to your iOS projects
+
+# ShareKit brings sharing to your iOS projects
+
+ShareKit from [Nate Weiner](http://twitter.com/ideashower) lets you support sharing URLs, images, text, and files in your iOS apps in just three lines of code. 
+
+<object width="500" height="300"><param name="movie" value="http://www.youtube.com/v/9uVx-UcPiH4&color1=0xb1b1b1&color2=0xd0d0d0&hl=en_US&feature=player_embedded&fs=1"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.youtube.com/v/9uVx-UcPiH4&color1=0xb1b1b1&color2=0xd0d0d0&hl=en_US&feature=player_embedded&fs=1" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="500" height="300"></embed></object>
+
+The project supports the usual suspects like Delicious, Twitter, Facebook, and more out of the box, but you can also [extend it](http://getsharekit.com/add/) to support other services. ShareKit even supports offline sharing, allowing items to be sent when the user reconnects to the network.
+
+[[Source on GitHub](http://github.com/ideashower/sharekit)] [[Homepage](http://getsharekit.com/)]

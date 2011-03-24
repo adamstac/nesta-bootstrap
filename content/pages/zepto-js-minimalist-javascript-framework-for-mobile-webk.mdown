@@ -1,0 +1,39 @@
+Date: 2010-09-21 13:40:40 GMT
+tumblr_id: 1161428869
+categories: github,javascript,mobile,ios,android,webkit,jquery
+github_repo: madrobby/zepto
+title: zepto.js: Minimalist JavaScript framework for mobile WebKit with jQuery-like chaining
+
+# zepto.js: Minimalist JavaScript framework for mobile WebKit with jQuery-like chaining
+
+It may seem strange that the author of [Prototype](http://www.prototypejs.org/)-based [script.aculo.us](http://script.aculo.us/) would embark on creating a new [jQuery](http://jquery.com)-esque JavaScript library for mobile devices, but that's exactly what [Thomas Fuchs](http://twitter.com/thomasfuchs) has done with [zepto.js](http://github.com/madrobby/zepto).
+
+One reason JavaScript frameworks have become popular is because they abstract browser differences and let the developer focus on the work at hand, not on how it's done. Since zepto.js targets only [Webkit](http://webkit.org) browsers, a lot of the cruft found in other frameworks can be eliminated. Modern JavaScript features such as `forEach` can be assumed so the framework is leaner, critical for building mobile apps.
+
+zepto.js is under heavy development (growing by 2x since we first spotted it yesterday), but looks to deliver on its goal of being a "~2k library that handles most basic dredge work for you in a nice API so you can concentrate on getting stuff done."
+
+#### Features
+
+zepto.js uses the familiar `$` function and includes the usual suspects:
+
+    get(): return array of all elements found
+    get(0): return first element found
+    html('new html'): set the contents of the element(s)
+    css('css properties'): set styles of the element(s)
+    append, prepend: like html, but append or prepend to element contents
+
+#### Ajax support
+
+Methods you'd expect for Ajax-fied `GET`s and `POST`s are there as well:
+
+    $.get(url, callback)
+    $.post(url, callback)
+    $.getJSON(url, callback)
+
+#### Installing and using
+
+Thomas recommends not linking to zepto.js directly in your document `<head>`, rather copy and paste the contents of zepto.min.js directly into a `<script>` tag.
+
+Thomas knows a thing or two about mobile optimization. Be sure and catch [his thoughts](http://mir.aculo.us/2010/06/04/making-an-ipad-html5-app-making-it-really-fast/) in how he optimized [Every Time Zone](http://everytimezone.com) for mobile devices.
+
+[[Source on GitHub](http://github.com/madrobby/zepto)]

@@ -1,0 +1,31 @@
+Date: 2010-12-20 14:00:06 GMT
+tumblr_id: 2387877665
+categories: github
+github_repo: holman/boom
+title: boom - text snippets on the command line
+
+# boom - text snippets on the command line
+
+I'm a command-line kinda guy. I spend most of my day with at least three terminals open: one that's `ssh`-d into a server where I have `irssi` running in a `tmux` session, another that's usually runing `rackup` or `rails server`, and a third that I actually do work in.
+
+That's why I get excited when I find new little command-line tools. `boom` is one of those tools. It lets you save little bits of text via the command line. I use it like a bookmarking service, considering [how hard those are to keep around these days](http://techcrunch.com/2010/12/16/is-yahoo-shutting-down-del-icio-us/). Check it out:
+
+    $ boom urls
+    Boom! Created a new list called "urls".
+    $ boom urls changelog http://thechangelog.com/
+    Boom! "changelog" in "urls" is "http://thechangelog.com/". Got it.
+    $ boom changelog
+    Boom! Just copied http://thechangelog.com/ to your clipboard.
+
+After saving some more urls:
+
+    $ boom urls
+    hacketyhack   http://hackety-hack.com
+    changelog http://thechangelog.com
+    github http://github.com
+
+Super cool. [Zach Holman](https://github.com/holman) ships `boom`. I've been using it for todo lists, as well. It's super fast, easy to use, and stores all of your information in `~/.boom`.
+
+To get `boom`, just `gem install boom`. That means you need Ruby installed, but I'm sure you already have that, right?
+
+[[GitHub](https://github.com/holman/boom)] [[README](https://github.com/holman/boom/blob/master/readme.markdown)]

@@ -1,0 +1,21 @@
+Date: 2010-03-26 05:40:00 GMT
+tumblr_id: 474190062
+categories: API,guest,php,github
+github_repo: collegeman/coreylib
+title: CoreyLib: PHP Universal API Wrapper
+
+# CoreyLib: PHP Universal API Wrapper
+
+The PHP world is filled with API and XML Parsers that often bring page rendering to a crawl.
+
+Aaron Collegeman's [CoreyLib library](http://coreylib.com/) is an incredibly simple universal API wrapper with caching built in.
+
+It can handle most modern APIs with full XML, JSON, authentication, parameterization, xmlNode, and Xpath support. All requests can be cached in MySql and parsed at a custom interval to dramatically improve page rendering speed. It's available as a zero-config [WordPress plugin](http://github.com/kennethreitz/coreylib-wordpress-plugin) too.
+
+Here's all the code needed to get the latest 5 tweets from twitter:
+
+<script src="http://gist.github.com/344547.js?file=CoreyLib-example"></script>
+
+[[Source on GitHub](http://github.com/collegeman/coreylib)] [[Documentation](http://coreylib.com/)]
+
+**Submitted by**: [Kenneth Reitz](http://kennethreitz.com/): Passionate open source web developer. Follow him on [GitHub](http://github.com/kennethreitz).

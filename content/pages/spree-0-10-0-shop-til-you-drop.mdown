@@ -1,0 +1,24 @@
+Date: 2010-03-16 17:35:14 GMT
+tumblr_id: 452553960
+categories: github,rails,ruby,spree,e-commerce,release
+github_repo: railsdog/spree
+title: Shop til you drop: Spree hits 0.10.0
+
+# Shop til you drop: Spree hits 0.10.0
+
+[Spree](http://spreecommerce.com/), the leading Rails storefront project, has released version 0.10.0 with some big new changes:
+
+* Named scopes and product groups
+* Pluggable search (with extension support for Xapian, Sphinx and Solr.)
+* Theming
+* New and improved multi-step checkout
+* Improved gateway configuration
+* Multiple payment methods
+* Refunds and credits
+* SEO improvements
+* RESTful API
+* Support for Rails 2.3.5 and Ruby 1.9
+
+The [docs](http://spreecommerce.com/documentation/) have also been refreshed to cover the new enhancements. If you're new to Spree, take a [test drive](http://spreecommerce.com/demo). If you need a more custom storefront, you can join the ranks of [300+ forks](http://github.com/railsdog/spree) on the Hub.
+
+[[Source on GitHub](http://github.com/railsdog/spree)] [[New since 0.9.4](http://github.com/railsdog/spree/compare/v0.9.4...v0.10.0)]

@@ -1,0 +1,88 @@
+Date: 2010-10-01 20:06:00 GMT
+tumblr_id: 1223333770
+categories: grants,,funding,vc,crowdsourcing
+title: How to Fund your Open Source Projects
+
+# How to Fund your Open Source Projects
+
+Ok, let's face it. The last thing you think about when starting an open source project is funding or raising money ... or do you?
+
+In the past we've talked with many developers working on Open Source projects like, [Appcelerator](http://www.appcelerator.com/), featured in ([Episode 0.0.8](http://thechangelog.com/post/334287138/episode-0-0-8-marshall-culpepper-from-appcelerator-titan)) and their suite of Titanium products, [DocumentCloud](http://www.documentcloud.org/), featured in ([Episode 0.0.5](http://thechangelog.com/post/272530971/episode-0-0-5-document-cloud)) with projects like [Underscore.js](http://github.com/documentcloud/underscore) and [Jammit](http://github.com/documentcloud/jammit). We even talked to [Andy Gross](http://twitter.com/argv0) the VP of Engineering at [Basho](http://www.basho.com/), featured in ([Episode 0.1.4](http://thechangelog.com/post/397364245/episode-0-1-4-andy-gross-and-sean-cribbs-on-riak)) about thieir Dynamo-inspired key/value store [Riak](http://thechangelog.com/search/Riak) ([website](http://wiki.basho.com/display/RIAK/Riak)) and many more. Open Source is moving fast and flourishing.
+
+## So who's paying for all of this?
+
+#### [Appcelerator](http://appcelerator.com/)
+
+Appcelerator is backed by heavy-weights [Storm Ventures](http://www.stormventures.com/) and open source luminary [Larry Augustin](http://lmaugustin.typepad.com/). Larry is currently the CEO of SugarCRM, an Open Source Customer Relationship Management (CRM) solution. In the past he founded VA Linux (now GeekNet), and also served as CEO. While in the CEO position at GeekNet Larry launched SourceForge.net and lead the company through an IPO.
+
+#### [DocumentCloud](http://documentcloud.com/)
+
+DocumentCloud is an independent nonprofit. It was funded in 2009 by a two-year grant from the [Knight News Challenge](http://www.newschallenge.org/). You probably heard Document Cloud being mentioned as Jeremy Ashkenas’s superhero alter-ego under which he’s released popular projects like [Underscore.js](http://documentcloud.github.com/underscore/). Jeremy is the first two-time guest on The Changelog, appearing on [Episode 0.0.5](http://thechangelog.com/post/272530971/episode-0-0-5-document-cloud) and [Episode 0.2.9](http://thechangelog.com/post/849754840/episode-0-2-9-coffeescript-with-jeremy-ashkenas). Jeremy is also a two-time winner of the [Sunlight Foundation’s](http://sunlightfoundation.com/) [Apps for America competition](http://sunlightlabs.com/contests/appsforamerica/), for [Know Thy Congressman](http://know-thy-congressman.com/) and [Quakespotter](http://quakespotter.org/).
+
+#### [Basho](http://www.basho.com/)
+
+In Basho's case, they self fund the project. They also offer a for-profit solution called [Riak EnterpriseDS](http://www.basho.com/enterpriseds.html) which extends the core Riak data store (distributed under the Apache 2 Open Source license) with advanced tools and services for applications requiring high availability and operational simplicity without high cost.
+
+## Crowd Sourcing to Raise Money
+
+If grants aren't your game or maybe you are crafting a solution for a small niche or a specific audience, you might want to consider crowdsourcing to raise money. Below are a few options that hit our radar.
+
+#### [Pledgie](http://pledgie.com/)
+
+Pledgie helps you raise money for causes you care about, even Open Source causes. It's 100% free to use regardless of how large or small your campaign is. However, Pledgie uses Paypal to transfer pledge donations to the campaign owner and Paypal may charge a fee for these transactions depending on your account type.
+
+We've seen lots of folks with the Pledgie badges on their projects. In fact, GitHub even offers support to enable Pledgie donations from your repo's admin section so it's too easy to get started with Pledgie.
+
+One of the first successes for the Open Source community was the [Caboose Rails Documentation Project](http://pledgie.com/campaigns/34) started by [Courtenay Gasking (@court3nay)](http://twitter.com/court3nay) of [ENTP](http://entp.com/). The project brought in 172 pledges and raised $17,032, $12,032 over their goal of $5000. It was huge with for the community and an incredible usage of crowdsourcing for an open source cause.
+
+Another big win was the project started to support the [Libre Graphics Meeting](http://www.libregraphicsmeeting.org/). The project brought in 279 pledges and raised over $12,000 to be used to subsidize travel and accommodation costs for developers.
+
+#### [Flattr](http://flattr.com/)
+
+Flattr is a social micropayment platform that helps you to support the people you like - and enable them to continue to do what they do! Not only that, but they provide a rank-based index of all Flattr projects so you keep an eye on projects you want to know about and support. They even have a category just for [Open Source on Flattr](http://flattr.com/browse/software/open%20source/1/all/1)
+
+A few projects that stand out in the Open Source crowd on Flattr are [Debian Package Manager - dpkg](https://flattr.com/thing/29919/Debian-Package-Manager-dpkg) with 633 Flattr's and [phpMyAdmin](https://flattr.com/thing/56976/phpMyAdmin) with 169 Flattr's.
+
+#### [Kickstarter](http://www.kickstarter.com/)
+
+Kickstarter is a funding platform for artists, designers, filmmakers, musicians, journalists, inventors, explorers and the like. Basically if you have an idea, can get people excited and belive in your idea, your in.
+
+One huge win for the Open Source community that came from a successful Kickstarter project was Diasopra (the privacy aware, personally controlled, do-it-all distributed open source social network), featured in [Diaspora Source Released on GitHub!](http://thechangelog.com/post/1129594095/diaspora-source-released-on-github) and [The Changelog Archive 20100930 - News roundup](http://thechangelog.com/post/1222831622/the-changelog-archive-20100930-news-roundup), with their project [Decentralize the web with Diaspora](http://www.kickstarter.com/projects/196017994/diaspora-the-personally-controlled-do-it-all-distr). They started out with a goal of $10,000 and ended up getting nearly 6500 backers and grossing $200,000!
+
+I guess the take away from this is if you have a good idea and can get enough people behind you, the possibilities are literally endless.
+
+## Grants
+
+**[Mozilla Grants](http://www.mozilla.org/grants/opensource/)** - Mozilla has awarded over two million dollars to fund projects that contribute to the health of the Open Web since 2006. The Mozilla Grants program is jointly funded by the Mozilla Corporation and the Mozilla Foundation, and awards financial support to individuals and organizations whose work supports and enhances the mission and values of the Mozilla Project. Specific to open Source, Mozilla's Open Source grants support the creation and adoption of Web standards, open source principles, and the overall principles of transparency, collaboration, and openness that free and open source software projects adhere to.
+
+If you want to support Open Source through the Mozilla Grants program you can make a donation to support the overall efforts of the Mozilla Foundation or [make a donation](http://www.mozilla.org/foundation/donate.html) to support a specific project. Be sure to read the [donate FAQs](http://www.mozilla.org/foundation/donate_faq.html) to get any questions you have answered before donating.
+
+## Managing Grants
+
+For those of you who are managing grants and helping to make all this happen, we've found a few gems along the way in researching this post that might be of some interest to you.
+
+#### [Solpath](http://www.solpath.org/)
+
+Solpath is supported by a [working group](http://www.solpath.org/aboutus.html#advisory) of staff from several philanthropic foundations attempting to better understand the technology issues and challenges facing grantmakers.
+
+Their answer to these challenges is an Open Source grants management platform called [Fluxx](http://projectfluxx.org/index.html).
+
+Open Source and available to all, [Solpath's GitHub profile](http://github.com/solpath) lists:
+
+* [Flux Grant](http://github.com/solpath/fluxx_grant)
+* [Flux CRM](http://github.com/solpath/fluxx_crm)
+* [Flux Engine](http://github.com/solpath/fluxx_engine)
+
+Each are available to you as rails engines.
+
+Check this out:
+
+<iframe title="YouTube video player" class="youtube-player" type="text/html" width="640" height="390" src="http://www.youtube.com/embed/AjyAgcf7h2o" frameborder="0"></iframe>
+
+* [Fluxx Grant](http://github.com/solpath/fluxx_grant) - is a rails engine that provides grants management functionality. This provides a mechanism for foundations to track the grant making progress using a highly configurable workflow system. The system allows each member of the foundation to view the data the way they need to see it. Fluxx Grant leverages FluxxCRM and Fluxx Engine to provide full-fledged grants management functionality. It integrates sphinx search. Thanks to the fact that Fluxx uses rails engines, it is simple to inject new functionality or override certain elements of Fluxx while keeping others. Fluxx does not generate any rails code, only migrations which may be customized as necessary. This means that you benefit from updates to the fluxx code base without needing to fork the underlying project.
+* [Fluxx CRM](http://github.com/solpath/fluxx_crm) - is a rails engine that provides a layer of basic CRM functionality on top of the Fluxx Engine. It leverages acts as state machine, user model and controller, roles, organization, user/organization relationship, history, documents and attachments (based on [paperclip](http://github.com/thoughtbot/paperclip), can be stored locally on disk or in the cloud), countries, states leveraging the GeoCities library ...
+* [Fluxx Engine](http://github.com/solpath/fluxx_engine) - is the building block for basic Fluxx functionality. It replaces and extends basic rails scaffolding to provide a starting point for any model-intensive application. It ships with a JQuery library that provides a basic operating system for displaying lists of model elements and CRUD-based actions on the models. Look and feel can be easily customized. Developers pick from an array of functionality. Models and Controllers can easily be decorated to provide RESTful functionality. A simple but flexible DSL is provided for users.
+
+## Did we miss something?
+
+If you know of other grant options or funding sources the Open Source community can use, please let us know at [ping@thechangelog.com](ping@thechangelog.com)

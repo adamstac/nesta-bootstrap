@@ -1,0 +1,38 @@
+Date: 2010-12-14 18:25:30 GMT
+tumblr_id: 2314253293
+categories: github,node.js,html5,API,canvas
+github_repo: ajaxorg/node-o3-canvas
+title: node-o3-canvas: HTML5 Canvas API for NodeJS
+
+# node-o3-canvas: HTML5 Canvas API for NodeJS
+
+<iframe src="http://player.vimeo.com/video/16484434" width="560" height="420" frameborder="0"></iframe>
+
+This isn't the first time we've featured the work of our friends over at [Ajax.org](http://www.ajax.org/). In the past we mentioned [o3](http://thechangelog.com/post/406745517/ajax-org-o3-collection-of-c-components-exposed) and [Cloud9](http://thechangelog.com/post/1186042992/cloud9-node-js-powered-ide-in-the-sky) and even had them on the podcast, see [episode 0.1.6](http://lg.gd/016).
+
+Their project, node-o3-canvas, is an HTML5 Canvas implementation for NodeJS based on LibAGG and Freetype. It's implemented using their previously mentioned [O3 component system](http://thechangelog.com/post/406745517/ajax-org-o3-collection-of-c-components-exposed). The goal with node-o3-canvas is not only to create a Canvas-spec type API, but also to extend it to provide easy image resizing, and image processing API's for server side image processing needs.
+
+[Ajax.org](http://www.ajax.org/) makes use of node-o3-canvas as a way to render Canvas charts server-side to allow emailing or save-as-picture.
+
+### Example usage
+
+* `git clone https://github.com/ajaxorg/node-o3-canvas.git`
+* `cd node-o3-canvas/example`
+* `node nodeanim.js`
+* open your browser to 127.0.0.1:4000
+
+How to use:
+
+    var createContext = require('path/to/node-o3-canvas/lib/o3-canvas');
+
+Here's a simple example usage:
+
+    var ctx = createContext(300,300, "argb");
+    ctx.clearRect(0,0,300,300);
+    ctx.fillStyle = "rgb(200,0,0)";
+    ctx.fillRect (10, 10, 55, 50);
+
+    var buf = ctx.pngBuffer();
+    console.log(buf.toBase64());
+
+[[Source on GitHub](https://github.com/ajaxorg/node-o3-canvas)] [[Readme](https://github.com/ajaxorg/node-o3-canvas#readme)] [[Blog Post](http://ajaxorg.posterous.com/canvas-api-for-nodejs)]

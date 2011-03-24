@@ -1,0 +1,41 @@
+Date: 2010-03-10 17:04:00 GMT
+tumblr_id: 439252752
+categories: github,geo,maps,css,vector,html5
+github_repo: jywarren/cartagen
+title: cartagen - Client side framework for creating vector maps in HTML5
+
+# cartagen - Client side framework for creating vector maps in HTML5
+
+[Cartagen](http://cartagen.org) from [Jeffrey Warren](http://unterbahn.com/) is a client framework to build vector-based maps in HTML5. 
+
+Here's a quick [video demo](http://vimeo.com/user263756):
+
+<object width="480" height="300"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=5542907&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=ffffff&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=5542907&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=ffffff&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="480" height="300"></embed></object>
+
+One interesting feature is how Cartagen uses [GSS](http://wiki.cartagen.org/wiki/show/GssUsage), or a CSS vocabulary for geospatial data:
+
+    waterway: {
+      fillStyle: "#57d",
+      strokeStyle: "#24a",
+      lineWidth: 4,
+      pattern: "/images/pattern-water.gif"
+    },
+    water: {
+      strokeStyle: "#24a",
+      lineWidth: 4,
+      pattern: "/images/pattern-water.gif"
+    },
+    highway: {
+      strokeStyle: "white",
+      lineWidth: 6,
+      outlineWidth: 3,
+      outlineColor: "white",
+      fontColor: "#333",
+      fontBackground: "white",
+      fontScale: "fixed",
+      text: function() { return this.tags.get('name') }
+    }
+
+Cartagen comes in both client and server editions
+
+[[Source on GitHub](http://github.com/jywarren/cartagen)] [[Cartagen.org Wiki](http://wiki.cartagen.org/wiki/show/HomePage)] [[API docs](http://cartagen.org/api/)]

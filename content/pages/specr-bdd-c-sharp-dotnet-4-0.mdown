@@ -1,0 +1,20 @@
+Date: 2010-03-16 19:07:41 GMT
+tumblr_id: 452689099
+categories: github,testing,bdd,rspec,dotnet,c-sharp
+github_repo: michael-erasmus/specr
+title: specr - A lightweight BDD framework for C# using the .NET 4.0 framework
+
+# specr - A lightweight BDD framework for C# using the .NET 4.0 framework
+
+[specr](http://github.com/michael-erasmus/specr) from [Michael Erasmus](http://github.com/michael-erasmus) is inspired by Ruby's [rspec](http://rspec.info/) and aims to add a drop-in BDD framework to your .NET unit tests. specr leverages .NET 4.0 features and brings rspec's vocabulary into C# idioms:
+
+    var foo = "foo";
+
+    foo.Should().BeA<string>();
+    foo.Should().NotBeAn<int>()
+    foo.Should().Equal("foo"); 
+    foo.Should().NotEqual("bar");
+
+There are more examples in the [README](http://github.com/michael-erasmus/specr#readme).
+
+[[Source on GitHub](http://github.com/michael-erasmus/specr)]

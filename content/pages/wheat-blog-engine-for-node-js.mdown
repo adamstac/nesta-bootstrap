@@ -1,0 +1,102 @@
+Date: 2010-04-16 22:11:00 GMT
+tumblr_id: 526646366
+categories: github,nodejs,blogging
+github_repo: creationix/wheat
+title: Wheat blog engine for node.js
+
+# Wheat blog engine for node.js
+
+Ever wanted a blog that was made for coders?  This one is built from the ground up with the needs of a modern programmer-who-happens-to-be-a-blogger-too in mind.  Wheat is the new engine to howtonode.org released today.
+
+If you've been itching to learn node, now is a great time.  The API is stabilizing and now with a tool like wheat you can blog about your experiences.
+
+#### Installing
+
+If you don't already have node.js, either compile by hand or use [nvm][] (Node Version Manager)
+
+    git clone git://github.com/creationix/nvm.git ~/.nvm
+
+Then add these three lines to your bash profile:
+
+    NVM_DIR=$HOME/.nvm
+    . $NVM_DIR/nvm.sh
+    nvm use v0.1.91
+
+Every new shell will get the nvm environment and set a default node version.  Now to install wheat:
+
+    git clone git://github.com/creationix/wheat.git
+    cd wheat
+    ./install.sh
+
+#### Usage
+
+Create a git repository on your server.  You can clone the [howtonode.org][] repo for a starting place.  This just needs a folder of articles, one for authors, and one for the skin of the site.
+
+Here is an example structure:
+
+     |-- README.markdown
+     |-- articles/
+     |   |-- hello-node/
+     |   |   |-- hello-console.js
+     |   |   |-- hello-http.js
+     |   |   |-- hello-router.js
+     |   |   |-- hello-tcp.js
+     |   |   |-- hello-graph.dot
+     |   |   `-- install.sh
+     |   |-- hello-node.markdown
+     |   |-- prototypal-inheritance/
+     |   |   |-- classical.js
+     |   |   |-- prototypal.js
+     |   |   `-- spawn.js
+     |   |-- prototypical-inheritance.markdown
+     |   |-- welcome.markdown
+     |-- authors/
+     |   `-- Tim Caswell.markdown
+     |-- description.markdown
+     `-- skin/
+         |-- article.haml
+         |-- feed.xml.haml
+         |-- index.haml
+         |-- layout.haml
+         |-- public/
+         |   |-- favicon.ico
+         |   |-- prettify.css
+         |   |-- volcano.css
+         |   |-- volcano.jpg
+         |   `-- volcano.less
+         |-- snippet.haml
+         `-- temp.haml
+
+Then you just `cd` into the repo and launch wheat:
+
+    > cd Code/howtonode.org
+    > wheat
+    Starting wheat server using git repo at /Users/tim/Code/howtonode.org
+    node-router server instance at http://127.0.0.1:8080/
+
+#### Articles
+
+Articles are written in markdown so there is no messing with clunky WYSIWYG editors.  Also as you can see from the tree, code samples are stored in their own files.  This means you can use your favorite code editor to write up your code snippets, and you can test them for syntax errors or even check the output.
+
+If the snippet is written in node.js, you can tell the engine to execute it and show the output inline in the article like in the [What is this][] article.  Here is some sample markdown:
+
+    This is an example of global scope:
+
+    <what-is-this/global.js*>
+
+    This is an example of local scope:
+
+    <what-is-this/local.js*>
+
+    <what-is-this/this.js#person*>
+
+    Note that I was able to access `Person.name` and `Person.age` from
+    within `Person.greeting`.  
+
+The `*` on the end means to execute the script.  The hashtag means to show just that part of the file.  This way you can explain a large file bit by bit, but keep it all in one functional place.
+
+There is so much more the engine does, but this is just a sampling.  There is live graphviz rendering, super scalable caching for production use on a bare git repo, RSS feed, etc...
+
+[What is this]: http://howtonode.org/what-is-this
+[howtonode.org]: http://github.com/creationix/howtonode.org
+[nvm]: http://github.com/creationix/nvm

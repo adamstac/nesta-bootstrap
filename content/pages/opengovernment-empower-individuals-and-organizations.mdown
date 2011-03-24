@@ -1,0 +1,56 @@
+Date: 2011-01-04 15:39:00 GMT
+tumblr_id: 2596290871
+categories: github,government,open source,ruby on rails
+github_repo: opengovernment/opengovernment
+title: OpenGovernment: Empower individuals and organizations to track government at every level
+
+# OpenGovernment: Empower individuals and organizations to track government at every level
+
+<a href="http://opengovernment.org/"><img src="http://cl.ly/1u1L2805352h28340J11/open-government.png" alt="open-government.png" /></a>
+
+When 9 Trillion dollars goes missing from the Federal Reserve and the Federal Inspector General can't explain the details of that missing money, what can "we" _the people_ do about it? ([See a visualization of 1 Trillion Dollars](http://www.pagetutor.com/trillion/index.html))
+
+<iframe title="YouTube video player" class="youtube-player" type="text/html" width="560" height="450" src="http://www.youtube.com/embed/GYNVNhB-m0o" frameborder="0"></iframe>
+[Watch this YouTube video](http://www.youtube.com/watch?v=GYNVNhB-m0o) to learn more about this insane debacle. Sadly, Alan Grayson (the questioner) never asked the simple closed-ended question, "So, is that a Yes or No?". However, collectively, we can ask that question if we have open access to government data.
+
+While OpenGovernment may not provide the answer to that specific question directly, it will certainly provide a level of government transparency like we've never seen before at the state, city, local and international levels.
+
+### What is OpenGovernment?
+
+[OpenGovernment](http://opengovernment.org/) is an open-source Ruby on Rails application for aggregating and presenting open government data, and it is based on [OpenCongress.org](http://www.opencongress.org/), the most-visited not-for-profit site for tracking the federal U.S. Congress.
+
+As a joint project of two 501(c)3 non-profit organizations, the [Participatory Politics Foundation](http://www.participatorypolitics.org/) and the [Sunlight Foundation](http://sunlightfoundation.com/), OpenGovernment will empower individuals and organizations to track government at every level.
+
+A 'beta' version of OpenGovernment is planned to launch this month (January 2011) with information for five state legislatures: California, Louisiana, Maryland, Texas, and Wisconsin.
+
+Moving forward, they are looking for non-profit funding to extend civic engagement to all 50 U.S. states, major cities, other countries, and beyond. Just as [OpenCongress](http://www.opencongress.org/) has grown to become a popular community site for watchdogging the U.S. Congress, OpenGovernment will empower individuals and organizations to track government at every level. And like OpenCongress, OpenGovernment is a non-partisan public resource, independent from any government entity or political party.
+
+### How can I give my support?
+
+You can support the open-source work on OpenGovernment by [becoming a Booster](https://crm.ppolitics.org/sites/all/modules/civicrm/bin/OneClick.php?oc_action=donate&pp=paypal&amount=31&recur=2&groups=PPF+News:PPF+Booster&receipt=45) of the non-profit Participatory Politics Foundation (a tax-exempt recurring donation of $1/day), [giving a one-time charitable gift](http://www.opencongress.org/donate), or by forking [the code on GitHub](https://github.com/opengovernment/opengovernment) and start hacking.
+
+Their biggest limiting factor isn't ideas, or a lack of valuable government info to make accessible, but rather web development time. There's a huge wish list of data & features for this open-source community site, so hop in **#opengovernment** on **irc.freenode.net**, or [join their Google Group](http://groups.google.com/group/opengovernment?lnk=gcimv) to get in touch. Also, [the project's README](https://github.com/opengovernment/opengovernment/blob/master/README.md) is super thorough in setting up the application to start hacking.
+
+Special thanks to [Jeremy Ashkenas](http://twitter.com/jashkenas) for [this tweet](http://twitter.com/jashkenas/status/22284246995435520) about OpenGovernment's Rails model for [legislature.rb](https://github.com/opengovernment/opengovernment/blob/master/app/models/legislature.rb).
+
+    class Legislature < ActiveRecord::Base
+      has_one :upper_chamber
+      has_one :lower_chamber
+      has_many :chambers
+      has_many :committees
+      has_many :primary_committees, :class_name => 'Committee', :conditions => 'committees.votesmart_parent_id is null'
+      has_many :sub_committees, :class_name => 'Committee', :conditions => 'committees.votesmart_parent_id is not null'
+      has_many :lower_committees
+      has_many :upper_committees
+      has_many :joint_committees
+      belongs_to :state
+      validates_uniqueness_of :name
+      validates_presence_of :name
+
+      has_many :sessions
+
+      CONGRESS = Legislature.find_by_name("United States Congress")
+      MAJOR_PARTIES = ["Democrat", "Republican"]
+    end
+
+[[Source on GitHub](https://github.com/opengovernment/opengovernment)] [[Homepage](http://opengovernment.org/)] [[Comment on Hacker News](http://news.ycombinator.com/item?id=2068129)]

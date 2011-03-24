@@ -1,0 +1,23 @@
+Date: 2010-08-07 23:17:00 GMT
+tumblr_id: 919553603
+categories: design,tumblr
+title: A new look
+
+# A new look
+
+Well as [some of you](http://twitter.com/evanwalsh/status/20526873929) have noticed, things have been a bit quiet around here this week.
+
+Fear not, we're not about to stop covering the fast-moving world of open source. We've just been working to give The Changelog a fresh coat of paint. 
+
+We love [Tumblr](http://tumblr.com), but creating custom themes isn't the easiest workflow in the world. Fortunately, Wynn's [Fumblr](http://github.com/pengwynn/fumblr) project let's us use [Compass and Sass](http://bit.ly/tcl-0-0-1) to speed things up a bit. We are also using [Mark Wunsch](http://twitter.com/markwunsch)'s [Tumblr gem](http://github.com/mwunsch/tumblr) to post articles and episodes right from the command line.
+
+#### New features
+
+Some highlights of the new design include
+
+* Easy access the [latest episode](http://thechangelog.com/latest) right from the header or from the [/latest](http://thechangelog.com//latest) vanity URL
+* Browse all episodes from the new [Episodes page](http://thechangelog.com/episodes)
+* Goodbye, Flash, hello HTML5 audio for devices that support it (including iPad). For other browsers that don't support MP3s in HTML5 (we're looking at you FF on Mac) we're using the [1 Bit audio player](http://github.com/dsingleton/1bit-audio-player)
+* Meet your contributors. Many of you didn't know that Adam and Wynn weren't the only Changeloggers. Meet [Micheil](http://twitter.com/miksago), [Kenneth](http://kennethreitz.com/), and [Tim](http://creationix.com/)
+
+[UPDATE]: How could I forget one of the biggest new items? We now have syntax highlighting [as seen here](http://thechangelog.com/post/872114581/node-http-proxy-reverse-proxy-for-node-js) using the nifty [Prettify](http://code.google.com/p/google-code-prettify/) from Google.

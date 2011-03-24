@@ -1,0 +1,28 @@
+Date: 2010-10-11 19:34:00 GMT
+tumblr_id: 1293058752
+categories: github,node,javascript,node.js,websockets,socket.io,html5,games
+github_repo: stephank/orona
+title: orona: Multiplayer websockets tank warfare game powered by Node.js
+
+# orona: Multiplayer websockets tank warfare game powered by Node.js
+
+Technologies like [Websockets](http://thechangelog.com/post/927103350/episode-0-3-1-websockets) show a lot of promise for web-based multiplayer games. You've probably seen [Rumpetroll](http://github.com/danielmahal/Rumpetroll), the super cool Websockets demo.
+
+Now, [Stéphan Kochen](http://github.com/stephank) is developing [Orona](http://github.com/stephank/orona) a websockets-powered port of [Bolo](http://en.wikipedia.org/wiki/Bolo_(video_game)), a multiplayer tank warfare game.
+
+<object classid='clsid:d27cdb6e-ae6d-11cf-96b8-444553540000' codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,115,0' width='500' height='308'><param name='movie' value='http://screenr.com/Content/assets/screenr_1116090935.swf' /><param name='flashvars' value='i=116748' /><param name='allowFullScreen' value='true' /><embed src='http://screenr.com/Content/assets/screenr_1116090935.swf' flashvars='i=116748' allowFullScreen='true' width='500' height='308' pluginspage='http://www.macromedia.com/go/getflashplayer'></embed></object>
+
+Orona was developed in [CoffeeScript](http://thechangelog.com/post/849754840/episode-0-2-9-coffeescript-with-jeremy-ashkenas) and runs on [Connect](http://thechangelog.com/post/674777483/connect-middleware-for-nodejs) the Node.js web framework from [Tim Caswell](http://twitter.com/creationix). Stéphan has also extracted a realtime browser game framework from Orona that he calls [Villain](http://github.com/stephank/villain).
+
+
+You can play the [multiplayer demo](http://stephank.github.com/orona/) or install it locally via [npm](http://npmjs.org) to play by yourself:
+
+    npm install coffee-script
+    npm install connect
+    npm install villain
+
+Once installed, you can browse to [http://localhost:8124/bolo.html](http://localhost:8124/bolo.html) to play the game.
+
+
+
+[[Source on GitHub](http://github.com/stephank/orona)] [[Demo](http://stephank.github.com/orona/)]

@@ -1,0 +1,36 @@
+Date: 2010-11-09 03:58:00 GMT
+tumblr_id: 1522032622
+categories: github,ruby,rack,modernizr,html5
+github_repo: marshally/rack-modernizr
+title: rack-modernizr: Ruby Rack middleware for Modernizr on the server
+
+# rack-modernizr: Ruby Rack middleware for Modernizr on the server
+
+A couple of weeks ago we covered [modernizr-server](http://thechangelog.com/post/1401439015/modernizr-server-modernizr-on-the-server-side), a nifty PHP project that lets you tap into the power [Modernizr](http://www.modernizr.com/) on the server. Modernizr, of course, is the JavaScript feature detection library that allows you to check browser support for HTML5 and other advanced features.
+
+Inspired by modernizr-server, [Marshall Yount](http://twitter.com/marshallyount) brings Modernizr to your Ruby web projects via some slick [Rack](http://rack.rubyforge.org) middleware. The first time a user visits your site, [rack-modernizr](http://github.com/marshally/rack-modernizr) adds the Modernizr library to your page automatically and stuffs all that Modernizr info into a cookie that you can check on subsequent requests on the server side.
+
+To install, grab the gem:
+
+    gem install rack-modernizr
+
+To use in your Rack app, just require it in your rackup file:
+
+    # config.ru
+    
+    require ::File.expand_path('../config/environment',  __FILE__)
+    require 'modernizr'
+    use Rack::Modernizr
+
+    run MyApp::Application
+  
+In Rails, add the gem to your `Gemfile` and configure the middleware in your `application.rb`
+
+    module MyApp
+      class Application < Rails::Application
+      
+      config.middleware.use Rack::Modernizr
+      
+    end
+
+[[Source on GitHub](http://github.com/marshally/rack-modernizr)]

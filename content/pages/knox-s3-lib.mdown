@@ -1,0 +1,51 @@
+Date: 2010-12-07 04:12:24 GMT
+tumblr_id: 2128784522
+categories: github,node,s3,amazon
+github_repo: learnboost/knox
+title: knox: Amazon S3 library for Node.js
+
+# knox: Amazon S3 library for Node.js
+
+Some of the best open source software is byproduct of great commercial software. Such is the case with most everything [LearnBoost](http://learnboost.com) given to the [Node.js](http://nodejs.org) community. Their latest offering is [Knox](http://github.com/learnboost/knox), [TJ](https://github.com/visionmedia)'s Amazon S3 client.
+
+Knox was built for Node 0.2.x and offers a Node-like low-level `http.Client` API. To get started, install via [npm](http://npmjs.org)
+
+    npm install knox
+
+In your Node app, create a Knox client:
+
+    var client = knox.createClient({
+        key: '<api-key-here>'
+      , secret: '<secret-here>'
+      , bucket: 'learnboost'
+    });
+
+You can now upload something to your S3 bucket via an HTTP `PUT`:
+
+    fs.readFile('Readme.md', function(err, buf){
+      var req = client.put('/test/Readme.md', {
+          'Content-Length': buf.length
+        , 'Content-Type': 'text/plain'
+      });
+      req.on('response', function(res){
+        if (200 == res.statusCode) {
+          console.log('saved to %s', req.url);
+        }
+      });
+      req.end(buf);
+    });
+
+`GET`ing that object again is just as simple:
+
+    client.get('/test/Readme.md').on('response', function(res){
+      console.log(res.statusCode);
+      console.log(res.headers);
+      res.setEncoding('utf8');
+      res.on('data', function(chunk){
+        console.log(chunk);
+      });
+    }).end();
+
+Be sure and check the [README](http://github.com/learnboost/knox#readme) for more options.
+
+[[Source on GitHub](http://github.com/learnboost/knox)]

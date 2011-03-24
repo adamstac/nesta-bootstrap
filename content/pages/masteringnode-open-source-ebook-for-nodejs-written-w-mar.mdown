@@ -1,0 +1,30 @@
+Date: 2010-09-01 03:18:00 GMT
+tumblr_id: 1045763455
+categories: github,node-js,javascript,ebooks,books
+github_repo: visionmedia/masteringnode
+title: Mastering Node: Open source eBook for Node.js
+
+# Mastering Node: Open source eBook for Node.js
+
+[GitHub](http://github.com) is for more than just code you know. It's a great collaboration tool for hackers. [Nathan](http://github.com/nex3), [Chris](http://github.com/chriseppstein), and I use GitHub as a big part of our workflow for our upcoming [book](http://twitter.com/ManningBooks/status/22554856352).
+
+[TJ](http://github.com/visionmedia) (do we really have to say his last name by now?), of [Express](http://expressjs.com/) and now [Sencha](http://thechangelog.com/post/866734244/episode-0-3-0-sencha-touch-with-david-kaneda) wants you to [Master Node.js](http://visionmedia.github.com/masteringnode/) by reading and hacking on his own community-driven ebook.
+
+The book will walk you through Node step-by-step from installation to topics like `EventEmitter`:
+
+> Typically an object inherits from EventEmitter, however our small example below illustrates the api. First we create an emitter, after which we can define any number of callbacks using the emitter.on() method which accepts the name of the event, and arbitrary objects passed as data. When emitter.emit() is called we are only required to pass the event name, followed by any number of arguments, in this case the first and last name strings.
+
+    var EventEmitter = require('events').EventEmitter;
+
+    var emitter = new EventEmitter;
+
+    emitter.on('name', function(first, last){
+        console.log(first + ', ' + last);
+    });
+
+    emitter.emit('name', 'tj', 'holowaychuk');
+    emitter.emit('name', 'simon', 'holowaychuk');
+    
+Go ahead, [fork it](http://github.com/visionmedia/masteringnode), contribute, and add [ePub](http://en.wikipedia.org/wiki/EPUB) support.
+
+[[Source on GitHub](http://github.com/visionmedia/masteringnode)]

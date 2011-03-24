@@ -1,0 +1,18 @@
+Date: 2010-11-09 01:49:00 GMT
+tumblr_id: 1520860942
+categories: github,git
+github_repo: github/gitignore
+title: gitignore: A collection of useful .gitignore templates
+
+# gitignore: A collection of useful .gitignore templates
+
+GitHub has created [gitignore](https://github.com/github/gitignore) which aims to showcase best practices for excluding files from git. You'll find templates arranged by language including [Ruby](https://github.com/github/gitignore/blob/master/Ruby.gitignore), [Python](https://github.com/github/gitignore/blob/master/Python.gitignore), and [Scala](https://github.com/github/gitignore/blob/master/Scala.gitignore) as well as frameworks like [Rails](https://github.com/github/gitignore/blob/master/Rails.gitignore) and [Django](https://github.com/github/gitignore/blob/master/Django.gitignore).
+
+For global system settings, they've also included a section for [global](https://github.com/github/gitignore/tree/master/Global/) `.gitignore` files.
+
+Got ideas? Go ahead and [fork the project](https://github.com/github/gitignore/) and contribute your own `.gitignore` preferences.
+
+This is definitely one repo you should not, ahem, _ignore_.
+
+
+[[Source on GitHub](http://github.com/github/gitignore)]

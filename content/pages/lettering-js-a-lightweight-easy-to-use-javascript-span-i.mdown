@@ -1,0 +1,46 @@
+Date: 2010-09-16 16:54:00 GMT
+tumblr_id: 1132597086
+categories: github,typography,javascript,design,jquery
+github_repo: davatron5000/Lettering.js
+title: Lettering.js: Radical web typography with jQuery
+
+# Lettering.js: Radical web typography with jQuery
+
+Even with the improvements [@font-face](http://thechangelog.com/post/616093411/webfont-loader-easy-font-face-from-google-typekit-or-you) brings to typography, web designers still don't have quite the control as their print counterparts. Basic tasks like per-letter or per-word styling involves a lot of `<span>`'s and stupid markup tricks.
+
+[Dave Rupert](http://daverupert.com/about) aims to help with [Lettering.js](http://daverupert.com/2010/09/lettering-js/), a jQuery plugin for "radical web typography."
+
+[![Screenshot](http://cl.ly/7483a28d86af2f7fa403/content)](http://daverupert.com/2010/09/lettering-js/)
+
+#### How it works
+
+In this example, Lettering.js takes over the tedious task of creating all of those per-letter `<span>`'s:
+
+    $(document).ready(function() {
+      $(".fancy_title").lettering();
+    });
+
+... which yields
+
+    <h1 class="fancy_title">
+      <span class="char1">S</span>
+      <span class="char2">o</span>
+      <span class="char3">m</span>
+      <span class="char4">e</span>
+      <span class="char5"></span>
+      <span class="char6">T</span>
+      <span class="char7">i</span>
+      <span class="char8">t</span>
+      <span class="char9">l</span>
+      <span class="char10">e</span>
+    </h1>
+
+You're now free to style each individual letter with the resulting CSS classes.
+
+Don't need that fine-grained control? Lettering.js can handle per-word options as well:
+
+    $(document).ready(function() {
+      $(".word_split").lettering('words');
+    });
+
+[[Source on GitHub](http://github.com/davatron5000/Lettering.js)] [[Blog post](http://daverupert.com/2010/09/lettering-js/)]

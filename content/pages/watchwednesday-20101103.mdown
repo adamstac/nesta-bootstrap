@@ -1,0 +1,45 @@
+Date: 2010-11-03 20:18:33 GMT
+tumblr_id: 1472756374
+categories: WatchWednesday,objective-c,ios,osx,api,performance,ruby,javascript,jquery,fonts
+title: WatchWednesday for 20101103
+
+# WatchWednesday for 20101103
+
+Our weekly list of projects you might have missed on GitHub:
+
+#### [RestKit](https://github.com/twotoasters/RestKit)
+
+[RestKit](https://github.com/twotoasters/RestKit) is a nice high-level library for consuming REST resources in Objective C. It runs on OS X and iOS and provides three major features:
+
+* **Network transport** including GET, POST, PUT, and DELETE
+* **Object mapping** between JSON responses and local domain types, in a nice declarative way
+* **Core Data** for persisting data in offline scenarios.
+
+#### [LoadTest.io](https://github.com/inadarei/loadtestio)
+
+[LoadTest.io](https://github.com/inadarei/loadtestio) is a Java-based multi-threaded load tester that includes auto discovery of web pages.
+
+#### [AppceleratorRecord](https://github.com/wibblz/AppceleratorRecord)
+
+[AppceleratorRecord](https://github.com/wibblz/AppceleratorRecord) provides ActiveRecord-inspired models for your Appcelerator Titanium Mobile applications. Be sure and catch [Episode 0.0.8 on Titanium Mobile](http://thechangelog.com/post/334287138/episode-0-0-8-marshall-culpepper-from-appcelerator-titan) if you missed it.
+
+#### [carmen](https://github.com/jim/carmen)
+
+As in [where in the world...](http://en.wikipedia.org/wiki/Carmen_Sandiego), [Carmen](https://github.com/jim/carmen) is a simple collection of geographic names and abbreviations for Ruby including support for Australia, Brazil, Canada, Cuba, Denmark, Germany, Italy, Mexico, Spain, Ukraine, and United States.
+
+#### [jQuery Idle Timer Plugin](https://github.com/paulirish/jquery-idletimer)
+
+From [Paul Irish](http://twitter.com/paul_irish), the [this plugin](https://github.com/paulirish/jquery-idletimer)  provides an easy way to raise an event when a user has been idle on a web page:
+
+    // idleTimer() takes an optional argument that defines the idle timeout
+    // timeout is in milliseconds; defaults to 30000
+    $.idleTimer(10000);
+
+
+    $(document).bind("idle.idleTimer", function(){
+     // function you want to fire when the user goes idle
+    });
+
+#### [Meslo](https://github.com/andreberg/Meslo-Font)
+
+[Meslo](https://github.com/andreberg/Meslo-Font) is a customized version of Apple's Menlo font, mentioned in [Episode 0.3.9](http://thechangelog.com/post/1408568115/episode-0-3-9-scripty2-zepto-js-vapor-js-and-more-with-t).

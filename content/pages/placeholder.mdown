@@ -1,0 +1,21 @@
+Date: 2010-08-11 17:36:37 GMT
+tumblr_id: 937860473
+categories: github,design,images,wireframes,web
+github_repo: mdarby/placeholder
+title: placeholder: Placeholder images for your wireframes
+
+# placeholder: Placeholder images for your wireframes
+
+If you do a great deal of wireframing, then you know the tedium of creating placeholder images for adds, banners, and other fixed items. Adam and I are big fans of [Placehold.it](http://placehold.it) for creating placeholder images.
+
+[Placeholder](http://github.com/mdarby/placeholder) from [Matt Darby](http://github.com/mdarby) gives you a neat Ruby interface to the service without having to remember URL format.
+
+    sudo gem install placeholder
+
+Now we can generate the following placeholder image: ![Sample placeholder image](http://placehold.it/400/333/fff&text=The%20Changelog)
+
+with the following Ruby:
+
+    = Placeholder.new(:size => 400, :text => "The Changelog", :fg_color => "fff", :bg_color => "333")
+
+[[Source on GitHub](http://github.com/mdarby/placeholder)]

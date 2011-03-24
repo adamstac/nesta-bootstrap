@@ -1,0 +1,536 @@
+@import base
+
+// Configure grid coordinates
+$grid-columns: 24
+$grid-width: 30px
+$grid-gutter-width: 10px
+
+@import grid-coordinates
+// Local path to grid-coordinate for testing 'edge'
+// @import ../../../../../OS/compass/grid-coordinates/extension/stylesheets/grid-coordinates
+
++grid-coordinates
+
+#grid
+  display: none
+  position: fixed
+  top: 0
+  left: 0
+  background: url(/thechangelog/images/grid-24.png) repeat-y 50% 0
+  height: 100%
+  width: 100%
+
+body
+  @extend .font-helvetica
+  background: white
+  color: $rich-black
+
+#header, #search, #feature, #utilities, #page, #podcasts, #footer
+  .content
+    @extend .grid-container
+
+#header
+  border:
+    top: 3px solid $rich-black
+    bottom: 3px solid $light-grey
+  color: $light-grey
+  font-size: 20px
+  font-weight: bold
+  padding: 5px 0
+  h1
+    @extend .grid-6
+    @extend .grid-suffix-2
+    a
+      background: url(/thechangelog/images/tcl-logo.png) no-repeat 0 50%
+      color: $rich-black
+      display: block
+      font-size: 18px
+      line-height: 80px
+      text-indent: -99999px
+      width: 100%
+  nav.main
+    @extend .grid-16
+    ul
+      +float-left
+      +no-bullets
+      margin-top: 32px
+      li
+        +float-left
+        padding-right: 25px
+        &:last-child
+          padding-right: 0
+        a
+          color: lighten($rich-black, 35%)
+          display: inline-block
+          font-size: 14px
+          font-weight: bold
+          padding-bottom: 2px
+          text-decoration: none
+          &.active, &:hover
+            border-bottom: 3px solid #ccc
+            color: $rich-black
+
+#feature
+  +linear-gradient(color-stops(#333333, #171717 75%))
+  border:
+    top: 1px solid $shadow-black
+    bottom: 5px solid black
+  color: $dark-grey
+  padding: 25px 0
+  .latest-episode
+    @extend .grid-17
+    @extend .grid-suffix-1
+    h2
+      font-size: 24px
+      font-weight: bold
+      line-height: 1.3
+      margin-bottom: 20px
+      padding-bottom: 3px
+      a:hover
+        border-bottom: 3px solid #444
+        text-decoration: none
+    h3
+      color: $dark-grey
+      font-size: 12px
+      margin-bottom: 10px
+      text-transform: uppercase
+    p
+      color: $dark-grey
+      font-size: 16px
+      line-height: 1.4
+      margin-right: 50px
+      padding-right: 40px
+    a
+      color: white
+      &.goto-episode
+        background: url(/thechangelog/images/goto-episode-button.png) no-repeat 0 0
+        display: inline-block
+        height: 42px
+        margin-top: 20px
+        text-indent: -99999px
+        width: 223px
+  .call-to-actions
+    @extend .grid-6
+    font-size: 13px
+    line-height: 1.5
+    ul li
+      margin-bottom: 5px
+      &.elsewhere
+        font-size: 12px
+        margin-top: 12px
+        a
+          background: #333
+          display: inline-block
+          color: white
+          padding: 2px 7px
+          text-decoration: none
+          &:hover
+            background: #555
+        p
+          +reset-box-model
+      img
+        display: block
+
+#search
+  background: $faint-grey
+  border-top: 3px solid $light-grey
+  border-bottom: 1px solid $light-grey
+  .content
+    padding: 5px 0
+  form
+    @extend .grid-16
+    @extend .grid-prefix-4
+    @extend .grid-suffix-4
+    font-size: 14px
+    line-height: 30px
+    p
+      display: inline-block
+      font-weight: bold
+      margin-right: 15px
+    input[type=text]
+      font-family: Helvetica, Arial, sans
+      font-size: 12px
+    #q
+      +border-radius(3px)
+      border: 1px solid $light-grey
+      padding: 4px 6px
+      width: 200px
+
+#page
+  padding: 25px 0
+  #content
+    @extend .grid-17
+    @extend .grid-suffix-1
+    
+    // Old can be dropped
+    .date
+      border-bottom: 1px solid $light-grey
+      color: #777777
+      font: italic 14px times, "Times New Roman", serif
+      margin: 0 0 20px 0
+      padding: 4px 0
+      &:first-child
+        margin-top: 0
+    
+    // New post styles
+    .post
+      @extend .nested-grid-container
+      margin-bottom: 50px
+      &:last-child
+        margin-bottom: 0
+      .post-heading
+        border-bottom: 1px solid #eee
+        margin-bottom: 12px
+        padding-bottom: 12px
+        h2
+          +text-shadow(#ccc,1px,1px,0)
+          color: #000
+          font-size: 30px
+          font-weight: bold
+          line-height: 1.2
+        .by-line
+          font-size: 12px
+          margin-top: 15px
+          text-transform: uppercase
+          a
+            color: black
+            font-weight: bold
+            text-decoration: none
+            &:hover
+              text-decoration: underline
+      .entry
+        .summary
+          font-size: 18px
+          line-height: 1.3
+          margin-bottom: 20px
+        a.read-more
+          +border-radius(3px)
+          +box-shadow(rgba(#000,.8),0,0,5px)
+          background: #171717
+          +linear-gradient(color-stops(#555, #000 75%))
+          border: 1px solid #000
+          color: #fff
+          display: inline-block
+          font-size: 12px
+          font-weight: bold
+          line-height: 22px
+          padding: 0 15px
+          text-decoration: none
+          &:hover
+            // border: 1px solid #656565
+            +box-shadow(rgba(#000,.6),0,0,12px)
+            // +linear-gradient(color-stops(#777,#555 50%))
+            // Red theme
+            border: 1px solid $red-darkest
+            +linear-gradient(color-stops($red-base,$red-darkest 75%))
+            
+            
+        p
+          font-size: 15px
+          line-height: 1.4
+          margin-bottom: 1.5em
+          &:last-child
+            margin-bottom: 0
+      .post-info
+        display: none
+        border-top: 1px solid #eee
+        margin-top: 10px
+        padding-top: 10px
+        font-size: 13px
+        a
+          color: black
+          font-weight: bold
+          text-decoration: none
+          &:hover
+            text-decoration: underline
+        ul
+          +no-bullets
+          li
+            display: inline
+            margin-right: 10px
+      
+    .more-posts
+      @extend .nested-grid-container
+      margin-bottom: 25px
+      & > div.post
+        @extend .grid-8
+        &:last-child
+          @extend .grid-prefix-1
+      & > div.heading
+        border-top: 2px solid #ccc
+        margin-bottom: 15px
+        h2
+          background: #ddd
+          color: #777
+          display: inline-block
+          font-size: 12px
+          font-weight: bold
+          margin-left: 5px
+          padding: 4px 18px 6px 18px
+          text-align: center
+          text-transform: uppercase
+      .post
+        .post-heading
+          border-bottom: 1px solid #eee
+          margin-bottom: 8px
+          padding-bottom: 8px
+          h2
+            font-size: 18px
+            line-height: 1.4
+        .entry
+          border-bottom: none
+          margin-bottom: 0
+          padding-bottom: 0
+          p
+            font-size: 14px
+            line-height: 1.3
+      
+      // Old stuffs, to be refactored
+      .content
+        @extend .grid-14
+        position: relative
+        h1
+          font-size: 24px
+          font-weight: bold
+          line-height: 1.2
+          margin-bottom: 18px
+        h2
+          font-size: 24px
+          font-weight: bold
+          line-height: 1.2
+          margin-bottom: 18px
+          padding-top: 26px
+          a
+            color: black
+            text-decoration: none
+            &:hover
+              text-decoration: underline
+        h3
+          position: absolute
+          top: 0
+          left: 0
+          color: #777777
+          font-size: 16px
+          font-family: Times, "Times New Roman", serif
+          font-style: oblique
+          margin-bottom: 10px
+        p
+          font-size: 14px
+          line-height: 1.5
+          margin-bottom: 18px
+          &:last-child
+            margin-bottom: 0
+        img
+          width: 550px
+          &.alignright
+            +float-right
+            margin-left: 20px
+            margin-bottom: 20px
+        p
+          font-size: 14px
+          line-height: 1.5
+          margin-bottom: 18px
+          &:last-child
+            margin-bottom: 0
+        ul
+          margin: 15px 0
+          padding-left: 20px
+          li
+            font-size: 14px
+            line-height: 1.4
+            margin-bottom: 5px
+            &:last-child
+              margin-bottom: 0
+        p, ul li
+          a
+            color: black
+            font-weight: bold
+            text-decoration: none
+            &:hover
+              text-decoration: underline
+      .sidebar
+        @extend .grid-3
+        margin-top: 26px
+        .episode
+          text-align: center
+          span
+            display: block
+            font-weight: bold
+            &.label
+              font-size: 16px
+              font-weight: normal
+              margin-bottom: 4px
+            &.data
+              font-size: 26px
+              line-height: 1
+        .tweetmeme_retweet
+          text-align: center
+      .footer
+        @extend .grid-16
+        font-size: 14px
+        margin-top: 20px
+        ul
+          +no-bullets
+          li
+            display: inline
+            line-height: 1.5
+            margin-right: 10px
+            &:first-child
+              margin-right: 3px
+        a
+          color: black
+          font-weight: bold
+          text-decoration: none
+          &:hover
+            text-decoration: underline
+
+#sidebar
+  @extend .grid-6
+  img.qr-code
+    display: block
+    margin: 0 auto
+    margin-top: 50px
+    margin-bottom: 50px
+  #influads_block
+    text-align: left
+    font-size: 12px
+    width: 192px
+    margin: 0 auto
+    padding: 10px 0 20px 0
+    .influads_img
+      +box-shadow(rgba(0, 0, 0, 0.8), 0, 0, 15px)
+      margin-bottom: 10px
+    .influads_text
+      position: relative
+      left: -18px
+      background: url(/thechangelog/images/asterix-bullet.png) no-repeat 0 1px
+      margin-bottom: 12px
+      padding-left: 18px
+      a
+        color: $rich-black
+        font-weight: bold
+    .influads_powered_div
+      a
+        color: #999999
+  #recently
+    +border-radius(2px)
+    +box-shadow(rgba(#000,0.5),0,0,5px)
+    +linear-gradient(color-stops(#252525, #171717 60%))
+    ul
+      padding: 20px
+      li
+        border-bottom: 1px solid black
+        border-top: 1px solid #333333
+        font-size: 13px
+        line-height: 1.3
+        padding-top: 10px
+        padding-bottom: 10px
+        &.first, &:first-child
+          border-top: none
+          padding-top: 0
+        &.last, &:last-child
+          border-bottom: none
+          margin-bottom: 0
+          padding-bottom: 0
+        a
+          color: #cccccc
+          padding: 2px 0
+          text-decoration: none
+          &:hover
+            background: #444444
+            color: white
+
+#podcasts
+  background: $faint-grey
+  border:
+    top: 1px solid $light-grey
+    bottom: 1px solid white
+  padding: 20px 0
+  .grid-container
+    .podcast
+      @extend .nested-grid-container 
+      font-size: 13px
+      line-height: 1.5
+      header
+        color: $rich-black
+        font-size: 14px
+        font-weight: bold
+        margin-bottom: 10px
+        a
+          color: inherit
+      img
+        +box-shadow(rgba(#000,.5),0,0,2px)
+        background: #fff
+        padding: 2px
+        width: 63px
+        &:hover
+          +box-shadow(rgba(#000,1),0,0,5px)
+      p
+        padding-right: 10px
+
+#footer
+  background: #171717
+  border:
+    top: 5px solid #aaa
+    bottom: 5px solid $shadow-black
+  color: $dark-grey
+  font-size: 14px
+  padding: 50px 0
+  
+  // Base section styles for the over-sized footer
+  section
+    header
+      color: white
+      font-size: 16px
+      font-weight: bold
+      margin-bottom: 15px
+    p
+      line-height: 1.5
+      padding-bottom: 10px
+      &:last-child
+        padding-bottom: 0
+      a
+        color: $light-grey
+        font-weight: bold
+    ul li
+      color: #444
+      font-size: 13px
+      line-height: 1.3
+      margin-bottom: 10px
+      &:last-child
+        margin-bottom: 0
+      a
+        color: $dark-grey
+        padding: 2px 0
+        text-decoration: none
+        &:hover
+          background: #444
+          color: white
+  
+  // Footer layout
+  .popular
+    @extend .grid-container
+    section
+      @extend .grid-8
+  .colophon
+    @extend .grid-container
+    border-top: 3px solid #292929
+    margin-top: 25px
+    padding-top: 25px
+    .sitemap
+      section
+        margin-top: 25px
+        &:first-child
+          margin-top: 0
+  .site
+    @extend .grid-container
+    padding: 50px 0 10px 0
+    p
+      @extend .grid-18
+      font-size: 12px
+    a.credit
+      @extend .grid-6 
+      background: url(/thechangelog/images/rizn-media-production.png) no-repeat 0 50%
+      display: inline-block
+      line-height: 22px
+      text-indent: -99999px

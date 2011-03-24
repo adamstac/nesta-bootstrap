@@ -1,0 +1,39 @@
+Date: 2010-11-11 02:44:00 GMT
+tumblr_id: 1539126140
+categories: github,xbox,open source,Contests,gaming
+github_repo: adafruit/Kinect
+title: Open Kinect project, $3,000 for Kinect for Xbox 360 open source drivers
+
+# Open Kinect project, $3,000 for Kinect for Xbox 360 open source drivers
+
+[Team Adafruit](http://www.adafruit.com/) is doing their first ever “X prize” type project. [Hack the Kinect for Xbox 360](http://www.adafruit.com/blog/2010/11/04/the-open-kinect-project-the-ok-prize-get-1000-bounty-for-kinect-for-xbox-360-open-source-drivers/) and claim the NOW $3,000 bounty! Hat tip to [Himanshu Chhetri](http://twitter.com/himanshuc) for [letting us know](http://twitter.com/himanshuc/status/2509129377644544) about this. Thanks man!
+
+The Open Kinect project has started a bit of drama around this contest. Microsoft seems to not be taking kindly to the bounty offer. Read the article titled "[Bounty offered for open-source Kinect driver](http://news.cnet.com/8301-13772_3-20021836-52.html)" over at [CNET](http://news.cnet.com/).
+
+### What is Kinect?
+
+Kinect for Xbox 360, or simply Kinect (originally known as code name Project Natal (pronounced /nəˈtɒl/ nə-tahl)), is a "controller-free gaming and entertainment experience" by Microsoft currently only available on the Xbox 360 video game platform. In the future PCs via Windows 8 may be supported.
+
+Kinect is based around a webcam-style add-on peripheral. It enables users to control and interact with the Xbox 360 through a natural user interface using gestures, spoken commands, or presented objects and images. The project is aimed at broadening the Xbox 360's audience beyond its typical gamer base and will compete with other consoles, motion control systems and peripherals such as Wii Remote, Wii MotionPlus and PlayStation Move for the Wii and PlayStation 3.
+
+### How does it work?
+
+<img src="http://www.adafruit.com/adablog/wp-content/uploads/2010/11/Canesta-howitworks1.jpg" alt="" />
+
+An invisible light source illuminates the subject. A sensor chip then measures the distance the light has to travel to each pixel within the chip. A unique imaging software uses a "depth map" to perceive and identify objects in realtime and the end-user device reacts appropriately.
+
+Wired has a great article about [how motion detection works in Xbox Kinect](http://www.wired.com/gadgetlab/2010/11/tonights-release-xbox-kinect-how-does-it-work/)!
+
+### What does Adafruit Industries want?
+
+They are looking to expand open source drivers for this cool USB device. The drivers and/or application can run on any operating system. Here's the catch, everything has to be completely documented and under an open source license. To demonstrate the driver you must also write an application with one “window” showing video (640 x 480) and one window showing depth. Then just upload your project to GitHub.
+
+### How get the bounty ($3,000 USD)
+
+Anyone around the world can work on this, even folks from Microsoft. Upload your code, examples and documentation to GitHub. The first person or group to get RGB out with distance values being used ... wins. All code needs to be open source and/or public domain.
+
+Email them a link to your repo, and Adafruit Industries as well as some “other” Kinect for Xbox 360 hackers will check it out – if it’s good to go, you’ll get the $3,000 bounty!
+
+Good luck.
+
+[[Source on GitHub](https://github.com/adafruit/Kinect)]

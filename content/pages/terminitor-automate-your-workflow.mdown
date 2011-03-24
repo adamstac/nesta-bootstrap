@@ -1,0 +1,42 @@
+Date: 2010-09-14 18:46:00 GMT
+tumblr_id: 1121940971
+categories: github,osx,console,tools,gems,ruby
+title: terminitor: Automate your terminal workflow on OSX
+
+# terminitor: Automate your terminal workflow on OSX
+
+As developers, we live in the terminal, often in several tabs per project for tasks like application consoles, database interfaces, or monitoring test output.
+
+If you're on OSX, [Arthur Chiu](http://github.com/achiu) from the [Padrino](http://thechangelog.com/post/708173099/episode-0-2-7-padrino-ruby-web-framework) team wants to make your life a bit easier. [Terminitor](http://github.com/achiu/terminitor) lets you define workspaces and workflows for projects, allowing you to script the setup of Terminal.app tabs that automagically unfold when you sit down to work on a project.
+
+Terminitor is installed via RubyGems
+
+    $ gem install terminitor
+
+You can then set up your environment and set up your `.terminitor` folder in your `$HOME` folder.
+
+    $ terminitor setup
+
+To define a new workspace, use the `open` command
+
+    $ terminitor open my_app
+
+Which you can then edit in your system editor:
+
+    # ~/.terminitor/my_app.yml
+    # you can make as many tabs as you wish...
+    # tab names are actually arbitrary at this point too.
+    ---
+    - tab1:
+      - cd ~/projects/my_app
+      - rails c
+    - tab2:
+      - mysql -u root
+      - use my_app_development;
+      - show tables;
+    - tab3:
+      - cd ~/projects/my_app
+      - open http://thechangelog.com
+      - autotest
+
+[[Source on GitHub](http://github.com/achiu/terminitor)]

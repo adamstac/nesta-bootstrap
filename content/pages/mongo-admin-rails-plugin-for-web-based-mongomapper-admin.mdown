@@ -1,0 +1,11 @@
+Date: 2009-12-18 16:51:18 GMT
+tumblr_id: 289081114
+categories: github,mongo,mongomapper,rails,ruby,plugins
+github_repo: ahe/mongo_admin
+title: mongo_admin: Rails plugin for web based MongoMapper admin
+
+# mongo_admin: Rails plugin for web based MongoMapper admin
+
+Browse and manage your MongoMapper data using your browser using this Rails plugin from [@2dc](http://twitter.com/2dc).
+
+[[Source on GitHub](http://github.com/ahe/mongo_admin)] [[Demo](http://mongo_admin.2dconcept.com/)]

@@ -1,0 +1,29 @@
+Date: 2010-10-30 19:05:00 GMT
+tumblr_id: 1440399456
+categories: github,music,api,fun
+github_repo: scrobbyl/scrobbyl
+title: scrobbyl: Automatically Scrobble your vinyl collection in real time
+
+# scrobbyl: Automatically Scrobble your vinyl collection in real time
+
+When we find them, we like to cover niche projects that show off the homebrew spirit that has always been strong in open source communities.
+
+Scrobbyl is a Python utility to sample what's spinning on your turntable and _scrobble_ it to your [Last.fm](http://last.fm) account.
+
+<a href="http://scrobbyl.com"><img height="375" width="500" src="http://cl.ly/a5387a049648dc12f4bf/content" alt="Setup"></a>
+
+#### How does it work?
+
+First, authenticate Scrobbyl with your Last.fm account:
+
+    python lastfm.py auth
+
+Next, make sure `ffmpeg` is in your `PATH`, hook up your turntable to your audio line in and run `scrobbyl`
+
+    ./scrobbyl
+
+Scrobbyl will create an audio fingerprint of your track, query it via the [Echo Nest API](http://developer.echonest.com/docs/v4/), and update your Last.fm account.
+
+The term _scrobbyl_ is a mashup of [_scrobble_](http://www.last.fm/help/faq?category=Scrobbling) and _vinyl_. Be sure and catch [Episode 0.3.5](http://lg.gd/035) with [Max Howell](http://twitter.com/mxcl), formerly of Last.fm, who built the original Last.fm Scrobbler. 
+
+[[Source on GitHub](http://github.com/scrobbyl/scrobbyl)] [[Home page](http://scrobbyl.com/)]

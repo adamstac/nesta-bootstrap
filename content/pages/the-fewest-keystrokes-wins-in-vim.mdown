@@ -1,0 +1,21 @@
+Date: 2010-12-29 05:33:43 GMT
+tumblr_id: 2508051212
+categories: github,vim,editors,games,terminal
+github_repo: igrigorik/vimgolf
+title: vimgolf: The fewest keystrokes wins - in Vim
+
+# vimgolf: The fewest keystrokes wins - in Vim
+
+[Vim](http://www.vim.org/) geeks take pride in solving problems in the fewest possible keystrokes, regardless of how cryptic the solution might be. With VimGolf from [Ilya Grigorik](https://github.com/igrigorik), they can now compete for bragging rights in a golf-like game where the fewest strokes wins.
+
+Wanna play? Just sign up at [Vimgolf.com](http://www.vimgolf.com) and install the CLI client:
+
+    $ gem install vimgolf
+    $ vimgolf setup
+    $ vimgolf put [challenge ID]
+
+The rules are simple. Challenges include a start file and end file and it's up to you to submit the shortest solution possible. Currently solutions are scored on simple file byte size, but future enhancements may add bonus points for use of key shortcuts and other advanced Vim features.
+
+[![Screenshot](http://cl.ly/1m1h0Q3U130d132D3V3J/Screen_shot_2010-12-28_at_11.27.43_PM.png)](http://www.vimgolf.com)
+
+[[Source on GitHub](http://github.com/igrigorik/vimgolf)] [[Play online](http://www.vimgolf.com)]

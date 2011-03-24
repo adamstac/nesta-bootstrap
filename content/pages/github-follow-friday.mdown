@@ -1,0 +1,26 @@
+Date: 2010-09-24 15:58:00 GMT
+tumblr_id: 1179362218
+categories: ff,FollowFriday
+title: GitHub Follow Friday
+
+# GitHub Follow Friday
+
+As we [promised](http://thechangelog.com/post/1167855730/watchwednesday-20100922) on [WatchWednesday](http://thechangelog.com/post/1167855730/watchwednesday-20100922), we're bringing back FollowFriday, but for [GitHub](http://github.com). As a regular Friday feature, we'll offer up [our list](http://github.com/thechangelog/follow-friday) of who you should follow. [Fork us](http://github.com/thechangelog/follow-friday) and send us your list, too.
+
+Our community has its own [celebs](http://github.com/dhh) and high-profile [founders](http://github.com/defunkt), but let us say up front that Follow Friday isn't about popularity alone.  Instead, we'll feature GitHub users who contribute to and truly influence the open source community on GitHub.
+
+#### [bmizerany (Blake Mizerany)](http://github.com/bmizerany)
+
+Blake's [Sinatra](http://www.sinatrarb.com/) and its simple DSL have inspired more tribute bands than perhaps The Chairman himself. The next time you hear "it's like Sinatra, but for...", think of Blake. Blake has over a hundred repos on GitHub, his most recent is [Swirl](http://github.com/bmizerany/swirl), a version agnostic EC2 client.
+
+#### [felixge (Felix Geisendörfer)](http://github.com/felixge)
+
+Outside of [Ryan Dahl](http://github.com/ry), perhaps nobody else as avidly contributed to Node.js than Felix. Felix also has created projects like [node-dirty](http://github.com/felixge/node-dirty), a tiny and fast key value store for Node that should be ideal for apps with < 1 million records.
+
+#### [cloudhead (Alexis Sellier)](http://github.com/cloudhead)
+
+Alexis has multi-language skills and is the mind behind [LessCSS](http://lesscss.org/) and [Vows](http://vowsjs.org/), but one of my favorite projects is [Toto](http://github.com/cloudhead/toto), a nifty Rack-based blogging tool for hackers.
+
+#### [jashkenas (Jeremy Ashkenas)](http://github.com/jashkenas)
+
+You probably know Jeremy's superhero alter-ego [Document Cloud](http://github.com/documentcloud) under which he's released popular projects like [Underscore.js](http://documentcloud.github.com/underscore/). But lately Jeremy's own project [CoffeeScript](http://jashkenas.github.com/coffee-script/) has also become quite popular. Jeremy is the first two-time guest on The Changelog, appearing on [Episode 0.0.5](http://thechangelog.com/post/272530971/episode-0-0-5-document-cloud) and [Episode 0.2.9](http://thechangelog.com/post/849754840/episode-0-2-9-coffeescript-with-jeremy-ashkenas).

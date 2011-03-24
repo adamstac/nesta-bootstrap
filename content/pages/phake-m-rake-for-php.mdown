@@ -1,0 +1,33 @@
+Date: 2010-04-03 18:58:05 GMT
+tumblr_id: 493856233
+categories: github,php,kennethreitz
+github_repo: jaz303/phake
+title: Phake: M/Rake for PHP
+
+# Phake: M/Rake for PHP
+
+It's always refreshing to see language communities learning from eachother. PHP now as its own clone of GNU Make and Ruby's Rake: Phake.
+
+Automation Ahoy!
+
+Phake supports task grouping, before/after blocks, and task descriptions. Requires PHP >= 5.3 (for closures).
+
+Here's a simple task definiton: 
+
+	task('dependency1', function() {
+    	  echo "i will run first!\n";
+	});
+
+	task('dependency2', function() {
+  	  echo "i will run second!\n";
+	});
+
+	task('task_name', 'dependency1', dependency2', function() {
+    	  echo "i will run last!\n";
+	});
+
+And to run the task, simply: 
+	
+	./phake task_name
+
+[[Source on GitHub](http://github.com/jaz303/phake)]

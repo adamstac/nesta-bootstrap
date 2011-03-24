@@ -1,0 +1,20 @@
+Date: 2009-11-27 16:25:00 GMT
+tumblr_id: 259598588
+categories: github,what-we-are-watching,javascript,node-js
+github_repo: danwrong/restler
+title: Restler: REST client library for node.js
+
+# Restler: REST client library for node.js
+
+An HTTP client library for [node.js](http://nodejs.org). Hides most of the complexity of creating and using http.Client.
+
+* Easy interface for basic operations via http.Client
+* Automatic serialization of post data
+* Automatic serialization of query string data
+* Automatic deserialization of XML, JSON and YAML responses to JavaScript objects
+* Provide your own deserialization functions for other datatypes
+* Automatic following of redirects
+* Deals with basic auth for you, just provide username and password options
+
+
+[[source on GitHub]](http://github.com/danwrong/restler)

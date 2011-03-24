@@ -1,0 +1,112 @@
+Date: 2010-09-07 15:55:23 GMT
+tumblr_id: 1081571891
+categories: github,api,console,ruby,testing,old-school
+github_repo: htty/htty
+title: htty: HTTP TTY, curl meets lynx in an HTTP console
+
+# htty: HTTP TTY, curl meets lynx in an HTTP console
+
+We've covered a number of web console tools like  [Webshell](http://thechangelog.com/post/942336843/webshell-a-console-based-javascripty-web-client-utility), a nifty HTTP console for [Node.js](http://thechangelog.com/search/node.js), and [Twurl](http://thechangelog.com/post/536535280/twurl-oauth-enabled-curl-for-the-twitter-api), the Twitter-specific tool for Ruby.
+
+But when [Nils Jonsson](http://github.com/njonsson) created an incredibly useful HTTP console with some old-school flair, we took notice. [HTTY](http://github.com/htty/htty) brings HTTP to a handy terminal shell in what Nils describes as a combination of [curl](http://curl.haxx.se/) and [lynx](http://en.wikipedia.org/wiki/Lynx_(web_browser)).
+
+HTTY is installed as a gem:
+
+    sudo gem install htty
+
+You can then fire up the console with your API or web site endpoint:
+
+    $ htty http://github.com/pengwynn.json
+    *** Welcome to  htty , the HTTP TTY. Heck To The Yeah!
+    http://github.com/pengwynn.json>
+
+To make a request, just use the `get` command
+
+    get
+    *** Type cookies-u[se] to use cookies offered in the response
+     200  OK -- 10 headers* -- 27206-character body
+    http://github.com/pengwynn.json>
+
+To see what we got back from the server, just use `body`:
+
+    $ body
+    [{"repository":{"description":"(Mac OS) TVShows 2 \"Phoenix\" is the next iteration of the easiest way to download your favorite TV shows automatically.","has_issues":false,"homepage":"http://embercode.com/tvshows/","fork":false,"has_downloads":true,"watchers":78,"pushed_at":"2010/08/16 14:39:36 -0700","url":"http://github.com/mattprice/TVShows","private":false,"name":"TVShows","owner":"mattprice","forks":10,"has_wiki":false,"created_at":"2009/09/15 17:44:46 -0700","open_issues":7},"created_at":"2010/09/05 21:04:43 -0700","sha":null,"public":true,"actor":"pengwynn"
+    ...
+
+HTTY is incredibly well documented, and the `help` command lists the full power of the console:
+
+    $ help
+
+                                       Navigation
+
+      a[ddress] address            Changes the address of the request
+      cd path                      Alias for pa[th-set]
+      fol[low]                     Changes the address of the request to the value
+                                   of the response's 'Location' header
+      fragment-c[lear]             Alias for fragment-u[nset]
+      fragment-s[et] fragment      Sets the fragment of the request's address
+      fragment-u[nset]             Removes the fragment from the request's address
+      history                      Displays previous request-response activity in
+                                   this session
+      history-[verbose]            Displays the details of previous request-response
+                                   activity in this session
+      ho[st-set] host              Changes the host of the request's address
+      pa[th-set] path              Changes the path of the request's address
+      por[t-set] port              Changes the TCP port of the request's address
+      query-c[lear]                Alias for query-unset-[all]
+      query-s[et] name value       Sets a query string parameter in the request's
+                                   address
+      query-unset name             Removes a query string parameter from the
+                                   request's address
+      query-unset-[all]            Clears the query string of the request's address
+      r[euse] index                Copies a previous request by the index number
+                                   shown in history
+      sc[heme-set] scheme          Changes the scheme (protocol identifier) of the
+                                   request's address
+      userinfo-c[lear]             Alias for userinfo-u[nset]
+      userinfo-s[et] userinfo      Sets the userinfo of the request's address
+      userinfo-u[nset]             Removes the userinfo from the request's address
+
+                                   Building Requests
+
+      body-c[lear]                 Alias for body-u[nset]
+      body-req[uest]               Displays the body of the request
+      body-s[et]                   Sets the body of the request
+      body-u[nset]                 Clears the body of the request
+      cookie-a[dd] name [value]    Alias for cookies-a[dd]
+      cookie-r[emove] name         Alias for cookies-remove
+      cookies                      Displays the cookies of the request
+      cookies-a[dd] name [value]   Adds a cookie to the request
+      cookies-c[lear]              Alias for cookies-remove-[all]
+      cookies-remove name          Removes from the request the last cookie having a
+                                   particular name
+      cookies-remove-[all]         Removes all cookies from the request
+      cookies-u[se]                Uses cookies offered in the response
+      header-s[et] name value      Alias for headers-s[et]
+      header-u[nset] name          Alias for headers-unset
+      headers-c[lear]              Alias for headers-unset-[all]
+      headers-req[uest]            Displays the headers of the request
+      headers-s[et] name value     Sets a header of the request
+      headers-unset name           Removes a header of the request
+      headers-unset-[all]          Removes all headers from the request
+
+                                  Inspecting Responses
+
+      body[-response]              Displays the body of the response
+      headers[-response]           Displays the headers of the response
+      st[atus]                     Displays the status of the response
+
+                                     Miscellaneous
+
+      e[xit]                       Alias for qui[t]
+      hel[p] [command]             Displays this help table, or help on the
+                                   specified command
+      qui[t]                       Quits htty
+
+As many readers know, I'm a sucker for [embedded humor](http://thechangelog.com/post/322569039/configliere-lightweight-configuration-management-for-rub), so I also got a chuckle from the exit message:
+
+    $ quit
+    *** Happy Trails To You!
+
+
+[[Source on GitHub](http://github.com/htty/htty)]

@@ -1,0 +1,17 @@
+Date: 2010-04-11 08:44:04 GMT
+tumblr_id: 512693979
+categories: github,kennethreitz,python
+github_repo: paulhammond/webkit2png
+title: webkit2png - command line web screenshots
+
+# webkit2png - command line web screenshots
+
+Typekit's Paul Hammond built a great Python application that easily generates screenshots of websites right from the command line. 
+
+Once installed, making a screenshot of a webpage is as simple as:
+
+`webkit2png http://thechangelog.com`
+
+The result: [full](http://static.kennethreitz.com/The+Changelog/webkit2png/thechangelogcom-full.png), [clipped](http://static.kennethreitz.com/The+Changelog/webkit2png/thechangelogcom-clipped.png), and [thumbnail](http://static.kennethreitz.com/The+Changelog/webkit2png/thechangelogcom-thumb.png) PNGs.
+
+[[Project Page](http://www.paulhammond.org/webkit2png/)] [[Source on GitHub](http://github.com/paulhammond/webkit2png)]

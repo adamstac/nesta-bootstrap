@@ -1,0 +1,40 @@
+Date: 2010-09-30 15:12:00 GMT
+tumblr_id: 1215877875
+categories: github,node,node.js,no.de,deployment,git,api,joyent
+github_repo: jsjohnst/no.de
+title: no.de: CLI for Joyent's Node.js hosting
+
+# no.de: CLI for Joyent's Node.js hosting
+
+Joyent's [No.de](https://no.de/) sevice and its [API](https://api.no.de/) look to be an exciting option to host [Node.js](http://nodejs.org) projects. [Jeremy Johnstone](http://github.com/jsjohnst) brings that API to your CLI with his [no.de](http://github.com/jsjohnst/no.de) wrapper.
+
+no.de can be installed via [npm](http://npmjs.org):
+
+    npm install no.de
+
+Next, configure your API credentials:
+
+    $ no.de config --api pengwynn S3CR3T
+    New config options for API have been saved!
+
+Setting up a new no.de instance requires an invite, or coupon. You can check if you've got any available with the `coupons` command.
+
+    $ no.de coupons
+    You have no available coupons! Try requesting one maybe?
+
+D'oh, no soup for us. Let's request one, maybe we'll get lucky:
+
+    $ no.de coupons --request
+    You have already requested a coupon.
+
+I got this message because I had already requested one by showing the API some love, literally: 
+
+    $ curl -k -u pengwynn:S3CR3T https://api.no.de/♥ -X POST
+
+Oh well, if someone at Joyent is reading this, I'd love a coupon.
+
+#### **UPDATE
+
+Thanks so much to [konobi](http://twitter.com/konobi) for hooking me up! 
+
+[[Source on GitHub](http://github.com/jsjohnst/no.de)] [[Joyent's no.de](https://no.de/)]

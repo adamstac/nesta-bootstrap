@@ -1,0 +1,26 @@
+Date: 2010-05-17 14:50:17 GMT
+tumblr_id: 607075727
+categories: github,javascript,testing
+github_repo: marak/Faker.js
+title: Faker.js - Generate fake data in Node.js or in your browser
+
+# Faker.js - Generate fake data in Node.js or in your browser
+
+Inspired by Ruby's [Faker gem](http://faker.rubyforge.org) and Perl's [Data::Faker](http://search.cpan.org/~jasonk/Data-Faker-0.07/lib/Data/Faker.pm), Faker.js lets you create large amounts of fake yet contextual data. Need a fake name for a form or fixture?
+
+    Faker.Name.findName();
+    => "Webster Jakubowski"
+
+What about a zip code?
+
+    Faker.Address.zipCode();
+    => "07555-2886"
+
+Company catchphrase?
+
+    Faker.Company.catchPhrase();
+    => "Multi-channelled reciprocal attitude"
+
+There is a [demo on the project homepage](http://maraksquires.com/Faker.js/) which is also included in the [examples folder](http://github.com/Marak/Faker.js/blob/master/examples/index.html).
+
+[[Source on GitHub](http://github.com/marak/Faker.js)] [[Homepage](http://maraksquires.com/Faker.js/)]

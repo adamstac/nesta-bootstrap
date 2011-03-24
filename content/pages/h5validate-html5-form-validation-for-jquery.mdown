@@ -1,0 +1,30 @@
+Date: 2010-11-10 20:19:21 GMT
+tumblr_id: 1536000767
+categories: github,jquery,html5,validation
+github_repo: dilvie/h5Validate
+title: h5Validate: HTML5 Form Validation for jQuery
+
+# h5Validate: HTML5 Form Validation for jQuery
+
+h5Validate is a jQuery plugin that understands HTML5 forms and knows how to validate them, even in browsers that don't yet support HTML5.
+
+In browsers that do support HTML5, h5Validate adds some much-needed features, such as the ability to customize the user interface when an input fails validation.
+
+For demo and usage, [see the h5Validate homepage](http://ericleads.com/h5validate).
+
+### Jump Start
+
+Copy and paste this at the end of the body on any page with an HTML5 form. If html5 validation rules exist in the form, you're in business!
+
+    <script src="lib/jquery/jquery-1.4.2.min.js"></script>
+    <script src="jquery.h5validate.js"></script>
+
+    <script>
+    $(document).ready(function () {
+        $('form').h5Validate();
+    });
+    </script>
+
+h5Validate is sponsored by Zumba Fitness and Rese Property Management
+
+[[Source on GitHub](https://github.com/dilvie/h5Validate)] [[Homepage & Demo](http://ericleads.com/h5validate/)]

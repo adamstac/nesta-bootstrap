@@ -1,0 +1,64 @@
+Date: 2010-10-03 21:56:24 GMT
+tumblr_id: 1238053750
+categories: github,ruby,queues,background
+github_repo: bradgessler/quebert
+title: quebert: A pluggable worker queue inspired by Beanstalk
+
+# quebert: A pluggable worker queue inspired by Beanstalk
+
+<a href="http://en.wikipedia.org/wiki/Q*bert" style="float: right; margin: 0 0 10px 10px"><img src="http://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Qbert.png/220px-Qbert.png" /></a>
+
+It must be Video Games of the 80s week on The Changelog. First [Asteroids](http://thechangelog.com/post/1206144430/erkie-github-com-mah-pages) then [Space Invaders](http://thechangelog.com/post/1222370200/space-tweet-node-socket-io-mootools-twitter-space-invade), and now [Q*Bert](http://en.wikipedia.org/wiki/Q*bert).
+
+[Quebert](http://github.com/bradgessler/quebert) from [Brad Gessler](http://github.com/bradgessler) aims to improve on [async_observer](http://async-observer.rubyforge.org/) by borrowing ideas from [Resque](http://github.com/defunkt/resque) and [DelayedJob](http://github.com/collectiveidea/delayed_job). Features include support for multiple backends (including Beanstalk), ActiveRecord integration, pluggable exception handling, and daemonization.
+<br style="clear:both"/>
+To create a job in Quebert, just inherit from `Quebert::Job`:
+
+    class WackyMathWizard < Quebert::Job
+      def perform(*nums)
+        nums.inject(0){|sum, n| sum = sum + n}
+      end
+    end
+
+Jobs can be dropped in a queue:
+
+    Quebert.backend.put WackyMathWizard, 1, 2, 3
+
+... or enqueue themselves:
+
+    WackyMathWizard.enqueue 4, 5, 6
+
+Jobs are then run through the familiar `perform` method:
+
+    Quebert.backend.reserve.perform # => 6
+    Quebert.backend.reserve.perform # => 15
+
+#### Async call pattern
+
+If the async call pattern is more your bag, Quebert does that, too. Just include the `AsyncSender` module in your class:
+
+    class Greeter
+      include Quebert::AsyncSender
+
+      def initialize(name)
+        @name = name
+      end
+
+      def sleep_and_greet(time_of_day)
+        sleep 10000 # Sleeping, get it?
+        "Oh! Hi #{name}! Good #{time_of_day}."
+      end
+
+      def self.budweiser_greeting(name)
+        "waaazup #{name}!"
+      end
+    end
+
+You can then call methods asynchronously with `async_send`:
+
+    walmart_greeter = Greeter.new("Brad")
+    walmart_greeter.async_send(:sleep_and_greet, "morning")
+
+Nifty. Be sure and check the [README](http://github.com/bradgessler/quebert#readme) for advance usage including backend configuration.
+
+[[Source on GitHub](http://github.com/bradgessler/quebert)]

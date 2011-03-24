@@ -1,0 +1,15 @@
+Date: 2009-12-08 05:36:00 GMT
+tumblr_id: 274269429
+categories: github,sinatra,ruby,generator
+github_repo: tdreyno/middleman
+title: Middleman: A static site generator with Haml, Sass, Compass + YUI compression and cache busting
+
+# Middleman: A static site generator with Haml, Sass, Compass + YUI compression and cache busting
+
+Written in [Ruby](http://www.ruby-lang.org/en/) - Middleman is built upon [Sinatra](http://www.sinatrarb.com/). In fact, the Middleman `init.rb` is evaluated within a Sinatra context so anything you could do in Sinatra can be done in Middleman. Very nice!!
+
+Middleman watches your template files (Haml, Sass, Erb, Builder, Maruku & Markaby) for changes and provides a development environment for rapid site creation and prototyping. Some important features are layouts, ruby helpers and the integration of the Compass CSS library. Hawt!!
+
+Hat tip: [http://bit.ly/8bWzxO](http://bit.ly/8bWzxO)
+
+[[code on GitHub](http://github.com/tdreyno/middleman)] [[homepage](http://awardwinningfjords.com/2009/10/22/middleman.html)]

@@ -1,0 +1,26 @@
+Date: 2010-08-25 03:46:00 GMT
+tumblr_id: 1006950102
+categories: Extensions,git,github,tools
+github_repo: visionmedia/git-extras
+title: Git Extras: Helpful tools for Git
+
+# Git Extras: Helpful tools for Git
+
+If you've ever been working heavily on a project that uses git, you'd know, that sometimes it's good to have a few extras to help you out, and that's what [TJ Holowaychuk](http://github.com/visionmedia/)'s recent project [git-extras](http://github.com/visionmedia/git-extras) provides!
+
+Currently git-extras includes:
+
+* git summary
+* git changelog
+* git commits-since
+* git count
+* git delete-branch
+* git delete-tag
+* git ignore
+* git release
+* git contrib
+* git repl
+
+Most cover tasks such as counting commit contributions, or viewing commits based on time, others include changelog generation based on commits and quickly adding items to the .git-ignore file. The extras are also quite easy to install, just clone the repository, then `[sudo] make install`.
+
+[[source on github](http://github.com/visionmedia/git-extras)]

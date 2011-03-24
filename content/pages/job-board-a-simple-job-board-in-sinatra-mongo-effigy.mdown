@@ -1,0 +1,13 @@
+Date: 2010-01-14 05:52:00 GMT
+tumblr_id: 333661680
+categories: github,ruby,sinatra,jobboard,jobs
+github_repo: dancroak/job-board
+title: job-board: A simple job board in Sinatra/Mongo/Effigy
+
+# job-board: A simple job board in Sinatra/Mongo/Effigy
+
+No readme on this one and the details are in the short description...BUT you know we love [Ruby](http://www.ruby-lang.org/) AND [Sinatra](http://www.sinatrarb.com/). I have (^AS) high hopes for this.
+
+If you get a chance to pull the code and take a peek leave a comment on what you think!
+
+[[Source on GitHub](http://github.com/dancroak/job-board)]

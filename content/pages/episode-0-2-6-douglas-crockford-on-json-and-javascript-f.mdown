@@ -1,0 +1,21 @@
+Date: 2010-06-08 15:07:00 GMT
+tumblr_id: 676820023
+categories: audio,conferences,html5,javascript,json,txjs,episode
+title: Episode 0.2.6 - Douglas Crockford on JSON and JavaScript from TXJS
+
+# Episode 0.2.6 - Douglas Crockford on JSON and JavaScript from TXJS
+
+While at [TXJS](http://www.texasjavascript.com/), Adam and Wynn caught up with [Douglas Crockford](http://javascript.crockford.com/), author of both [JavaScript: The Good Parts](http://www.amazon.com/exec/obidos/ASIN/0596517742/wrrrldwideweb) and the [JSON spec](http://json.org), and a global namespace unto himself.
+
+[Download MP3](http://www.buzzsprout.com/105/5556-episode-0-2-6-douglas-crockford-on-json-and-javascript-from-txjs.mp3)
+
+Items mentioned in the show:
+
+* [JSON](http://json.org) - (JavaScript Object Notation) is a lightweight data-interchange format, easy for humans to read and write.
+* [The JSON Saga](http://developer.yahoo.com/yui/theater/video.php?v=crockford-json) - how JSON came about
+* [JSON.parse, JSON.stringify](https://developer.mozilla.org/en/Using_native_JSON) - Parse and and generate JSON in a standard way
+* [YAML](http://www.yaml.org/) - YAML Ain't Markup Language
+* Douglas says we should scrap [HTML5](http://dev.w3.org/html5/spec/Overview.html) and start over and address [XSS](http://en.wikipedia.org/wiki/Cross-site_scripting) instead
+* [ECMAScript 5](http://en.wikipedia.org/wiki/ECMAScript) - Version 5 of the international JavaScript standard
+* [JSONP](http://en.wikipedia.org/wiki/JSON#JSONP) - Current hack to do XSS with JSON
+* [The JSON logo](http://www.json.org/img/json160.gif)

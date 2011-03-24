@@ -1,0 +1,54 @@
+Date: 2010-09-30 21:26:13 GMT
+tumblr_id: 1217510580
+categories: REST,api,bash,github,python,zsh,json
+github_repo: micha/resty
+title: resty: Piping hot REST client for bash or zsh
+
+# resty: Piping hot REST client for bash or zsh
+
+I [love REST APIs](http://blog.programmableweb.com/2010/09/28/wynn-netherland-ruby-mashup-devs-best-friend/), so I'm always looking for new tools for the toolbox. [Resty](http://github.com/micha/resty) from [Micha Niskin](http://github.com/micha) caught my eye because it can be loaded into your bash or zsh. To install, just download [the script](http://github.com/micha/resty/raw/master/resty) and `source` it.
+
+    $ curl http://github.com/micha/resty/raw/master/resty > resty
+    $ . resty
+
+Now your shell is loaded up with the Resty commands. First, set an API endpoint, like [GitHub](http://github.com):
+
+    $ resty http://github.com
+    http://github.com*
+
+Now we can make any normal `GET`, `POST`, `PUT`, or `DELETE` as you would expect.
+
+    GET /pengwynn.json
+
+For formatted output, pipe it to pretty print:
+
+    GET /pengwynn.json | pp
+
+... or save to a file
+
+    GET /pengwynn.json > me.json
+
+#### REST on the Couch
+
+Resty is perfect for [CouchDB](http://couchdb.apache.org/). Just set your endpoint
+
+    resty http://127.0.0.1:5984
+    
+... and you're ready to create datbases
+
+    PUT /test '{}'
+
+... and stash documents.
+
+    PUT /test/me < me.json
+
+#### cURL-ing
+
+Since Resty sits on top cURL, any additional options after the required path will be passed along to cURL:
+
+    resty http://github.com/api/v2/json
+    GET /repos/show/pengwynn -u pengwynn:0U812
+
+Be sure to check out [Jan-Piet Mens' introductory screencast](http://blog.fupps.com/2010/04/26/resty/) or the [README](http://github.com/micha/resty#readme) for advanced usage.
+
+[[Source on GitHub](http://github.com/micha/resty)] [[Screencast](http://blog.fupps.com/2010/04/26/resty/)]

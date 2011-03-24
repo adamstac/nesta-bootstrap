@@ -1,0 +1,11 @@
+Date: 2010-04-27 16:02:00 GMT
+tumblr_id: 553658946
+categories: github,nodejs,modules
+github_repo: kriszyp/nodules
+title: Nodules - module loader for Node with automated dependency resolution and module reloading
+
+# Nodules - module loader for Node with automated dependency resolution and module reloading
+
+While the world of nodejs has been busily been working on competing package managers to be the rubygems of the node world, Kris Zyp has quietly come up a novel approach.  He overloads the require statement to do automatic downloading, caching and dependency resolution of modules based on urls, not a central repository.  This decentralized approach means that anyone can use the package management features without registering the modules with a repository somewhere.  Also it packs useful features like hot reloading of local modules and grouping of module aliases into packages.
+
+[[Source on GitHub](http://github.com/kriszyp/nodules)]

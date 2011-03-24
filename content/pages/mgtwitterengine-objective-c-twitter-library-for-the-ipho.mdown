@@ -1,0 +1,21 @@
+Date: 2010-03-27 20:37:58 GMT
+tumblr_id: 477601710
+categories: apis,appcelerator,iphone,obj-c,twitter,github
+github_repo: mattgemmell/MGTwitterEngine
+title: MGTwitterEngine - Objective-C Twitter library for the iPhone
+
+# MGTwitterEngine - Objective-C Twitter library for the iPhone
+
+If you need to integrate Twitter into your iPhone app or build your own Twitter client, you might check out [MGTwitterEngine](http://github.com/mattgemmell/MGTwitterEngine) from [Matt Gemmell](http://github.com/mattgemmell). MGTwitterEngine consumes the Twitter XML API and supports both NSXMLParser and [libxml](http://xmlsoft.org/).
+
+When building your controller, the library supports a few callbacks:
+
+    - (void)requestSucceeded:(NSString *)requestIdentifier;
+    - (void)requestFailed:(NSString *)requestIdentifier withError:(NSError *)error;
+    - (void)statusesReceived:(NSArray *)statuses forRequest:(NSString *)identifier;
+    - (void)directMessagesReceived:(NSArray *)messages forRequest:(NSString *)identifier;
+    - (void)userInfoReceived:(NSArray *)userInfo forRequest:(NSString *)identifier;
+
+If Obj-C is a bit too low-level for you, take a look at [Appcelerator Titanium Mobile](http://www.appcelerator.com/products/titanium-mobile-application-development/) which has an easy JavaScript API that includes network API support. If you missed it, also be sure to check out [Episode 0.0.8](http://bit.ly/tcl-0-0-8) with [Marshall Culpepper](http://twitter.com/marshall_law).
+
+[[Source on GitHub](http://github.com/mattgemmell/MGTwitterEngine)] [[Matt's blog post](http://mattgemmell.com/2008/02/22/mgtwitterengine-twitter-from-cocoa)]

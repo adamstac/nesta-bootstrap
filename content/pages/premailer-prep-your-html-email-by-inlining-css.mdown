@@ -1,0 +1,42 @@
+Date: 2010-04-02 13:55:03 GMT
+tumblr_id: 491230460
+categories: github,email,ruby,design,css,scripts
+github_repo: alexdunae/premailer
+title: Premailer - prep your HTML email by inlining CSS
+
+# Premailer - prep your HTML email by inlining CSS
+
+At what must be the nexus of the open source universe, we're posting a cool project from [Alex Dunae](http://twitter.com/theCHANGELOG) aka [theCHANGELOG](http://twitter.com/theCHANGELOG). [Premailer](http://github.com/alexdunae/premailer/) is a Ruby library to help you prep your HTML email templates for better viewing in most web clients by:
+
+* making all your CSS inline
+* changing relative links to absolute links
+* moving any CSS pseudo-classes (like :hover) to the `<head>`
+* checking your HTML and CSS for compatibiliy with e-mail programs
+* creating a plain-text version of your message
+
+To use:
+
+    sudo gem install premailer
+
+and then
+
+    premailer = Premailer.new('http://example.com/myfile.html', :warn_level => Premailer::Warnings::SAFE)
+
+    # Write the HTML output
+    fout = File.open("output.html", "w")
+    fout.puts premailer.to_inline_css
+    fout.close
+
+    # Write the plain-text output
+    fout = File.open("ouput.txt", "w")
+    fout.puts premailer.to_plain_text
+    fout.close
+
+    # Output any CSS warnings
+    premailer.warnings.each do |w|
+      puts "#{w[:message]} (#{w[:level]}) may not render properly in #{w[:clients]}"
+    end
+
+For the terminally challenged there's also a nifty [web interface](http://premailer.dialect.ca/)
+
+[[Source on GitHub](http://github.com/alexdunae/premailer/)] [[Home page](http://premailer.dialect.ca/)] 

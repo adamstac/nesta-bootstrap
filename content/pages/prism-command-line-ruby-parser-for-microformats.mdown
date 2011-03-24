@@ -1,0 +1,46 @@
+Date: 2010-03-08 03:45:55 GMT
+tumblr_id: 433846929
+categories: github,ruby,microformats,dsl,scraping,cli
+github_repo: mwunsch/prism
+title: Prism - command line and Ruby library parser for Microformats
+
+# Prism - command line and Ruby library parser for Microformats
+
+Prism from [Mark Wunsch](http://github.com/mwunsch) is a cool Ruby library and command line tool for parsing [Microformats](http://microformats.org). It even supports vCard export:
+
+    twitter_contacts = Prism.find 'http://twitter.com/markwunsch', :hcard
+    me = twitter_contacts.first
+    me.fn
+    #=> "Mark Wunsch"
+    me.n.family_name
+    #=> "Wunsch"
+    me.url
+    #=> "http://markwunsch.com/"
+    File.open('mark.vcf','w') {|f| f.write me.to_vcard }
+    ## Add me to your address book!
+
+Or if the command line is your bag:
+
+    $: prism --hcard http://markwunsch.com > ~/Desktop/me.vcf
+
+or using STDIN and cURL:
+
+    $: curl http://markwunsch.com | prism --hcard > ~/Desktop/me.vcf
+
+Prism also includes a DSL for parsing your own [POSH](http://microformats.org/wiki/posh) formats:
+
+    class Navigation < Prism::POSH::Base
+        search {|document| document.css('ul#navigation') }
+        # Search a Nokogiri document for nodes of a certain type
+
+        validate {|node| node.matches?('ul#navigation') }
+        # Validate that a node is the right element we want
+
+        has_many :items do
+            search {|doc| doc.css('li') }
+        end
+        # has_many and has_one define properties, which themselves inherit from
+        # Prism::POSH::Base, so you can do :has_one, :has_many, :search, :extract, etc.
+    end
+
+[[Source on GitHub](http://github.com/mwunsch/prism)] [[Docs](http://rdoc.info/projects/mwunsch/prism)] [[Mark Wunsch on Twitter](http://twitter.com/markwunsch)]

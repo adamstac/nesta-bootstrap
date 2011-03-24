@@ -1,0 +1,40 @@
+Date: 2010-12-16 15:26:00 GMT
+tumblr_id: 2336985491
+categories: github,rails,ruby
+github_repo: sferik/rails_admin
+title: RailsAdmin - Rails 3 engine to view your data
+
+# RailsAdmin - Rails 3 engine to view your data
+
+I am super pumped about [RailsAdmin](https://github.com/sferik/rails_admin). It's a [Ruby Summer of Code project](http://www.rubysoc.org/projects) by [Bogdan Gaza](http://github.com/hurrycane). But apparently not just him, as he tweeted:
+
+![hurrycane tweet](http://imgur.com/08I6d.png)
+
+So what's it do? Let's let a screenshot do the talking:
+
+![rails admin](http://imgur.com/ojX0x.png)
+
+Yep. Super simple access to view, edit and search all of the models in your Rails 3 application. It's incredibly easy to install, put this in your Gemfile:
+
+    gem 'devise' # Devise must be required before RailsAdmin
+    gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
+
+and then run this:
+
+    $ bundle install
+    $ rails generate rails_admin:install_admin
+
+Hitting `http://localhost:3000/admin` will take you to the panel, after you `rails server`, of course. RailsAdmin uses the standard 'config method that takes a block' pattern to configure itself.
+
+    RailsAdmin.config do |config|
+      config.model Team do
+        list do
+          field :name
+          field :created_at
+        end
+      end
+    end
+
+There are approximately 1 zillion options, too. You can check them all out in the project's [README](https://github.com/sferik/rails_admin/blob/master/README.mkd) file.
+
+[[Source on GitHub](https://github.com/sferik/rails_admin)] [[Readme](https://github.com/sferik/rails_admin/blob/master/README.mkd)] [[A presentation on Slidshare](http://www.slideshare.net/hurrycane/railsadmin)]

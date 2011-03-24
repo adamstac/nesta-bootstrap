@@ -1,0 +1,20 @@
+Date: 2010-08-11 19:08:46 GMT
+tumblr_id: 938211029
+categories: github,html5,web,bootstrap,templates,modernizr,css3,mobile
+github_repo: paulirish/html5-boilerplate
+title: html5-boilerplate: Best practices starting point project for HTML5 and mobile web apps
+
+# html5-boilerplate: Best practices starting point project for HTML5 and mobile web apps
+
+While HTML5 is [expanding in definition to include any whizz-bang feature in the post rounded corner web era](http://jeffcroft.com/blog/2010/aug/02/term-html5/), implementing actual HTML5 in your web app can be confusing. It's a fast moving landscape that touches everything from traditional web apps to mobile.
+
+[Paul Irish](http://paulirish.com), the Google Chrome dev relations guy who gave us the [bulletproof syntax](http://paulirish.com/2009/bulletproof-font-face-implementation-syntax/) for [@font-face](http://thechangelog.com/tagged/typography), brings us his [HTML5 Boilerplate](http://github.com/paulirish/html5-boilerplate) a great tutorial/starting point for implementing a number of best practices in your desktop and mobile web applications including
+
+  * HTML5 `<!doctype>` and CSS reset
+  * Handheld stylesheets
+  * CSS media queries for advanced mobile device targeting (even portrait or landscape layouts)
+  * Paul's [Modernizr](http://www.modernizr.com/) script for detecting device capabilities such as `Modernizr.video.ogg`
+  
+The current version is heavily documented. Paul promises a more slim, production ready version soon.
+
+[[Source on GitHub](http://github.com/paulirish/html5-boilerplate)]

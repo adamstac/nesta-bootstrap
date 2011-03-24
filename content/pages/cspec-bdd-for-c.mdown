@@ -1,0 +1,29 @@
+Date: 2009-12-03 20:17:14 GMT
+tumblr_id: 268009308
+categories: github,c,testing,bdd
+github_repo: visionmedia/cspec
+title: CSpec - BDD with C
+
+# CSpec - BDD with C
+
+Very nice, readable syntax from CSpec that alllows you to do behavior driven development with C.
+
+    #include "cspec.h"
+
+    static int nbefore_each;
+
+    describe "CSpec before_each"
+      before_each
+        ++nbefore_each;
+      end
+
+      it "should be called before each spec"
+        nbefore_each should equal 1
+      end
+
+      it "should be called before each spec"
+       nbefore_each should equal 2
+      end
+    end
+
+[[Source on GitHub](http://github.com/visionmedia/cspec)]

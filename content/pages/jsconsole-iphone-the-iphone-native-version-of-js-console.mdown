@@ -1,0 +1,26 @@
+Date: 2010-09-26 04:22:18 GMT
+tumblr_id: 1189366882
+categories: github,iphone,iPad,javascript,mobile,iOS,websockets
+github_repo: remy/jsconsole-iphone
+title: jsconsole: JavaScript console now on the iPhone, iPad
+
+# jsconsole: JavaScript console now on the iPhone, iPad
+
+[![jsconsole](http://cl.ly/5bf8df22677adc7f37c1/content)](http://jsconsole.com)
+
+[JSConsole](http://jsconsole.com/) from [Remy Sharp](http://remysharp.com/) is a great way to play with JavaScript in the browser, especially during live coding sessions. 
+
+Just like Firebug or the WebKit JavaScript consoles, simply type an expression and JSConsole will evaluate it:
+
+    Math.floor(-3.15)
+    > -4
+
+JSConsole also serves up permalinks for each command: [http://jsconsole.com/?Math.floor(-3.15)](http://jsconsole.com/?Math.floor(-3.15)). You can even load external JavaScript libraries with a single command:
+
+    :load jquery
+
+Remy has now ported the console to mobile devices using [PhoneGap](http://www.phonegap.com/), complete with [Websockets](http://thechangelog.com/post/927103350/episode-0-3-1-websockets) support.
+
+[![Screenshot of jsconsole on iPhone](http://cl.ly/5f5e82e057f123d6ae73/content)](http://github.com/remy/jsconsole-iphone)
+
+[[JSConsole on GitHub](http://github.com/remy/jsconsole)][[JSConsole for iOS on GitHub](http://github.com/remy/jsconsole-iphone)]

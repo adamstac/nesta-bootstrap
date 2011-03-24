@@ -1,0 +1,7 @@
+# Marking up your pages
+
+Making a new web page in Nesta is extremely easy, and the text behind this very page is about as simple as it gets. It's just plain text. Have a look at `content-demo/pages/marking-up-pages.mdown`.
+
+If you opened the file you may now be wondering where the links to the Markdown, Textile and Haml pages (that you should be able to see in your browser if you scroll down a bit) came from. It's quite simple really; they're just pages that have been assigned to the "Marking up your pages" category. Nesta is aware of this, and the theme you're using has chosen to link to them beneath these opening paragraphs of text.
+
+If you look carefully, you'll also notice that the articles (i.e. pages with dates) that have been assigned to this page are listed in a separate section to plain web pages. You can customize this behaviour by copying a default template and tweaking a couple of lines of Ruby, but this isn't the place to get into that (but do [check the docs](http://effectif.com/nesta/design)).

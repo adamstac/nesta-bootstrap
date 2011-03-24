@@ -1,0 +1,14 @@
+Date: 2010-04-21 16:53:42 GMT
+tumblr_id: 538581764
+categories: github,nodejs,haxe
+github_repo: blackdog66/hxNode
+title: hxNode - Node.js wrapper for haxe
+
+# hxNode - Node.js wrapper for haxe
+
+What do you get when you combine the two very cool projects node.js and the haxe language?  You get awesome!  Blackdog is at it again extending the haxe project to be able to target more languages with Haxe.  The language already compiles to browser javascript, flash bytecode, neko bytecode, PHP, and C++.  Now he's made a modified version of the JavaScript target that wraps the node.js apis.
+
+If you love having a strongly typed system with AS3 like syntax and ocaml-like semantics, then Haxe is for you.  Now you can write servers using the amazing event-based performance of node in it.
+
+The wrapper is still under development, but it already wraps parts of the core node api directly and has a partial abstraction API to match the other existing haxe apis.  Maybe node will be the key to helping haxe become widely used beyond flash.
+

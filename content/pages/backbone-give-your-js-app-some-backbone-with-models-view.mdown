@@ -1,0 +1,32 @@
+Date: 2010-10-13 17:22:00 GMT
+tumblr_id: 1306791328
+categories: github,javascript,mvc,framework
+github_repo: documentcloud/backbone
+title: backbone: Give your JS App some Backbone with Models, Views, Collections, and Events
+
+# backbone: Give your JS App some Backbone with Models, Views, Collections, and Events
+
+Earlier today, [Jeremy Ashkenas](http://github.com/documentcloud/backbone) from [Document Cloud](http://github.com/documentcloud) released yet another open source project from them. This time, it's a library that gives you a spine to develop your JavaScript-heavy applications on top of, naturally, it would have to be called [Backbone.js](http://github.com/documentcloud/backbone).
+
+Backbone provides you with models, collections, and views &ndash; the core principles of Model-View-Controller development &ndash; for your JavaScript applications. As for synchronising the data between the client-side and server-side? Well Backbone has a neck for that too, a simple RESTful JSON interface connector. An example of a Backbone model and collection looks something like the following:
+
+    var book = new Backbone.Model({
+      id     : '1-the-tempest',
+      title  : "The Tempest",
+      author : "Bill Shakespeare",
+      length : 123
+    });
+
+    var Collection = Backbone.Collection.extend({
+      url: function() { return '/collection'; }
+    });
+
+    var library = new Collection();
+    library.add(book);
+
+This library also hooks into [jQuery](http://jquery.com) for some aspects of it, which could be a winning point, considering all the [talk of MVC for jQuery](http://blog.rebeccamurphey.com/on-jquery-large-applications). For those concerned about the size of your JavaScript, fear not, as the production version of Backbone weighs in at a tiny 2kb.
+
+If you're developing a JavaScript-heavy application, Backbone.js definitely gives you something to stand on.
+
+
+[[Source on GitHub](http://github.com/documentcloud/backbone)] [[Documentation](http://documentcloud.github.com/backbone/)]

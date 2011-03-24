@@ -1,0 +1,43 @@
+Date: 2010-09-22 17:11:11 GMT
+tumblr_id: 1167855730
+categories: WatchWednesday,css,javascript,devops,node.js,node
+title: WatchWednesday for 20100922
+
+# WatchWednesday for 20100922
+
+We're bringing back [#FollowFriday](http://mashable.com/2009/03/06/twitter-followfriday/), but for [GitHub](http://github.com). On Friday, we'll kick off our #FollowFriday series and showcase GitHub users you should follow.
+
+But it's *Wednesday*, you say. That's right, we're riffing on #FollowFriday and introducing #WatchWednesday - a quick list of projects you may have overlooked, aren't ready for primetime, or otherwise noteworthy.
+
+Got suggestions for projects or people to watch and follow on GitHub? [Tweet us](http://twitter.com/changelogshow) and let us know.
+
+#### [Close Pixelate](http://github.com/desandro/close-pixelate)
+
+> Inspired by American portrait painter Chuck Close, this script converts an image into a pixelated version using an HTML5 canvas element. 
+
+  ![original](http://cl.ly/adf50a21b1957e12941e/content) ![pixelated](http://cl.ly/b08ae2066ebec8dbb708/content)
+  
+
+#### [CSS3 Buttons](http://github.com/ubuwaits/css3-buttons)
+
+>  collection of buttons that show what is possible using CSS3.
+
+  ![buttons screen shot](http://cl.ly/9ee0c64b7c7a2e74c5b3/content)
+
+#### [Sous-chef](http://github.com/jackhq/sous-chef)
+
+> A simple chef cookbook repository that can get you cooking locally with [chef](http://www.opscode.com/chef) from [opscode](http://www.opscode.com/).
+
+
+#### [node-supermarket](http://github.com/pkrumins/node-supermarket)
+
+> A key/value store based on sqlite for node.js that actually works.
+
+    Store('users.db', function (err, db) {
+        db.set('pkrumins', 'cool dude', function (error) {
+            // value 'pkrumins' is now set to 'cool dude'
+            db.get('pkrumins', function (error, value, key) {
+                console.log(value); // cool dude
+            });
+        });
+    });

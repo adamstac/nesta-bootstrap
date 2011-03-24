@@ -1,0 +1,27 @@
+Date: 2010-10-06 02:12:00 GMT
+tumblr_id: 1253059801
+categories: github,bash,linux,unix,osx
+github_repo: revans/bash-it
+title: bash-it: A community bash framework in the spirit of oh-my-zsh
+
+# bash-it: A community bash framework in the spirit of oh-my-zsh
+
+[Robby Russell](http://github.com/robbyrussell)'s [zsh](http://www.zsh.org/) framework indeed made us say [oh-my-zsh!](http://github.com/robbyrussell/oh-my-zsh). With over forty themes and a dozen plugins, oh-my-zsh makes it easy to pimp your zsh.
+
+If you're perfectly happy with bash and things like right side prompts, smart tab completions, and shared session history aren't your bag, then check out [bash-it](http://github.com/revans/bash-it) from [Robert Evans](http://github.com/revans). Like oh-my-zsh, bash-it provides a community framework for pimping your shell using [themes](http://github.com/revans/bash-it/tree/master/themes/) and [plugins](http://github.com/revans/bash-it/tree/master/plugins/).
+
+To install, clone the repo:
+
+	git clone http://github.com/revans/bash-it.git
+
+Be sure and backup your current `.bash_profile`:
+
+	cp ~/.bash_profile ~/.bash_profile.bak
+
+... and then start with bash-it's default profile template.
+
+	cp <path/to/cloned/repo>/template/bash_profile.template.bash ~/.bash_profile
+	
+Current plugins provide extra goodies for git, rails, and common aliases. Mercurial support is on the way. Got ideas? Well get to [forkin'](http://github.com/revans/bash-it#fork_box) and send a pull request already.
+
+[[Source on GitHub](http://github.com/revans/bash-it)]

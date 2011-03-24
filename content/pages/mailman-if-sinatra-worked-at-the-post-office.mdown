@@ -1,0 +1,39 @@
+Date: 2010-07-28 15:07:18 GMT
+tumblr_id: 871001431
+categories: github,email,sinatra,ruby,gems
+github_repo: titanous/mailman
+title: Mailman: If Sinatra worked at the post office
+
+# Mailman: If Sinatra worked at the post office
+
+
+As part of the [Ruby Summer of Code](http://rubysoc.org/), [Jonathan Rudenberg](http://twitter.com/titanous) has released [Mailman](http://github.com/titanous/mailman). Mailman aims to provide the classy [Sinatra](http://www.sinatrarb.com/) declarative style for handling incoming mail:
+
+Mailman is a [Ruby gem](http://rubygems.org) so it's easy to install:
+
+    sudo gem install mailman
+    
+Then you're ready to start handling some mail:
+
+    require 'mailman'
+
+    Mailman.config.maildir = '~/Maildir'
+
+    Mailman::Application.run do
+      to 'ticket-%id%@vipsupport.com' do 
+        Ticket.find(params[:id]).add_reply(message)
+      end
+      
+      from('%user%@example.org').subject(/RE: (.*)/) do
+        params[:user] #=> 'chunkybacon'
+        # it is an indifferent hash, so you can use strings and symbols
+        # interchangeably as keys
+        params['captures'][0] #=> 'A very important message about pigs'
+      end
+    end
+    
+Simple and classy.
+
+The comments on [Jonathan's original blog post](http://blog.titanous.com/post/867488976/mailman-released) suggested he change the name to something more Googleable. Jonathan, if you're open to suggestions, might we suggest [KarlMalone](http://en.wikipedia.org/wiki/Karl_Malone)?
+
+[[Source on GitHub]](http://github.com/titanous/mailman)

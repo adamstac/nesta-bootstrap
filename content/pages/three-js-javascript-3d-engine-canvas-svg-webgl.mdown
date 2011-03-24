@@ -1,0 +1,20 @@
+Date: 2010-09-20 15:35:00 GMT
+tumblr_id: 1156250994
+categories: github,javascript,3d,canvas,svg,graphics
+github_repo: mrdoob/three.js
+title: three.js: Javascript 3D Engine for canvas, svg, and WebGL
+
+# three.js: Javascript 3D Engine for canvas, svg, and WebGL
+
+It's a great time to be a JavaScript developer. We've seen an explosion of innovation [on the server](http://thechangelog.com/search/node), and technologies like `<canvas>`, `<svg>`, and WebGL open up exciting new possibilities in the browser.
+
+[Three.js](http://github.com/mrdoob/three.js) from [Mr.doob](http://mrdoob.com/) is a lightweight 3D engine aiming for just enough abstraction over these new browser features to make it easy to render compelling 3D scenes using JavaScript. With patches from [Nicolas Garcia Belmonte](http://github.com/philogb), r17 adds basic WebGL lighting support including `Light`, `AmbientLight`, and `DirectionalLight`.
+
+Check the [README](http://github.com/mrdoob/three.js#readme) for usage and amazing demos including [this one](http://capped.tv/xplsv-or_so_they_say%7Chq):
+
+<video class="sublime" id="vidobj" width="500" height="281" poster="http://capped.tv/jpg/xplsv-or_so_they_say.jpg" preload="none" controls="controls"> 
+<source src="http://cdn.capped.tv/vhq/xplsv-or_so_they_say.mp4" type='video/mp4; codecs="avc1.64001E, mp4a.40.2"' /> 
+<object width="450" height="254"><param name="movie" value="http://capped.micksam7.com/play.swf?vid=xplsv-or_so_they_say|lq" /><param name="wmode" value="direct" /><param name="allowFullScreen" value="true" /><param name="bgcolor" value="#000000" /><embed src="http://capped.micksam7.com/play.swf?vid=xplsv-or_so_they_say|lq" wmode="direct" bgcolor="#000000" allowFullScreen="true" width="450" height="254" type="application/x-shockwave-flash"></embed></object>
+</video>
+
+[[Source on GitHub](http://github.com/mrdoob/three.js)] [[Demos](http://github.com/mrdoob/three.js#readme)]

@@ -1,0 +1,50 @@
+Date: 2010-08-11 03:45:00 GMT
+tumblr_id: 935222780
+categories: github,compass,sass,css,sprites,performance,tools
+github_repo: hagenburger/lemonade
+title: Lemonade - Generates sprites on the fly with Compass and Sass
+
+# Lemonade - Generates sprites on the fly with Compass and Sass
+
+One of the best ways to optimize your stylesheets and improve your site performance is to use [CSS sprites](http://www.alistapart.com/articles/sprites). A CSS sprite is the technique of stitching together many images into a larger image and managing the placement using CSS background positioning. The upside is you save many network calls for your image assets. The downside is the complexity of creating the sprite.
+
+Enter [Lemonade](http://github.com/hagenburger/lemonade) from [Nico Hagenburger](http://twitter.com/hagenburger). Lemonade is a [Compass](http://compass-style.org) plugin that creates CSS sprites on-the-fly without Photoshop or ImageMagick.
+
+To install, just install the gem:
+
+    sudo gem install lemonade
+    
+and then add the plugin to your Compass config:
+
+    # in config.rb
+    require 'lemonade'
+    
+You're then all set to start creating sprites in your Sass:
+
+    .logo {
+      background: sprite-image("lemonade/lemonade-logo.png");
+    }
+    .lime {
+      background: sprite-image("lemonade/lime.png");
+    }
+    .coffee {
+      background: sprite-image("other-drinks/coffee.png") no-repeat;
+    }
+    
+which yields
+
+    .logo {
+      background: url('/images/lemonade.png');
+    }
+    .lime {
+      background: url('/images/lemonade.png') 0 -26px;
+    }
+    .coffee {
+      background: url('/images/other-drinks.png') no-repeat;
+    }
+    
+Nifty. Check out some advanced features on Nico's [blog post](http://www.hagenburger.net/BLOG/Lemonade-CSS-Sprites-for-Sass-Compass.html). 
+
+Technically, a better name might have been [Lymon](http://wynn.fm/lymon)ade, but this project is refreshing just the same.
+
+[[Source on GitHub](http://github.com/hagenburger/lemonade)]

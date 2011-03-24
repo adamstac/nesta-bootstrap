@@ -1,0 +1,15 @@
+Date: 2010-07-22 17:54:22 GMT
+tumblr_id: 845912225
+categories: github,rails,issue-tracking,ruby,releases
+github_repo: edavis10/redmine
+title: Redmine releases 1.0 Release Candidate
+
+# Redmine releases 1.0 Release Candidate
+
+After four years of tireless work, the [Redmine](http://www.redmine.org) team has released a 1.0 Release Candidate version of the feature rich Rails-based issue tracker. 
+
+New in this release is a long-awaited [REST API for issues](http://www.redmine.org/issues/1214) and a [ton of other features and bug fixes](http://www.redmine.org/versions/show/14).
+
+Congrats to Jean-Phillipe Lang, Eric Davis and everyone involved!
+
+[[Mirror on GitHub]](http://github.com/edavis10/redmine) [[Homepage]](http://www.redmine.org)

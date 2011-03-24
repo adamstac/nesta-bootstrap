@@ -1,0 +1,30 @@
+Date: 2010-08-14 04:45:22 GMT
+tumblr_id: 950796609
+categories: github,ruby,twitter,social,web
+github_repo: intridea/tweet-button
+title: tweet-button: Easy Twitter Tweet Buttons for your Rails apps
+
+# tweet-button: Easy Twitter Tweet Buttons for your Rails apps
+
+Nobody does 0day gems like [Intridea](http://intridea.com). First they released  [OAuth2](http://thechangelog.com/post/543459572/oauth2-ruby-wrapper-for-oauth-2-0) the same day Facebook announced their plans for it. This week, they created [tweet-button](http://github.com/intridea/tweet-button) the same day Twitter unveiled their new [official tweet button](http://twitter.com/goodies/tweetbutton).
+
+[Tweet button](http://github.com/intridea/tweet-button) is a simple helper to provide a nice Ruby interface for adding the button to your page:
+
+    = tweet_button :via => "changelogshow", :url => "http://wynn.fm/twbtns", :text => "This is so meta!"
+    
+which will yield
+
+<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://wynn.fm/twbtns" data-text="This is so meta!" data-count="horizontal" data-via="changelogshow">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
+Configurable options include:
+
+* `:url` - The URL to share; the default is the current URL.
+* `:text` - The text that will appear in the tweet; the default is "Check this out!"
+* `:via` - The attribution. Defaults to "tweetbutton", but you should change that.
+* `:lang` - Set the language for the tweet (no default).
+* `:related` - Related Twitter accounts (no default).
+* `:count` - The tweet count box position (values can be "none", "horizontal", or "vertical"; default is "vertical").
+
+Check the [README](http://github.com/intridea/tweet-button#readme) for advanced features.
+
+[[Source on GitHub](http://github.com/intridea/tweet-button)]

@@ -1,0 +1,22 @@
+Date: 2010-03-29 14:00:00 GMT
+tumblr_id: 481707677
+categories: github,javascript,json,jsonquery,awk,apis
+github_repo: micha/jsawk
+title: jsawk - Powerful JSON querying on SpiderMonkey
+
+# jsawk - Powerful JSON querying on SpiderMonkey
+
+As JSON becomes the _lingua franca_ of web-based APIs, you might find yourself needing a way to query large chunks of data in JSON format. 
+
+[jsawk](http://github.com/micha/jsawk) from [Micha Niskin](http://github.com/micha) provides [awk](http://www.manpagez.com/man/1/awk/)-like functionality:
+
+    cat /data/athletes | jsawk 'this.sports = this.sports.join(",")'
+
+In this example, we read the contents of a JSON file and pipe it into jsawk and concatenate the array of sports into a delimited string.
+
+jsawk also supports the popular [JSONQuery](http://docs.persvr.org/documentation/jsonquery) syntax with the `-q` option.
+
+Be sure to check out full installation instructions and extensive examples in the [README](http://github.com/micha/jsawk#readme).
+
+[[Source on GitHub](http://github.com/micha/jsawk)]
+

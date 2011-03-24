@@ -1,0 +1,12 @@
+Date: 2010-04-23 20:15:00 GMT
+tumblr_id: 543783561
+categories: nosql,smackdown,video,couchdb,cassandra,mongodb
+title: Video: NoSQL Smackdown Part 4
+
+# Video: NoSQL Smackdown Part 4
+
+The last of our [NoSQL Smackdown series](http://thechangelog.com/post/457259567/episode-0-1-8-nosql-smackdown)  features CouchDB contributor [J Chris Anderson](http://twitter.com/jchris) tagging in for [Jan](http://twitter.com/janl) to talk about what makes CouchDB development so cool.
+
+<embed src="http://blip.tv/play/hbxigdjENgA%2Em4v" type="application/x-shockwave-flash" width="500" height="281" allowscriptaccess="always" allowfullscreen="true"></embed>
+
+[[Download](http://blip.tv/file/get/Thechangelog-NoSQLSmackdownPart4143.m4v)] [[iPhone version](http://blip.tv/file/get/Thechangelog-NoSQLSmackdownPart4787.m4v)]

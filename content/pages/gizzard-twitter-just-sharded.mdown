@@ -1,0 +1,21 @@
+Date: 2010-04-07 03:11:09 GMT
+tumblr_id: 502232871
+categories: github,data,sharding,scaling,twitter
+github_repo: twitter/gizzard
+title: Gizzard - Twitter just sharded
+
+# Gizzard - Twitter just sharded
+
+[<img src="http://github.com/twitter/gizzard/raw/master/doc//middleware.png?raw=true" />](http://github.com/twitter/gizzard)
+
+Database sharding, or [shared nothing partitioning](http://www.codefutures.com/database-sharding/) is a technique that helps sites with massive amounts of data scale. Usually sharding is built into the database technology, either RDBMS or NoSQL. Twitter has released Gizzard, a middleware networking service that allows you to shard data across _arbitrary backend datastores_.
+
+> The partitioning rules are stored in a forwarding table that maps key ranges to partitions. Each partition manages its own replication through a declarative replication tree. Gizzard supports "migrations" (for example, elastically adding machines to the cluster) and gracefully handles failures. The system is made eventually consistent by requiring that all write-operations are idempotent and as operations fail (because of, e.g., a network partition) they are retried at a later time.
+
+Gizzard handles both _physical_ and _logical_ shards. Physical shards point to a physical database backend whereas logical shards are trees of other shards.
+
+<img src="http://github.com/twitter/gizzard/raw/master/doc/replication_tree.png" alt="diagram" />
+
+Gizzard supports advanced features such as fault tolerance, replication, and migrations. Twitter has a nice [README](http://github.com/twitter/gizzard#readme) with a great amount of documentation.
+
+[[Source on GitHub](http://github.com/twitter/gizzard)] [[README](http://github.com/twitter/gizzard#readme)]

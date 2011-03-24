@@ -1,0 +1,36 @@
+Date: 2010-09-27 21:52:44 GMT
+tumblr_id: 1200486354
+categories: github,git,games,fun,learning
+github_repo: icefox/git-achievements
+title: git-achievements: Earn geeky merit badges while learning Git
+
+# git-achievements: Earn geeky merit badges while learning Git
+
+Between Foursquare and Gowalla, it seems badges are all the rage these days. [Benjamin C. Meyer](http://http://github.com/icefox) aka [icefox](http://http://github.com/icefox), brings the fun to your terminal with [Git Achievements](http://github.com/icefox/git-achievements). The premise is simple: unlock badges as you learn and use [git](http://git-scm.com/), everyone's favorite distributed version control system. For instance, running
+
+    git add --help
+
+will unlock the "Student" badge. Want to become an "Investigator?" try using `git blame`. There are over forty achievements in all, and you can view them in the [project source](http://github.com/icefox/git-achievements/blob/gh-pages/git-achievements).
+
+To install, download or clone the project and alias `git` to `git-achievements`, perhaps in your `.bash_profile`:
+
+    export PATH="$PATH:~/git/git-achievements"
+    alias git="git-achievements"
+
+Now try it out.
+
+    git achievements --help
+
+Congrats, you've unlocked your first achievement!
+
+For über git geek status, you can have your achievements posted to [GH Pages](http://pages.github.com/), just like [Benjamin does](http://icefox.github.com/git-achievements/).
+
+First, fork and clone [the repository](http://github.com/icefox/git-achievements). Then configure auto uploading:
+
+    git config --global achievement.upload "true"
+
+Benjamin just added _Merchant Level 5_. What's next? Maybe Foursquare-style achievements like
+
+> [Erik Michaels-Ober](http://github.com/sferik) just ousted [John Nunemaker](http://github.com/jnunemaker) as Mayor of the [Twitter Ruby gem](http://github.com/jnunemaker/twitter)
+
+[[Source on GitHub](http://github.com/icefox/git-achievements)]

@@ -1,0 +1,15 @@
+Date: 2011-01-08 20:36:05 GMT
+tumblr_id: 2656153601
+categories: github,javascript,tools
+github_repo: madrobby/dom-monster
+title: dom-monster: Cross-browser bookmarklet to analyze your DOM, improve performance
+
+# dom-monster: Cross-browser bookmarklet to analyze your DOM, improve performance
+
+Thomas Fuchs, JavaScript pro featured recently on [Episode 0.3.9](http://lg.gd/039) has teamed up with his wife [Amy Hoy](http://slash7.com) to bring you the [DOM Monster](http://mir.aculo.us/dom-monster/), a cross-browser bookmarklet that analyzes your markup and offers tips to improve page performance.
+
+[![Screenshot](http://cl.ly/341F3x1S3K3Y371S0c2I/dom-monster.png)](http://mir.aculo.us/dom-monster/)
+
+Other tools such as [Y! Slow](http://developer.yahoo.com/yslow/) provide similar analysis and integrate with Firebug, but the DOM Monster aims to be a cross-browser solution. Got ideas to improve the project? Check out the [project source](http://github.com/madrobby/dom-monster) and submit a patch.
+
+[[Source on GitHub](http://github.com/madrobby/dom-monster)] [[Homepage](http://mir.aculo.us/dom-monster/)]

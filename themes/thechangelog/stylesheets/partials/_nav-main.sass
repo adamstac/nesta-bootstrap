@@ -1,0 +1,57 @@
+=current
+  background-color: #fff
+  background-image: url(/images/nav-main-current.png)
+  border-top-color: #fff
+  color: #000
+
+=active
+  background-color: #A5A5A5
+  background-image: url(/images/nav-main-active.png)
+  background-position: 0 top
+  border-top: none
+  border-bottom-color: #000
+  color: #fff
+
+body.home #header #nav_main ul li.home,
+body.page-id-385 #header #nav_main ul li.pitch,
+body.page-id-94 #header #nav_main ul li.archives,
+body.single #header #nav_main ul li.archives,
+body.page-id-101 #header #nav_main ul li.schedule,
+body.page-id-97 #header #nav_main ul li.sponsor,
+body.page-id-2 #header #nav_main ul li.about
+  a
+    +current
+
+=nav-main
+  #nav-main
+    @extend .font-sans
+    background: #000
+    border-top: 1px solid #333
+    border-bottom: 5px solid #e1e1e1
+    padding-top: 6px
+    ul, li, a
+      +float-left
+      li
+        font-size: 12px
+        font-weight: bold
+        text-transform: capitalize
+        margin-right: 1px
+        &:last-child
+          margin-right: 0
+        a
+          background-image: url(/images/nav-main-inactive.png)
+          background-repeat: repeat-x
+          background-position: 0 bottom
+          border-top-width: 3px
+          border-top-color: transparent
+          border-top-style: solid
+          color: #fff
+          display: block
+          line-height: 36px
+          text-align: center
+          text-decoration: none
+          width: 165px
+          &.current, &:hover
+            +current
+
++nav-main

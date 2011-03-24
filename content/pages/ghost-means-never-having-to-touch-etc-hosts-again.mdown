@@ -1,0 +1,33 @@
+Date: 2010-03-08 05:24:16 GMT
+tumblr_id: 434045062
+categories: github,ruby,gems,cli,dns,tools
+github_repo: bjeanes/ghost
+title: Ghost means never having to touch /etc/hosts again
+
+# Ghost means never having to touch /etc/hosts again
+
+[Ghost](http://github.com/bjeanes/ghost) from [Bodaniel Jeanes](http://github.com/bjeanes) is a Ruby gem that lets you manage your local host names without futzing with /etc/hosts.
+
+To install:
+
+    sudo gem install ghost
+
+And then from the command line:
+
+    $ ghost add mydevsite.local
+      [Adding] mydevsite.local -> 127.0.0.1
+
+    $ ghost add staging-server.local 67.207.136.164
+      [Adding] staging-server.local -> 67.207.136.164
+
+    $ ghost list
+    Listing 2 host(s):
+      mydevsite.local      -> 127.0.0.1
+      staging-server.local -> 67.207.136.164
+
+    $ ghost delete mydevsite.local
+      [Deleting] mydevsite.local
+
+Aside from basic `list`, `add`, and `delete` options, Ghost provides powerful `import` and `delete_matching` operations to import files or delete entries based on pattern matching.
+
+[[Source on GitHub](http://github.com/bjeanes/ghost)] 

@@ -1,0 +1,32 @@
+Date: 2010-12-12 20:29:00 GMT
+tumblr_id: 2189666169
+categories: SIMBL,Twitter,github,retweet,tweetie
+github_repo: nickpaulson/ReTweetie
+title: ReTweetie - Add Native Retweeting to Tweetie for Mac
+
+# ReTweetie - Add Native Retweeting to Tweetie for Mac
+
+<img src="http://cl.ly/1w0Y070P0F3K291C1f26/retweetie-logo.png" alt="ReTweetie Logo" />
+
+### What Does it Do?
+
+ReTweetie is a SIMBL plugin for Mac that makes [Tweetie](http://www.atebits.com/tweetie-mac/) use [Twitter's native Retweeting functionality](http://support.twitter.com/articles/220115-what-is-retweet-newtwitter). No longer do you get a "RT @username: " tweet, but instead a real [#NewTwitter](http://twitter.com/newtwitter) Retweet. Just Retweet your tweet as usual, and let ReTweetie handle the rest.
+
+### Who developed it?
+
+We give thanks to [Nick Paulson](http://nickpaulson.com/) of [Linebreak](http://bylinebreak.com/), developer of [CloudApp](http://getcloudapp.com/) and [BaseApp](http://getbaseapp.com/), for open sourcing ReTweetie and letting folks peak under the hood of a SIMBL plugin.
+
+Also, special thanks to [Christina Warren](http://twitter.com/film_girl) of [Mashable](http://mashable.com/) for mentioning this [on Twitter](http://twitter.com/film_girl/status/14027692118638592).
+
+### Installation Instructions
+
+* Download and install [SIMBL](http://www.culater.net/software/SIMBL/SIMBL.php).
+* Place ReTweetie bundle in `/Library/Application Support/SIMBL/Plugins`
+* Relaunch Tweetie for Mac.
+
+### Requirements
+
+* Max OS X 10.5 or later
+* [SIMBL](http://www.culater.net/software/SIMBL/SIMBL.php) - a free bundle loader for Mac
+
+[[Source on GitHub](https://github.com/nickpaulson/ReTweetie)] [[Homepage](http://nickpaulson.com/retweetie/)]

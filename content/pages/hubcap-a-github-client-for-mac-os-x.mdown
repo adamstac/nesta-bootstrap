@@ -1,0 +1,23 @@
+Date: 2010-12-12 21:15:00 GMT
+tumblr_id: 2190237790
+categories: Cocoa,MacRuby,osx,github
+github_repo: hubcap/hubcap
+title: Hubcap - A GitHub client for Mac OS X
+
+# Hubcap - A GitHub client for Mac OS X
+
+<img src="http://cl.ly/3u1930151p0P3s0J1p0O/hubcap-dock-screenshot.png" alt="Hubcap Dock Screenshot" />
+
+We are a bit late to blog about this, but if you [follow The Changelog on Twitter](http://twitter.com/changelogshow) you would have seen tweets from us mentioning this project.
+
+On December 3rd [we chipped in](http://twitter.com/changelogshow/status/10782936672509952) to back [a Kickstarter project](http://www.kickstarter.com/projects/1487030260/hubcap-a-github-client-for-mac-os-x) started by [Erik Michaels-Ober](https://github.com/sferik) to fund Hubcap, a proposed native Mac client for GitHub. Erik's plan is to bring the elegance of various Twitter clients for the Mac, including [Tweetie](http://www.atebits.com/tweetie-mac/), [Hibari](http://hibariapp.com/), [Itsy](http://mowglii.com/itsy/), and [Echofon](http://www.echofon.com/) to GitHub and increase social engagement. Obviously, we're excited about this project, [as are the guys at GitHub](https://github.com/blog/761-hubcap-a-socially-aware-github-mac-app).
+
+As of today's date (Sunday - December 12nd, 2010) the Kickstarter project has [93 backers](http://www.kickstarter.com/projects/1487030260/hubcap-a-github-client-for-mac-os-x/backers) and has raised over $3000 dollars. Erik's original goal was to raise $2222 (I'd love to know where that number came from) by December 16th, so that means this project "is on", and awaits the release of the funding this Thursday on the 16th at 5:00pm EST.
+
+If this is something you are interested in suporting, consider [making a pledge to the cause](https://www.kickstarter.com/projects/1487030260/hubcap-a-github-client-for-mac-os-x/pledge/new?clicked_reward=false&logged_in=false&p=0&v=n).
+
+Hubcap will leverage the [GitHub API](http://develop.github.com/) to display your activity feed, notifications, and inbox messages. It will also allow you to compose and send new messages, follow new people or projects, and read the news feed of individuals, organizations, or projects. Hubcap will be a [Cocoa app](http://developer.apple.com/technologies/mac/cocoa.html) written primarily in [MacRuby](http://www.macruby.org/).
+
+Erik tells us to expect to have an alpha version completed in April 2011, with beta versions coming in the early summer and the 1.0 shipping in the fall. What's the best part? Once the 1.0 ships, the source code will be made available on GitHub to everyone.
+
+[[Project on GitHub (private for now)](https://github.com/hubcap/hubcap)] [[Kicksarter Project](http://www.kickstarter.com/projects/1487030260/hubcap-a-github-client-for-mac-os-x)]

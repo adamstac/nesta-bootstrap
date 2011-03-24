@@ -1,0 +1,38 @@
+Date: 2010-09-26 20:53:00 GMT
+tumblr_id: 1193810890
+categories: github,mobile,javascript,ios,android,sass,html5,frameworks
+github_repo: unify/unify
+title: Deutsche Telekom releases Unify, metaframework for mobile built on HTML5, JavaScript, and Sass
+
+# Deutsche Telekom releases Unify, metaframework for mobile built on HTML5, JavaScript, and Sass
+
+At [JSConf.eu 2010](http://jsconf.eu/2010/), [Deutsche Telekom](http://www.telekom.de/) took the wraps off of their [Unify Project](http://unify.github.com/unify/) which aims to provide a unified API for building cross-platform mobile and desktop applications.
+
+<iframe class="youtube-player" type="text/html" width="500" height="306" src="http://www.youtube.com/embed/5SG975uV_4M" frameborder="0"></iframe>
+
+Unify looks to be a metaframework of sorts, wrapping other popular frameworks:
+
+* [qooxdoo](http://qooxdoo.org/) is a comprehensive and innovative framework for creating rich internet applications (RIAs) using object-oriented JavaScript
+* [PhoneGap](http://www.phonegap.com/) provides a native wrapper for web apps, providing interfaces for device features not supported with browser-based apps alone.
+* [Sass](http://www.sass-lang.com/) is a superset of CSS3 syntax and provides programmatic features for CSS such as variables, mixins, and selector nesting, covered way back in [Episode 0.0.1](http://lg.gd/001)
+* [Adobe AIR](http://adobe.com/products/air) provides a cross-platform runtime for desktop applications.
+
+Unify currently supports iOS, Android, and WebOS devices and plans to support BlackBerry OS 6.0 soon.
+
+### [API](http://unify.github.com/unify/api/index.html#unify)
+
+The [Unify API](http://unify.github.com/unify/api/index.html#unify) provides a single progamming model to features such as IO, storage, cache, geolocation, and even UI.
+
+Here's the `ScrollView` class as an example:
+
+> ##### unify.ui.mobile.ScrollView
+>
+* Scrolling could be enabled/disabled separately for each axis.
+* Indicator style is changable through an API call (per instance)
+* Flips back when scrolling out of allowed ranges.
+* Smooth animations for deleleration and flip back
+* Page based scrolling where the content is auto-splitted into pages which are used for snapping into
+
+Keep an eye on the [Unify Roadmap](http://unify.github.com/unify/#roadmap) for updates and real-world implementations.
+
+[[Source on GitHub](http://github.com/unify/unify)] [[Homepage](http://unify.github.com/unify/)]

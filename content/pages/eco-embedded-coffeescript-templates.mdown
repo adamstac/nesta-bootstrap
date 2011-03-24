@@ -1,0 +1,42 @@
+Date: 2010-09-23 21:56:02 GMT
+tumblr_id: 1174993103
+categories: github,node,node.js,cofeescript,templates,javascript
+github_repo: sstephenson/eco
+title: eco: Embedded CoffeeScript templates for Node.js
+
+# eco: Embedded CoffeeScript templates for Node.js
+
+Node developers have a growing number of templating options these days. [EJS](http://embeddedjs.com/), [Jade](http://jade-lang.com/), and [Mustache.js](http://github.com/janl/mustache.js/) are popular options.
+
+[Sam Stephenson](http://github.com/sstephenson/eco) has released 1.0.0 of [Eco](http://github.com/sstephenson/eco), or Embedded CoffeeScript, his take on EJS. If you're unfamiliar with [CoffeeScript](http://coffeescript.org), be sure and check out [Episode 0.2.9](http://thechangelog.com/post/849754840/episode-0-2-9-coffeescript-with-jeremy-ashkenas).
+
+You can install eco via [npm](http://npmjs.org)
+
+    npm install eco
+    
+... and the usual `require`:
+
+    eco = require "eco"
+
+Eco templates look much like EJS templates, except the escaped code is CoffeeScript instead of JavaScript:
+
+    <% if @projects.length: %>
+      <% for project in @projects: %>
+        <a href="<%= project.url %>"><%= project.name %></a>
+        <p><%= project.description %></p>
+      <% end %>
+    <% else: %>
+      No projects
+    <% end %>
+
+Like most `<%...%>`-based templating languages, Eco's code blocks come in a few flavors:
+
+* `<% expression %>` Evaluate without printing
+* `<%= expression %>` Evaluate, escape, and print
+* `<%- expression %>` Evaluate and print without escaping
+* `<%= @property %>` Escape and print the value of a supplied `context` object
+* `<%= @helper() %>` Escape and print the return value of a `context` helper
+
+For more advanced features, including how to handle whitespace, be sure and check the [README](http://github.com/sstephenson/eco#readme)
+
+[[Source on GitHub](http://github.com/sstephenson/eco)]

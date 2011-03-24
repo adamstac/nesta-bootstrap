@@ -1,0 +1,74 @@
+Date: 2010-10-27 02:32:00 GMT
+tumblr_id: 1411685310
+categories: github,jquery,javascript
+github_repo: nathansearles/Faded
+title: Faded: super simple fading image and content viewer for jQuery
+
+# Faded: super simple fading image and content viewer for jQuery
+
+I love when software is super simple ...
+
+Faded is a super simple fading image and content viewer for jQuery by [Nathan Searles](http://github.com/nathansearles). It's Easy to setup and design to YOUR specifications.
+
+#### It features:
+
+* auto generated pagination
+* an awesome sequential image loader
+* fancy crossfading
+* essentially no CSS required
+* a number of custom options for you to set (if you'd like)
+
+#### Markup for content
+
+    <div id="faded">
+      <ul>
+        <li>Slide 1 Copy</li>
+        <li>Slide 2 Copy</li>
+        <li>Slide 3 Copy</li>
+        <li>Slide 4 Copy</li>
+      </ul>
+      <a href="#" class="prev">prev</a>
+      <a href="#" class="next">next</a>
+    </div>
+
+#### Markup for images
+
+    <div id="faded">
+      <div>
+        <img src="01.jpg" alt="" />
+        <img src="02.jpg" alt="" />
+        <img src="03.jpg" alt="" />
+        <img src="04.jpg" alt="" />
+      </div>
+      <a href="#" class="prev">prev</a>
+      <a href="#" class="next">next</a>
+    </div>
+
+#### Initialize
+
+    <script type="text/javascript" charset="utf-8">
+      $(function(){
+        $("#faded").faded();
+      });
+    </script>
+
+
+#### Defaults
+
+    speed: 300, // sets animation speed.
+    crossfade: false, // crossfades content.
+    bigtarget: false, // click content for next.
+    loading: false, // for images only, checks if first image is loaded before showing it.
+    autoheight: false, // auto adjust height.
+    pagination: "pagination", // sets true and class name for pagination. set to false to disable this feature.
+    autopagination: true, // set to true to auto generate pagination.
+    nextbtn: "next", // next button class.
+    prevbtn: "prev", // previous button class.
+    loadingimg: false, // location of loading image (e.g."/img/loading.gif") if using loading.
+    autoplay: false, // auto play of content. set to positive number for true. also sets time interval. use 1000 for 1 second.
+    autorestart: false, // auto restart if auto play stopped. set to positive number for true. also sets time interval. use 1000 for 1 second.
+    random: false // set to true to randomize order
+
+### Check out the codes & demo
+
+[[Source on GitHub](http://github.com/nathansearles/Faded)] [[Demo](http://nathansearles.com/faded/example.html)]

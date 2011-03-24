@@ -1,0 +1,67 @@
+Date: 2010-09-16 15:26:00 GMT
+tumblr_id: 1132300045
+categories: github,ruby,auth,security,gems,redis,nosql
+github_repo: nu7hatch/aclatraz
+title: ACLatraz: Redis-powered access control for your ruby apps
+
+# ACLatraz: Redis-powered access control for your ruby apps
+
+Authentication options get a lot of press these days, but there is another *Auth* that can still be a pain: *Authorization*. [ACLatraz](http://github.com/nu7hatch/aclatraz) from [Kriss Kowalik](http://github.com/nu7hatch) caught our eye because it's inspired by *nix Access Control Lists (ACLs), powered by [Redis](http://code.google.com/p/redis/), and has a sense of humor.
+
+Install ACLatraz via Ruby gems
+
+    gem install aclatraz
+
+and configure your Redis-based storage
+
+    Aclatraz.init :redis, "redis://localhost:6379/0"
+
+#### Everyone is a `Suspect`
+
+In keeping with the Alcatraz theme, actors in your authorization system are deemed *`Suspects`*:
+
+    class Account < ActiveRecord::Base
+      include Aclatraz::Suspect
+    end
+
+ACLatraz supports **global**, **class-related**, and **object-related** roles:
+
+    # global admin role
+    @account.roles.assign(:admin) # or ...
+    @account.is.admin!
+    
+    # Page class-related role
+    @account.roles.assign(:responsible, Page) # or...
+    @account.is.responsible_for!(Page)
+    
+    # object-related role for page 15
+    @account.roles.assign(:author, Page.find(15)) # or...
+    @account.is.author_of!(Page.find(15))
+    
+Once, assigned you can *interrogate* your suspects a couple of ways using `has?`
+
+    @account.roles.has?(:admin)                # => true
+    @account.roles.has?(:responsible, Page)     # => true
+    @account.roles.has?(:author, Page.find(15) # => true
+    
+... or the more natural semantic shortcuts:
+
+    @account.is_not.admin?                      # => false
+    @account.is_not.responsible_for?(Page)       # => false
+
+#### `Guard`ing [The Rock](http://www.imdb.com/title/tt0117500/)
+
+To enable access control on an object, include the `Aclatraz::Guard` module:
+
+    class Page
+      include Aclatraz::Guard
+
+      suspects :account do
+        deny all # notice that it's a method, not symbol
+        allow :admin
+      end
+    end
+    
+Check the [README](http://github.com/nu7hatch/aclatraz#readme) for even more features including custom actions, aliases, and class inheritance.
+
+[[Source on GitHub](http://github.com/nu7hatch/aclatraz)]

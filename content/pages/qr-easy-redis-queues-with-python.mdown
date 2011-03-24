@@ -1,0 +1,55 @@
+Date: 2010-03-05 14:24:23 GMT
+tumblr_id: 428323974
+categories: github,python,redis,queues
+github_repo: tnm/qr
+title: QR - Easy Redis queues with Python
+
+# QR - Easy Redis queues with Python
+
+[QR](http://github.com/tnm/qr) from [Ted Nyman](http://github.com/tnm/qr) makes it simple to create double ended queues, queues, and stacks in Redis from Python. Double ended queues allow items to be added to the beginning or end of the queue while normal queues and stacks are first-in-first-out (FIFO) and last-in-first-out (LIFO) respectively.
+
+To create a queue simply import QR:
+
+    >> from qr import Queue
+
+and create the queue:
+
+    >> bqueue = Queue('Beatles', 3)
+
+Here we created a regular Queue, but you can also create a double ended queue with `Dequeue` or stack with `Stack`.
+
+To added data, use `push`:
+
+    >> bqueue.push('Ringo')
+    PUSHED: 'Ringo'
+
+    >> bqueue.push('Paul')
+    PUSHED: 'Paul'
+
+    >> bqueue.push('John')
+    PUSHED: 'John'
+
+    >> bqueue.push('George')
+    PUSHED: 'George' 
+    'Ringo'
+
+To grab the next item simply call `pop`:
+
+    >> bqueue.pop()
+    'Paul'
+
+You can also grab all items in the queue, even as JSON:
+
+    >> beatles_queue.elements()
+    ['Ringo', 'John', 'George']
+
+    >> beatles_queue.elements_as_json()
+    '['Ringo', 'John', 'George']'
+
+Another cool feature of QR is that all three queue varieties may be set up as _bounded_ or _unbounded_:
+
+> * **Bounded**: once the DQS reaches a specified size of elements, it will pop an element.
+
+> * **Unbounded**: the DQS can grow to any size, and will not pop elements unless you explicitly ask it to.
+
+[[Source on GitHub](http://github.com/tnm/qr)]

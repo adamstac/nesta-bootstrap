@@ -1,0 +1,9 @@
+Date: 2009-11-19 06:00:00 GMT
+tumblr_id: 255049350
+categories: github,javascript
+github_repo: documentcloud/underscore
+title: Underscore.js a bowtie for jQuery's tux
+
+# Underscore.js a bowtie for jQuery's tux
+
+Neat little JavaScript framework from [DocumentCloud](http://documentcloud.org) that includes many convenience methods for arrays and collections.

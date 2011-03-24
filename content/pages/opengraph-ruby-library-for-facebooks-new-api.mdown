@@ -1,0 +1,37 @@
+Date: 2010-04-23 13:28:00 GMT
+tumblr_id: 543106777
+categories: github,facebook,opengraph,apis,ruby,gems
+github_repo: intridea/opengraph
+title: OpenGraph - Ruby library for Facebook's new API
+
+# OpenGraph - Ruby library for Facebook's new API
+
+[Updated]: Thanks to Michael's correction in the comments below and more caffeine it's apparent that Michael released two [_entirely unrelated_](http://thechangelog.com/post/543459572/oauth2-ruby-wrapper-for-oauth-2-0) Facebook gems yesterday. Also, as Mike points out, the example in this case is hypothetical since IMDb does not yet support OpenGraph.
+
+OpenGraph is a way to let web publishers turn ordinary web pages into rich objects in a user's social graph just by embedding some `meta` tags on the page:
+
+    <html xmlns:og="http://opengraphprotocol.org/schema/">
+    <head>
+    <title>The Rock (1996)</title>
+    <meta property="og:title" content="The Rock" />
+    <meta property="og:type" content="movie" />
+    <meta property="og:url" content="http://www.imdb.com/title/tt0117500/" />
+    <meta property="og:image" content="http://ia.media-imdb.com/images/rock.jpg" />
+    ...
+    </head>
+    ...
+    </html>
+
+With Michael's gem, you can now query a site and get this information back:
+
+    require 'opengraph'
+
+    movie = OpenGraph.fetch(http://www.imdb.com/title/tt0117500')
+
+    movie.title # => 'The Rock'
+    movie.movie? # => true
+    movie.image # => 'http://ia.media-imdb.com/images/rock.jpg'
+
+Nifty.
+
+[[Source on GitHub](http://github.com/intridea/opengraph)] [[OpenGraph protocol](http://opengraphprotocol.org/)] [[Facebook API docs](http://developers.facebook.com/docs/api)]

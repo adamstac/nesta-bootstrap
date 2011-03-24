@@ -1,0 +1,17 @@
+Date: 2010-08-23 02:23:00 GMT
+tumblr_id: 995873400
+categories: github,10k,javascript,tools
+github_repo: sr3d/GithubFinder
+title: GithubFinder: JavaScript-powered Github repo browser
+
+# GithubFinder: JavaScript-powered Github repo browser
+
+For those times you need to quickly browse a GitHub repo but don't want to clone it locally, check out [GitHubFinder](http://github.com/sr3d/GithubFinder) from [Alex Le](http://github.com/sr3d). 
+
+![Screenshot](http://cl.ly/c8768e18fed3dd7dc410/content)
+
+Modeled after the Mac OSX finder, GitHubFinder provides a familiar drill-down navigation to browse all the files in a given repo. The project has a plugin-based architecture for extensibility and includes keyboard navigation, file diffs, basic syntax highlighting, and a resizable, panel-based interface out of the box.
+
+Written in JavaScript as part of the [10K Apart Contest](http://10k.aneventapart.com/), the app uses the same [JSONP API](http://develop.github.com/) we use here on The Changelog and weighs in at just 8.5KB compressed. Bravo, Alex!
+
+[[Source on GitHub](http://github.com/sr3d/GithubFinder)]

@@ -1,0 +1,42 @@
+Date: 2010-12-28 22:02:07 GMT
+tumblr_id: 2502699802
+categories: github,ruby,evented
+github_repo: tarcieri/cool.io
+title: cool.io - cool event driven programming for Ruby
+
+# cool.io - cool event driven programming for Ruby
+
+It seems like there is a common pattern with many libraries: You have your full stack solution, and then you have your lean and mean one. Ruby on Rails has its counterpart in Sinatra, for example. So what about event-driven programming frameworks, like EventMachine or Node.js?
+
+Enter cool.io:
+
+    require 'rubygems'
+    require 'cool.io'
+
+    ADDR = '127.0.0.1'
+    PORT = 4321
+
+    cool.io.server ADDR, PORT do
+      on_connect do
+        puts "#{remote_addr}:#{remote_port} connected"
+      end
+
+      on_close do
+        puts "#{remote_addr}:#{remote_port} disconnected"
+      end
+
+      on_read do |data|
+        write data
+      end
+    end
+
+    puts "Echo server listening on #{ADDR}:#{PORT}"
+    cool.io.run
+
+Pretty cool. Cool.io is trying to make evented programming really easy, which is good, because this style of programming is a bit different than your usual kinds of web programming. 
+
+Under the hood, Cool.io is built on top of `libev`, which hooks it up to various system calls on different operating systems for doing this kind of thing in a blazing fast manner. Then again, my OS developer buddies would kill me for calling a system call 'performant,' but that's a different story... what it boils down to is that Cool.io doesn't reinvent the wheel: epoll on Linux, kqueue on BSD and OSX...
+
+Personally, I've been meaning to write some software in the evented style, but I haven't had the time to appropriately level up my Javascript skills yet. Cool.io just might be the ticket to building something more than just a toy example or two.
+
+[[Github](https://github.com/tarcieri/cool.io)] [[README](https://github.com/tarcieri/cool.io/blob/master/README.markdown)]

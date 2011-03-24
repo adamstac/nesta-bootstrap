@@ -1,0 +1,58 @@
+Date: 2010-09-29 17:17:00 GMT
+tumblr_id: 1211109600
+categories: WatchWednesday,ww,git,vim,heroku,gems,email,twitter,php
+title: WatchWednesday for 20100929
+
+# WatchWednesday for 20100929
+
+It's [Wednesday again](http://thechangelog.com/post/1167855730/watchwednesday-20100922), time for us to serve up another quick list of projects to watch on [GitHub](http://github.com). These are projects you might have missed or should could keep an eye on.
+
+#### [Heroku::Autoscale](http://github.com/ddollar/heroku-autoscale)
+
+[David Dollar](http://github.com/ddollar) makes automatically scaling your [Heroku](http://heroku.com) dynos a snap with this gem. Simply add the gem to your Gemfile
+
+    gem 'heroku-autoscale'
+
+and configure your Heroku credentials and the minimum and maximum numbers of dynos for your app in your rackup file
+
+    use Heroku::Autoscale,
+      :username  => ENV["HEROKU_USERNAME"],
+      :password  => ENV["HEROKU_PASSWORD"],
+      :app_name  => ENV["HEROKU_APP_NAME"],
+      :min_dynos => 2,
+      :max_dynos => 5,
+      :queue_wait_low  => 100,  # milliseconds
+      :queue_wait_high => 5000, # milliseconds
+      :min_frequency   => 10    # seconds
+
+Now your app will scale up with traffic and down as traffic wanes.
+
+#### [Tempalias](http://github.com/pilif/tempalias)
+
+Warning! This email address will self destruct. Perfect for media site content walls, contests, or auction transactions, [Tempalias](http://github.com/pilif/tempalias) is powered by Node.js and lets you create email addresses with a built-in expiration using [http://tempalias.com/](http://tempalias.com/#!/about) or hosted on own your own site.
+
+
+#### [Justin.tv's Apple Push Notification Service gem](http://github.com/justintv/APNS)
+
+Send and read Apple Push Notifications from Ruby:
+
+> Jtv-apns is a gem for accessing the Apple Push Notification Service that allows
+both sending notifications and reading from apple’s feedback service. This gem
+is based heavily on the work of [James Pozdena](http://github.com/jpoz/APNS).
+
+#### [Tweetnest](http://github.com/graulund/tweetnest)
+
+[Tweetnest](http://pongsocket.com/tweetnest/) is a PHP app to archive, browse, and search your tweets.
+
+[![Screenshot](http://cl.ly/b4a2f8f537602a5b2c77/content)](http://pongsocket.com/tweetnest/)
+
+#### [fugitive.vim](http://github.com/tpope/vim-fugitive)
+
+A nice Git wrapper for Vim:
+
+> View any blob, tree, commit, or tag in the repository with `:Gedit` (and
+`:Gsplit`, `:Gvsplit`, `:Gtabedit`, ...).  Edit a file in the index and
+write to it to stage the changes.  Use `:Gdiff` to bring up the staged
+version of the file side by side with the working tree version and use
+Vim's diff handling capabilities to stage a subset of the file's
+changes.

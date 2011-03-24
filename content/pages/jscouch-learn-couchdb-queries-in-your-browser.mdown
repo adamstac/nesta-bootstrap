@@ -1,0 +1,17 @@
+Date: 2010-05-06 20:32:00 GMT
+tumblr_id: 576895709
+categories: couchdb,demo,json,tools,github
+github_repo: janl/jscouch
+title: JSCouch - Learn CouchDB queries in your browser
+
+# JSCouch - Learn CouchDB queries in your browser
+
+Part [CouchDB](http://couchdb.apache.org/) interactive query console, part tutorial, [JSCouch](http://labs.mudynamics.com/wp-content/uploads/2009/04/icouch.html) is a neat way to learn CouchDB's map/reduce functions right in your browser. You can provide some sample JSON (or use the default demo data), write your map and reduce functions, and execute them to see sample results.
+
+JSCouch also includes some sample functions for those learning CouchDB. Just choose a function from the list and read the explanation provided.
+
+[<img src="http://cl.ly/vqj/content" height="190" width="480"/>](http://labs.mudynamics.com/wp-content/uploads/2009/04/icouch.html)
+
+Hat tip: [Will Leinweber](http://twitter.com/leinweber)
+
+[[Source on GitHub](http://github.com/janl/jscouch)] [[Demo](http://labs.mudynamics.com/wp-content/uploads/2009/04/icouch.html)]

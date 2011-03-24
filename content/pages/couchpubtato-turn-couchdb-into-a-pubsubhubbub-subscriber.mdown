@@ -1,0 +1,26 @@
+Date: 2010-10-13 18:28:00 GMT
+tumblr_id: 1307084728
+categories: github,couchdb,javascript,couchapp,pubsubhubub
+github_repo: maxogden/couchpubtato
+title: couchpubtato: Turn CouchDB into a PubSubHubbub subscriber
+
+# couchpubtato: Turn CouchDB into a PubSubHubbub subscriber
+
+[Tyler Gillies](http://twitter.com/RdfTurtle) and [Max Ogden](http://github.com/maxogden), who recently ported [Diaspora](http://thechangelog.com/post/1129594095/diaspora-source-released-on-github) to a [CouchApp](http://github.com/couchapp/couchapp) have released Couchpubtato. [Couchpubtato](http://github.com/maxogden/couchpubtato) is a CouchApp that turns CouchDB into a PubSubHubbub subscriber. Be sure and catch [Episode 0.3.7](http://thechangelog.com/post/1249379846/episode-0-3-7-pubsubhubbub-with-superfeedrs-julien-genes) for the scoop on PubSubHubbub if you missed it.
+
+What does all of this mean for you? Now with a little help from Superfeedr, you can create a realtime JSON API from any PubSubHubbub-enabled XML feed.
+
+#### What you'll need
+
+* First, you'll need CouchDB running locally or on the Internets, perhaps at [CouchOne](http://couchone.com/get).
+* Next, signup for a free [Superfeedr](http://superfeedr.com) account and[ configure a feed](http://github.com/superfeedr/popular-feeds). Set the callback URL to point to your CouchDB instance:
+
+    http://your.couchone.com/awesome-events/_design/push/_rewrite/xml
+    
+Now Superfeedr will pump your CouchDB full of data as your feed updates. So smart!
+
+#### **Updated
+
+It seems [Tyler Gillies](http://twitter.com/RdfTurtle) was [the original brains behind the project](http://twitter.com/#!/maxogden/status/27266362982).
+
+[[Source on GitHub](http://github.com/maxogden/couchpubtato)]

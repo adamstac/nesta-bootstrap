@@ -1,0 +1,19 @@
+Date: 2010-12-26 00:52:49 GMT
+tumblr_id: 2462797954
+categories: github,obj-c,cocoa,mac,code,editors
+github_repo: rsms/kod
+title: kod: CSS3 themable, Node.js powered editor for OS X
+
+# kod: CSS3 themable, Node.js powered editor for OS X
+
+It's a very Merry Christmas for Mac developers. [Rasmus Andersson](http://github.com/rsms) has open sourced [Kod](http://kodapp.com), the "programmers' editor for OS X."
+
+Built from the ground to feel like a native OS X app, Kod sports Chrome-style tear-off tabs and aims for full concurrency, taking advantage of additional CPU cores when loading files, performing syntax highlighting, and other intensive tasks.
+
+Even with the provided integrated scripting environment powered by [Node.js](http://thechangelog.com/search/node), perhaps the most impressive feature for the web geek is that Kod is fully themable using CSS3.
+
+[![screenshot](http://kodapp.com/screenshot.png) ](http://github.com/rsms/kod)
+
+So if you're still waiting on TextMate 2.0 and Vim or emacs isn't your bag, then give Kod a try.
+
+[[Source on GitHub](http://github.com/rsms/kod)] [[Web site](http://kodapp.com)]

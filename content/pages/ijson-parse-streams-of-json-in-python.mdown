@@ -1,0 +1,48 @@
+Date: 2010-09-22 22:41:11 GMT
+tumblr_id: 1169335384
+categories: GitHub,JSON,Big Data
+github_repo: kennethreitz/ijson
+title: iJSON: Parse Streams of JSON in Python
+
+# iJSON: Parse Streams of JSON in Python
+
+JSON will forever serve as a great alternative for XML, but it has a weakness: big data. This is due to a lack of support for stream processing.
+
+Luckily for Python, there's now a solution. [Ivan Sagalaev](http://softwaremaniacs.org/) developed [iJSON](http://pypi.python.org/pypi/ijson/), a library for performing SAX-style parsing of JSON.
+
+iJSON allows you to interact with the incoming datastream as a standard iterator. 
+
+Example Simple Data use:
+
+    from ijson import items
+
+    f = urlopen('http://.../')
+    objects = items(f, 'earth.europe.item')
+    cities = (o for o in objects if o['type'] == 'city')
+    for city in cities:
+        do_something_with(city)
+
+Example Big Data use:
+
+    from ijson import parse
+
+    f = urlopen('http://.../')
+    parser = parse(f)
+    stream.write('<geo>')
+    for prefix, event, value in parser:
+        if (prefix, event) == ('earth', 'map_key'):
+            stream.write('<%s>' % value)
+            continent = value
+        elif prefix.endswith('.name'):
+            stream.write('<object name="%s"/>' % value)
+        elif (prefix, event) == ('earth.%s' % continent, 'end_map'):
+            stream.write('</%s>' % continent)
+    stream.write('</geo>')
+
+
+To get started:
+
+    $ pip install ijson
+
+
+[[PyPi Listing](http://pypi.python.org/pypi/ijson/)] [[GitHub Mirror](http://github.com/kennethreitz/ijson)]

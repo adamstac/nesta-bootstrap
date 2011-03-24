@@ -1,0 +1,10 @@
+Date: 2009-11-22 06:00:00 GMT
+tumblr_id: 254788034
+categories: audio,haml,sass,css,design,episode
+title: Episode 0.0.1 - Haml Sass and Compass (59:42)
+
+# Episode 0.0.1 - Haml Sass and Compass (59:42)
+
+Wynn and I discuss Haml, Sass and Compass with the core developers Nathan Weizenbaum and Chris Eppstein
+
+[Download MP3](http://www.buzzsprout.com/105/1805-episode-0-0-1-haml-sass-and-compass.mp3)

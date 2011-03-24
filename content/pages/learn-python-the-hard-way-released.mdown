@@ -1,0 +1,22 @@
+Date: 2010-09-29 14:35:00 GMT
+tumblr_id: 1210543982
+categories: Python
+title: Learn Python the Hard Way Released
+
+# Learn Python the Hard Way Released
+
+Zed Shaw, who we interviewed on [Episode 0.3.4](http://thechangelog.com/post/1087757312/episode-0-3-4-mongrel2-guitar-and-more-with-zed-shaw), just released [Learn Python The Hard Way](http://learnpythonthehardway.org/index), an early-beginners guide to Python. 
+
+This is not a book for developers interested in learning Python:
+
+> If you can already code then the book will probably drive you insane. It's intended for people who have no coding chops to build up their skills before starting a more detailed book.
+ 
+The book goes over all the basic data structures, boolean algebra, if-statments, while-loops etc. He even snuck a little parsing in there :)
+
+If a friend or coulleague is interested in learning how to program, this would be a great guide.
+
+
+
+[[Project Page](http://learnpythonthehardway.org/)] 
+[[PDF](http://learnpythonthehardway.org/static/LearnPythonTheHardWay.pdf)] 
+[[Press Release](http://sheddingbikes.com/posts/1285754959.html)] 

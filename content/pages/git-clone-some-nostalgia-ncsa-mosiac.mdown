@@ -1,0 +1,14 @@
+Date: 2010-03-08 13:52:00 GMT
+tumblr_id: 434666803
+categories: github,browsers,old-skoo
+github_repo: alandipert/ncsa-mosaic
+title: Git clone some nostalgia - NCSA Mosiac
+
+# Git clone some nostalgia - NCSA Mosiac
+
+When many of us started working on the web it was an untamed land of center-justified slate gray pages. Now you can relive those days when you clone and fire up [Mosaic](http://en.wikipedia.org/wiki/Mosaic_(web_browser)), the browser that started it all.
+
+<a href="http://github.com/alandipert/ncsa-mosaic"><img src="http://github.com/downloads/alandipert/ncsa-mosaic/github.png" alt="Mosaic screenshot" height="308" width="500" /></a>
+
+
+[[Source on GitHub](http://github.com/alandipert/ncsa-mosaic)]

@@ -1,0 +1,30 @@
+Date: 2010-04-03 23:38:00 GMT
+tumblr_id: 494315826
+categories: event-machine,fibers,github,rack,rails,ruby,scaling
+github_repo: mperham/phat
+title: That app is Phat
+
+# That app is Phat
+
+We all know the [Rails Can't Scale](http://canrailsscale.com/) line to be bunk, but that doesn't mean we stop looking for ways to speed up Rails apps.
+
+[Mike Perham](http://github.com/mperham) says his apps are Phat, and yours can be, too. Phat is a Rails app pattern that employs a _single Thread, multiple Fiber_ model in Ruby 1.9 to async-ify an otherwise vanilla Rails app behind Thin. 
+
+Phat uses [rack-fiber_pool](http://github.com/mperham/rack-fiber_pool), Mike's [Rack Middleware](http://rack.rubyforge.org/) to execute each request in a Fiber. Phat also configures Fiber-enabled async libraries including [em_postgresql](http://github.com/mperham/em_postgresql), memcache-client, and [em-resolv-replace](http://github.com/mperham/em-resolv-replace) to achieve some impressive scalability:
+
+    # Asynchronous DNS lookup
+    require 'em-resolv-replace'
+    require 'rack/fiber_pool'
+    # Pull in the evented memcache-client.
+    # You'll need to configure config.cache_store as normal.
+    require 'memcache/event_machine'
+ 
+    Rails::Initializer.run do |config|
+      config.cache_store = :mem_cache_store
+      # Run each request in a Fiber
+      config.middleware.use Rack::FiberPool
+      # Get rid of Rack::Lock so we don't kill our concurrency
+      config.threadsafe!
+    end
+
+[[Source on GitHub](http://github.com/mperham/phat)] [[Mike's Blog Post](http://www.mikeperham.com/2010/04/03/introducing-phat-an-asynchronous-rails-app/)]

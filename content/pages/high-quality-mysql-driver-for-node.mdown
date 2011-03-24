@@ -1,0 +1,26 @@
+Date: 2010-08-25 05:34:36 GMT
+tumblr_id: 1007417500
+categories: github,mysql,nodejs,database
+github_repo: felixge/node-mysql
+title: High Quality MySQL driver for Node
+
+# High Quality MySQL driver for Node
+
+Now that Felix Geisendörfer launched his node powered site <http://transloadit.com>, he's tacked the much needed task of writing a high quality MySQL protocol implementation in pure JavaScript.  
+
+Using the high performance networking capabilities of node, and the awesome speed of V8, it's now feasible to implement binary network protocols without resorting to writing C++ extensions and wrapping blocking APIs in thread pools.
+
+Felix is a great programmer, but could use some help in the form of sponsorship and/or patches.  We all win when high quality drivers are written and shared with the community.
+
+
+#### Design Goals
+
+- TDD: All code is written using test driven development, code coverage should approach 100%
+- Simplicity: The MySQL protocol is easy, a good parser should reflect that
+- Efficiency: Use fast algorithms, buffers and as little memory as possible.
+- Portability: Should run anywhere node runs
+- Completeness: The goal is to support the full MySQL API.
+- Compatibility: MySql >= 4.1
+
+Check out the code and more info on his [git repo](http://github.com/felixge/node-mysql).
+

@@ -1,0 +1,12 @@
+Date: 2010-09-17 19:48:00 GMT
+tumblr_id: 1138803213
+categories: github,gist,twitter,new-twitter
+title: New Twitter has Gist Support!
+
+# New Twitter has Gist Support!
+
+[![Screenshot](http://media.tumblr.com/tumblr_l8wpmdGcFn1qz7mr2.png)](http://twitter.com/wycats/status/24784300743)
+
+This is just too awesome.
+
+/via [Yehuda Katz](http://twitter.com/wycats/status/24784300743)

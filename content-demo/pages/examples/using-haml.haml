@@ -1,0 +1,29 @@
+Categories: marking-up-pages
+Summary: Haml is an alternative syntax for HTML that has gained a large amount of traction in the Ruby community. Though not to everybody's taste, Haml is (primarily due to support for other markup languages) an ideal language for writing rich pages in Nesta.
+
+%h1 Using Haml
+
+%p
+  Haml is an alternative syntax for HTML that has gained a large amount of
+  traction in the Ruby community. Though not to everybody's taste, Haml is
+  (primarily due to support for other markup languages) an ideal language for
+  writing rich pages in Nesta.
+  
+%p
+  The Haml web site explains the rationale behind Haml as:
+
+%blockquote
+  Haml is based on one primary principle.
+  %em Markup should be beautiful.
+
+%p Indeed.
+
+:markdown
+  ## Haml filters
+  
+  Now, I mentioned earlier that Haml is a superb markup language for creating complicated pages with plenty of content in Nesta. Why? Well, on occassion you will want to apply HTML classes to images or write custom markup, in the middle of a page. Haml allows you the full power of HTML, without all the funny brackets.
+  
+  Haml will also, in the next breath, drop into one of several popular markup formats, including Markdown, Textile and JavaScript. See Haml's [filter documentation](http://haml-lang.com/docs/yardoc/file.HAML_REFERENCE.html#filters) for a full list of supported formats.
+  
+:textile
+  Have a look at <code>content-demo/pages/examples/using-haml.haml</code> for an example. I wrote the previous two paragraphs in Markdown, and this one in Textile!

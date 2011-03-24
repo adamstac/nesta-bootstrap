@@ -1,0 +1,14 @@
+Date: 2010-04-11 20:07:50 GMT
+tumblr_id: 513820180
+categories: github,kennethreitz,ipad,objc
+github_repo: hongrich/Dashboard
+title: Dashboard for iPad Open Sourced
+
+# Dashboard for iPad Open Sourced
+
+Rich Hong's Dashboard app for the iPad was recently submitted to the App Store.
+Apple rejected the app, so Rich decided to open source it.
+
+<object width="400" height="300"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=10515296&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=10515296&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="400" height="300"></embed></object><p><a href="http://vimeo.com/10515296">Dashboard on iPad</a> from <a href="http://vimeo.com/hongrich">Rich Hong</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+
+[[Source on Github](http://github.com/hongrich/Dashboard)]

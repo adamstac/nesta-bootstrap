@@ -1,0 +1,94 @@
+Date: 2010-10-28 06:42:00 GMT
+tumblr_id: 1421721495
+categories: github,parser,HTML,TextMate,vim
+github_repo: rstacruz/sparkup
+title: sparkup: A parser for a condensed HTML format
+
+# sparkup: A parser for a condensed HTML format
+
+Sparkup is just plain cool. You can write HTML in a CSS-like syntax, and have Sparkup handle the expansion to full HTML code. In short, Sparkup lets you write HTML code superfast!
+
+Sparkup is written in Python, and requires Python 2.5 or newer (2.5 is preinstalled in Mac OS X Leopard). Sparkup also offers integration for common text editors. Support for VIM and TextMate are currently included.
+
+Sparkup was written by [Rico Sta. Cruz](http://github.com/rstacruz) and was inspired by [Zen Coding](http://code.google.com/p/zen-coding/) of [Vadim Makeev](http://pepelsbey.net/). For those who may be familiar with Zen HTML, the syntax is forward-compatible with Sparkup (anything that Zen HTML can parse, Sparkup can too).
+
+### Usage and Installation
+
+Download Sparkup from Github - you can [download the latest version](http://github.com/rstacruz/sparkup/downloads) here.
+
+#### TextMate
+
+Simply double-click on the Sparkup.tmbundle package in Finder to install the bundle.
+
+In TextMate, open an HTML file and type in something like ...
+
+    #header > h1
+    
+Then, press Ctrl + E. Pressing Tab after the snippet is expanded will cycle through all your newly created empty elements.
+
+#### VIM
+
+Copy the contents of `vim/ftplugin/` to your `~/.vim/ftplugin` directory.
+
+    // Assuming your current dir is sparkup/vim/
+    $ cp -R ftplugin ~/.vim/
+
+#### Command-line and others
+
+Put Sparkup in your `$PATH` somewhere and then invoke it by typing:
+
+    echo "(input here)" | sparkup
+
+... or this for a list of commands.
+
+    sparkup --help
+
+#### NetBeans?
+
+Check out the [ZenCodingNetBeansPlugin](http://github.com/lorenzos/ZenCodingNetBeansPlugin).
+
+### Superfast HTML prototyping
+
+This ...
+
+    ul.feature-list > li*5 > h2 + p + a.button{Learn More}
+
+Expands to this ...
+
+    <ul class="feature-list">
+        <li>
+            <h2></h2>
+            <p></p>
+            <a href="" class="button">Learn More</a>
+        </li>
+        <li>
+            <h2></h2>
+            <p></p>
+            <a href="" class="button">Learn More</a>
+        </li>
+        <li>
+            <h2></h2>
+            <p></p>
+            <a href="" class="button">Learn More</a>
+        </li>
+        <li>
+            <h2></h2>
+            <p></p>
+            <a href="" class="button">Learn More</a>
+        </li>
+        <li>
+            <h2></h2>
+            <p></p>
+            <a href="" class="button">Learn More</a>
+        </li>
+    </ul>
+
+Take a peek at [the readme](http://github.com/rstacruz/sparkup#readme) for more details.
+
+### What about Haml, Jade, Slim, or ... ?
+
+Well, as it is right now, the project is only catering to the HTML market, but hopefully one of you fine folks out there will fork it and get to work.
+
+### Check out the Codes and Video Demo
+
+[[Source on GitHub](http://github.com/rstacruz/sparkup)] & [[Video Demo](http://www.youtube.com/watch?v=Jw3jipcenKc)]

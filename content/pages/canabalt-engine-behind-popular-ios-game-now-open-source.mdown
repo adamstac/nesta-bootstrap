@@ -1,0 +1,36 @@
+Date: 2010-12-31 04:12:59 GMT
+tumblr_id: 2537183293
+categories: github,ios,cocoa,games
+github_repo: ericjohnson/canabalt-ios
+title: Canabalt: Engine behind popular iOS game now open source
+
+# Canabalt: Engine behind popular iOS game now open source
+
+[![Logo](http://cl.ly/1e0F0z0h323Q271f0C1I/os.jpg.scaled500.jpg)](http://blog.semisecretsoftware.com/nearly-25000-raised-for-charity-canabalt-goes)
+
+In a [blog post](http://blog.semisecretsoftware.com/nearly-25000-raised-for-charity-canabalt-goes) announcing their part in raising over $25,000 for charity, Semi Secret Software has released the source to Flixel iOS, the game engine behind their popular iOS title [Canabalt](http://itunes.apple.com/us/app/canabalt/id333180061?mt=8).
+
+[![Screenshot](http://a1.phobos.apple.com/us/r1000/025/Purple/10/18/ef/mzl.hpylsvsw.320x480-75.jpg)](http://itunes.apple.com/us/app/canabalt/id333180061?mt=8)
+
+A port of [Flixel](http://flixel.org), the Action Script Flash game framework, Flixel iOS handles texture atlas generation, particle rendering, collisions, and animated sprites.
+
+    ...
+    
+    #import "Smoke.h"
+    #import <SemiSecret/SemiSecretTexture.h>
+
+    static NSString * ImgSmoke = @"smoke.png";
+
+    @interface Smoke ()
+    - (id) initWithGLData:(SmokeGLData *)glData texture:(SemiSecretTexture *)texture;
+    - (void) setupVertices;
+    - (void) setupTexCoords;
+    @end
+    
+    ...
+
+If your app does Twitter, check out their previously released [Twitter xAuth](https://github.com/ericjohnson/twitter-xauth) project. Need more? Go ahead and [fork the project](https://github.com/ericjohnson/canabalt-ios) and improve upon it.
+
+[![Game over](http://a1.phobos.apple.com/us/r1000/026/Purple/ff/d6/9b/mzl.marrukwg.320x480-75.jpg)](http://itunes.apple.com/us/app/canabalt/id333180061?mt=8)
+
+[[Source on GitHub](http://github.com/ericjohnson/canabalt-ios)] [[Blog post](http://blog.semisecretsoftware.com/nearly-25000-raised-for-charity-canabalt-goes)]

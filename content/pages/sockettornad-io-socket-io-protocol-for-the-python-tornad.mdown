@@ -1,0 +1,35 @@
+Date: 2010-10-01 01:58:46 GMT
+tumblr_id: 1219197715
+categories: github,python,websockets,socket.io,tornado
+github_repo: novus/SocketTornad.IO
+title: SocketTornad.IO: Server-side Websockets for Tornado and Socket.io
+
+# SocketTornad.IO: Server-side Websockets for Tornado and Socket.io
+
+<img src='http://www.tornadoweb.org/static/tornado.png' style='float: right; margin: 0 0 10px 10px' />
+[Socket.IO](http://socket.io/), the popular [Websockets](http://thechangelog.com/post/927103350/episode-0-3-1-websockets) library gets some Python love from [Brendan McAdams](http://github.com/bwmcadams).
+
+[SocketTornad.IO](http://github.com/novus/SocketTornad.IO) adds Websockets support to your [Tornado](http://www.tornadoweb.org/) app, handling all the protocol details on the server to wire up to the usual Socket.IO client libraries in the browser.
+
+
+
+In the simplest case, your Tornado app need only subclass `tornad_io.socket_io.SocketIOHandler` and handle `on_message`, and optionally `on_open` and `on_close` events.
+
+    class EchoHandler(SocketIOHandler):
+        def on_open(self, *args, **kwargs):
+            logging.info("Socket.IO Client connected with protocol '%s' {session id: '%s'}" % (self.protocol, self.session.id))
+            logging.info("Extra Data for Open: '%s'" % (kwargs.get('extra', None)))
+
+        def on_message(self, message):
+            logging.info("[echo] %s" % message)
+            self.send("[echo] %s" % message)
+
+        def on_close(self):
+            logging.info("Closing Socket.IO Client for protocol '%s'" % (self.protocol))
+
+The upside of using Socket.IO on the client is broad fallback support for browsers that do not support Websockets including Adobe Flash Socket, AJAX long polling,  AJAX multipart streaming, Forever Iframe and, JSONP Polling.
+
+
+Be sure to check the [SocketTornad.IO README](http://github.com/novus/SocketTornad.IO#readme) for advanced usage.
+
+[[Source on GitHub](http://github.com/novus/SocketTornad.IO)] [[Socket.IO](http://socket.io)]

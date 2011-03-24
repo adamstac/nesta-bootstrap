@@ -1,0 +1,53 @@
+Date: 2010-03-29 16:00:42 GMT
+tumblr_id: 481900495
+categories: github,nodejs,javascript,sinatra,dsl,frameworks
+github_repo: visionmedia/express
+title: Express - Sinatra cover band for Node.js
+
+# Express - Sinatra cover band for Node.js
+
+We've covered [cool things](http://thechangelog.com/post/350914743/jspec-robust-bdd-for-both-client-and-server-javascript) from [TJ Holowaychuk](http://twitter.com/tjholowaychuk) before, but [Express](http://expressjs.com/), a new [Sinatra](http://www.sinatrarb.com/)-ispired DSL-based web framework for [Node.js](http://nodejs.org) brings us to our feet.
+
+To install, simply clone the project from The Hub:
+
+    $ git clone git://github.com/visionmedia/express.git
+    $ cd express && git submodule update --init
+
+or install via Kiwi
+
+    $ kiwi -v install express
+
+From there, the syntax should look very familiar for the Sinatra fan:
+
+    require.paths.unshift('path/to/express/lib')
+    require('express')
+
+    get('/', function(){
+      this.redirect('/hello/world')
+    })
+
+    get('/hello/world', function(){
+      return 'Hello World'
+    })
+
+    run()
+
+Features in this version include: 
+
+* RESTful DSL
+* Focus on high performance
+* Multi-part file upload support
+* Cookie support
+* Session support
+* Redirection helpers
+* Environment based configuration
+* Light-weight class implementation
+* Persistent flash messages
+* Route passing
+* MIME helpers
+* Logger plugin with many formats
+* View support (haml, sass, etc)
+* Cache API
+* RESTful HTTP client
+
+[[Source on GitHub](http://github.com/visionmedia/express)] [[Homepage](http://expressjs.com/index.html)]

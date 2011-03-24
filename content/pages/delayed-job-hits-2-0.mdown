@@ -1,0 +1,24 @@
+Date: 2010-04-04 06:26:41 GMT
+tumblr_id: 495099940
+categories: github,ruby,delayed-job,mongomapper,datamapper
+github_repo: collectiveidea/delayed_job
+title: Delayed Job hits 2.0
+
+# Delayed Job hits 2.0
+
+[Collective Idea](http://collectiveidea.com/) has released Delayed Job 2.0 from [their fork](http://github.com/collectiveidea/delayed_job) of everyone's favorite database-driven job queue for Ruby. The latest version supports new database options including MongoMapper and DataMapper.
+
+Version 2.0 is roughly six times faster than 1.8.5 when using the active_record backend:
+
+                          user     system      total        real
+    delayed_job 1.8.5 195.670000  14.020000  209.690000 (230.887172)
+    delayed_job 2.0    36.200000   0.940000  37.140000  ( 39.959233)
+
+What's even more surprising is that active_record is so much faster than the other two options based on [Brandon's benchmarks](http://opensoul.org/2010/4/3/delayed_job-2-0):
+
+                         user     system      total        real
+    active_record      36.200000   0.940000  37.140000 ( 39.959233)
+    mongo_mapper       69.270000   3.220000  72.490000 ( 90.783220)
+    data_mapper       255.620000   2.880000 258.500000 (275.550383)
+
+[[Source on GitHub](http://github.com/collectiveidea/delayed_job)] [[Changelog](http://wiki.github.com/collectiveidea/delayed_job/changelog)] [[Compare 2.0 with 1.8.5](http://github.com/collectiveidea/delayed_job/compare/v1.8.5...v2.0.0)]

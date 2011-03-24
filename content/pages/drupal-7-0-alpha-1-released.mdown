@@ -1,0 +1,20 @@
+Date: 2010-01-15 19:07:44 GMT
+tumblr_id: 336129110
+categories: github,drupal,php
+github_repo: mikl/drupal
+title: Drupal 7.0 Alpha 1 released
+
+# Drupal 7.0 Alpha 1 released
+
+> After nearly two years of development, we are proud to announce the release of the first alpha version of the Drupal 7.x family. This alpha includes a tremendous number of new features and new under-the-hood improvements for both users and developers.
+
+#### What's new, what's changed?
+
+* Revamped User Interface
+* Custom Fields
+* Image Handling
+* Update Manager
+* Front-end "under-the-hood" improvements
+* Back-end "under-the-hood" improvements
+
+[[Mirror on GitHub](http://github.com/mikl/drupal/tree/DRUPAL-7-0-ALPHA1)] [[Official Release](http://drupal.org/drupal-7.0-alpha1)] [[Homepage](http://drupal.org/)]

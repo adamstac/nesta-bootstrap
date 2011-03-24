@@ -1,0 +1,27 @@
+Date: 2010-12-31 09:03:00 GMT
+tumblr_id: 2540329753
+categories: github,sass,compass,css,java
+github_repo: handlino/CompassApp
+title: CompassApp: Compile Sass stylesheets easily without resorting to the command line
+
+# CompassApp: Compile Sass stylesheets easily without resorting to the command line
+
+<a href="http://compass.handlino.com/"><img src="http://cl.ly/2R3V3J1G1b2X3o2Z2A2P/compass-app.png" alt="compass-app.png" /></a>
+
+One of the biggest adoption hurdles to reaching the designer masses for [Sass](http://sass-lang.com/) and [Compass](http://compass-style.org/) has been the intimidation level presented to designers when mentioning "the command line" ... ooh, I just scared myself.
+
+But seriously, the command line truly can be intimidating for folks who don't care to or ever plan to go there. I'm talking about folks like traditional css designers, print designers, graphic designers and folks who just want to use [GUI](http://en.wikipedia.org/wiki/Graphical_user_interface) tools to do their day to day design work. No, I am not putting anyone down. Facts are facts.
+
+Well, the good folks over at [Handlino](http://handlino.com/) recognized these facts and got to work on creating [Compass.app](http://compass.handlino.com/) (written in [Java](https://github.com/languages/Java)) to do all the heavy lifting for you - leaving you to enjoy a command line free life, all while embracing the awesomeness that is Sass and Compass.
+
+<img src="http://cl.ly/1K0y2h0N0n0e3i371K0P/compass-app-screenshot.png" alt="compass-app-screenshot.png" />
+
+### Getting started
+
+Out of the box Compass.app is supported on Windows, Linux and Mac OS X. For a small nominal fee of $7, you can buy a pre-built copy for your platform [at the official site](http://compass.handlino.com/). Or, if you know how to build it yourself, you can download the source from GitHub and save your money.
+
+Either way you are gonna need to have Java, [JRuby](http://jruby.org/) and [rawr](http://rawr.rubyforge.org/) installed on your machine.
+
+<iframe title="YouTube video player" class="youtube-player" type="text/html" width="560" height="345" src="http://www.youtube.com/embed/pFCYhy9N6co?rel=0" frameborder="0"></iframe>
+
+[[Source on GitHub](https://github.com/handlino/CompassApp)] [[Homepage](http://compass.handlino.com/)]

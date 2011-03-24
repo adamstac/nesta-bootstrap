@@ -1,0 +1,30 @@
+Date: 2010-04-04 01:00:00 GMT
+tumblr_id: 494458410
+categories: github,unix,jquery,javascript,cool,funny
+github_repo: chromakode/xkcdfools
+title: xkcdfools: Mock a UNIX terminal in jQuery
+
+# xkcdfools: Mock a UNIX terminal in jQuery
+
+As seen on [xkcd's awesome April Fool's homepage](http://xkcd.com/unixkcd/), xkcdfools is a mock terminal client written in jQuery. Many familiar commands are supported:
+
+    guest@xkcd:/$ ls
+    welcome.txt
+    license.txt
+    blag/
+    blog/
+    fora/
+    forums/
+    store/
+    about/
+
+Terminal history works by hitting the up arrow, and there are even some funny Easter eggs included as well including:
+
+    guest@xkcd:/$ whoami
+
+    You are Richard Stallman.
+    guest@xkcd:/$
+
+as well as the famous [Konami code](http://en.wikipedia.org/wiki/List_of_Konami_code_games) (↑, ↑, ↓, ↓, ←, →, ←, →, B, A). Woot!
+
+[[Source on GitHub](http://github.com/chromakode/xkcdfools)] [[Demo](http://xkcd.com/unixkcd/)]

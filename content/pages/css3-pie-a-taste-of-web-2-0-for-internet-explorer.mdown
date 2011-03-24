@@ -1,0 +1,22 @@
+Date: 2010-07-28 18:23:47 GMT
+tumblr_id: 871618173
+categories: css3,IE,hacks,design,github
+github_repo: lojjic/PIE
+title: CSS3 PIE - A taste of Web 2.0 for Internet Explorer
+
+# CSS3 PIE - A taste of Web 2.0 for Internet Explorer
+
+How will that web app of yours ever get featured on TechCrunch without rounded corners and drop shadows? With CSS3, such things are child's play. If only IE supported them.
+
+Be not despaired, my friends for [Jason Johnston](http://twitter.com/lojjic) brings you [Progressive Internet Explorer](http://github.com/lojjic/PIE) (PIE). PIE takes advantage of vendor namespaced CSS properties and an HTML Behavior (remember those) to graft on some missing features for Internet Explorer:
+
+    .box {
+      background: -webkit-gradient(linear, 0 0, 0 bottom, from(#EEFF99), to(#66EE33));
+      background: -moz-linear-gradient(#EEFF99, #66EE33);
+      -pie-background: linear-gradient(#EEFF99, #66EE33);
+      behavior: url(/PIE.htc);
+    }
+
+PIE [supports a number of CSS3 properties](http://css3pie.com/documentation/supported-css3-features/) including `border-radius`, `box-shadow`, `border-image`, RGBA color values, and gradients.
+
+[[Source on GitHub]](http://github.com/lojjic/PIE) [[Homepage]](http://css3pie.com) [[Docs]](http://css3pie.com/documentation/)

@@ -1,0 +1,27 @@
+Date: 2010-08-11 18:22:56 GMT
+tumblr_id: 938035648
+categories: github,javascript,charts,canvas,graphs
+github_repo: joewalnes/smoothie
+title: smoothie: Lightweight JavaScript library for smooth real-time charts in the browser
+
+# smoothie: Lightweight JavaScript library for smooth real-time charts in the browser
+
+Providing real-time, smoothly updating charts in the browser is a challenge. London-based developer [Joe Walnes](http://github.com/joewalnes) has tackled the problem with [Smoothie Charts](http://github.com/joewalnes/smoothie), a lightweight JavaScript library that uses `<canvas>` to do just that.
+  
+![Screenshot](http://cl.ly/d70d178690b0ddd81e2d/content)
+
+A quick example from [the project homepage](http://smoothiecharts.org/):
+
+    // Randomly add a data point every 500ms
+    var random = new TimeSeries();
+    setInterval(function() {
+      random.append(new Date().getTime(), Math.random() * 10000);
+    }, 500);
+    
+    function createTimeline() {
+      var chart = new SmoothieChart();
+      chart.addTimeSeries(random, { strokeStyle: 'rgba(0, 255, 0, 1)', fillStyle: 'rgba(0, 255, 0, 0.2)', lineWidth: 4 });
+      chart.streamTo(document.getElementById("chart"), 500);
+    }
+
+[[Source on GitHub](http://github.com/joewalnes/smoothie)] [[Homepage](http://smoothiecharts.org/)]

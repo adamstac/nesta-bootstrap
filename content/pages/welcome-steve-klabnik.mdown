@@ -1,0 +1,16 @@
+Date: 2010-12-13 17:50:00 GMT
+tumblr_id: 2302220469
+categories: 
+title: Welcome Steve Klabnik!
+
+# Welcome Steve Klabnik!
+
+I think it goes without saying that we love open source software and the community that uses it. When Wynn and I started The Changelog last year (November 19th, 2009), we had but one goal in mind. To shine a spotlight on the people and projects in open source and serve the community in whatever way we could. This blog and podcast has never been about quantity. It's always been about quality.
+
+I'm proud to introduce [Steve Klabnik](https://github.com/steveklabnik) as the latest addition to The Changelog contributors team.
+
+Steve is a software craftsman, writer, accidental teacher, and anarchist. He began programming at a very young age, and has been hacking away ever since. [Ruby](http://www.ruby-lang.org/en/) and [Haskell](http://www.haskell.org/haskellwiki/Haskell) are his languages of choice and he's the current maintainer of [Hackety Hack](https://github.com/hacketyhack/hacketyhack) which he inherited from [_why](http://en.wikipedia.org/wiki/Why_the_lucky_stiff).
+
+When Steve's not working on software, he's likely writing about it. He maintains a [personal blog](http://blog.steveklabnik.com/), [the Hackety Hack blog](http://blog.hackety-hack.com/), and [the Shoes blog](http://blog.shoesrb.com/). Steve also writes about politics, startups, and anything else he happens to have an opinion about.
+
+We're stoked to add Steve to the team and ask that you extend him a warm welcome and maybe tweet a nice shout out [to him on Twitter](http://twitter.com/steveklabnik).
