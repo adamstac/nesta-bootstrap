@@ -1,11 +1,28 @@
+# Compass Configuration
+
+require 'meyer-reset'
 require 'grid-coordinates'
 
-http_path = "/"
-css_dir = "themes/thechangelog/public/thechangelog/css"
-sass_dir = "themes/thechangelog/stylesheets"
-images_dir = "images"
-javascripts_dir = "js"
-output_style = :expanded #compressed #nested #compact
-environment = :production
-# To enable relative paths to assets via compass helper functions. Uncomment:
-# relative_assets = true
+# HTTP paths
+http_path             = '/'
+http_stylesheets_path = '/base/css'
+http_images_path      = '/base/images'
+http_javascripts_path = '/base/javascripts'
+
+# File system locations
+sass_dir              = 'themes/base/sass'
+css_dir               = 'themes/base/public/base/css'
+images_dir            = 'themes/base/public/base/images'
+javascripts_dir       = 'themes/base/public/base/javascripts'
+
+# Set to true for easier debugging
+line_comments         = false
+
+# CSS output style - :nested, :expanded, :compact, or :compressed
+output_style          = :expanded
+
+# Determine whether Compass asset helper functions generate relative
+# or absolute paths
+relative_assets       = true
+
+# Learn more: http://compass-style.org/docs/tutorials/configuration-reference/

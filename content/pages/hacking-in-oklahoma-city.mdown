@@ -1,9 +1,0 @@
-Date: 2010-05-06 14:23:00 GMT
-tumblr_id: 576256849
-categories: ruby,rdrc,conferences
-title: Hacking in Oklahoma City
-
-# Hacking in Oklahoma City
-
-[<img src="http://reddirtrubyconf.com/images/title.png" alt="conference logo" height="47" width="240" style="float: right; margin: 10px" />](http://reddirtrubyconf.com/) 
-We're excited to host an open source hackfest this evening at [Red Dirt Ruby Conf](http://reddirtrubyconf.com/). Join [JEG2](http://twitter.com/JEG2), [Wynn](http://twitter.com/pengwynn) and other Rubyists at a [_secret location_](http://plancast.com/a/30q7) (to be announced after Dave Thomas' keynote) for food, drinks, and hacking on your favorite open source Ruby project.

@@ -1,0 +1,12 @@
+!!!
+%html{html_attrs}
+  %head
+    %title= @title
+    %link{:href => "/base/css/stylesheet.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
+    %script{:type => "text/javascript", :src => "http://code.jquery.com/jquery-1.5.min.js"}
+    %script{:type => "text/javascript", :src => "/base/javascripts/modernizr-1.6.min.js"}
+    %script{:type => "text/javascript", :src => "/base/javascripts/application.js"}
+  %body{:class => @body_class}
+    .container
+      .content
+        = yield
