@@ -30,59 +30,6 @@ namespace :heroku do
   end
 end
 
-namespace :tumblr do
-  desc "Import items from tumblr"
-  task :import do
-    
-    login     = ENV['TUMBLR_EMAIL']
-    password  = ENV['TUMBLR_PASSWORD']
-    
-    tumblr = Tumblr::Reader.new login, password
-    tumblr.defaults.merge! :filter => 'none'
-    
-    posts = tumblr.get_all_posts "thechangelog"
-    
-    
-
-    posts.each do |post|
-      
-      slug = post.slug
-      date = post.date
-      tumblr_id = post.post_id
-      tags = post.tags
-      
-      case post.type
-      when :link
-        title = post.name
-        github_repo = post.url.split("/").reverse[0..1].reverse.join('/') if post.url[/github/]
-        content = post.description
-        
-      when :regular
-        title = post.title
-        content = post.body
-      else
-        puts "unhandled #{post.type}"
-        next
-      end
-      
-      # Write out the data and content to file
-      File.open("content/pages/#{slug}.mdown", "w") do |f|
-        
-        f.puts "Date: #{date}"
-        f.puts "tumblr_id: #{tumblr_id}"
-        f.puts "categories: #{tags}"
-        f.puts "github_repo: #{github_repo}" unless github_repo.nil?
-        f.puts "title: #{title}"
-        f.puts "\n"
-        f.puts "# #{title}"
-        f.puts "\n"
-        f.puts content
-      end
-      
-    end
-  end
-end
-
 ## My Rake tasks
 desc 'Start the application'
 task :start do
